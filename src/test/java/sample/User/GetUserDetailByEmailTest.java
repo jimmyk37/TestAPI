@@ -4,71 +4,79 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import sample.base.BaseTestClass;
 
-public class GetUserDetailByEmailTest {
-	
+public class GetUserDetailByEmailTest extends BaseTestClass {
+
 	@BeforeClass
-    public void setup() {
-        RestAssured.baseURI = "https://automationexercise.com";
-    }
-	
+	public void setup() {
+		RestAssured.baseURI = "https://automationexercise.com";
+	}
+
 	@Test
 	public void testGetUserDetailByEmailSuccess() {
-	    String email = "jimmy@example.com";
+		test.log(Status.INFO, "Starting testGetAllBrandsListSuccess API test...");
 
-	    Response response =RestAssured.
-	        given().
-	            param("email", email).
-	            get("/api/getUserDetailByEmail");
-	    System.out.println("testGetUserDetailByEmailSuccess" + response.getBody().asPrettyString());
+		String email = "jimmy@example.com";
 
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
-	    Assert.assertEquals(response.jsonPath().getString("user.email"), email);
-	        
+		Response response = RestAssured.given().param("email", email).get("/api/getUserDetailByEmail");
+		System.out.println("testGetUserDetailByEmailSuccess" + response.getBody().asPrettyString());
+
+		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 200);
+		Assert.assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
+		Assert.assertEquals(response.jsonPath().getString("user.email"), email);
+
+		test.log(Status.INFO, "API test completed.");
+
 	}
+
 	@Test
 	public void testNonexistentEmail() {
-	    String email = "nonexistent@example.com";
+		test.log(Status.INFO, "Starting testGetAllBrandsListSuccess API test...");
 
-	    Response response =RestAssured.
-		        given().
-		            param("email", email).
-		            get("/api/getUserDetailByEmail");
-		    System.out.println("testNonexistentEmail" + response.getBody().asPrettyString());
+		String email = "nonexistent@example.com";
 
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
+		Response response = RestAssured.given().param("email", email).get("/api/getUserDetailByEmail");
+		System.out.println("testNonexistentEmail" + response.getBody().asPrettyString());
+
+		Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
+		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
+
+		test.log(Status.INFO, "API test completed.");
+
 	}
-	
+
 	@Test
 	public void testMissingEmailParameter() {
-		Response response =RestAssured.
-		        given().
-		            param("email", "").
-		            get("/api/getUserDetailByEmail");
-		    System.out.println("testMissingEmailParameter" + response.getBody().asPrettyString());
+		test.log(Status.INFO, "Starting testGetAllBrandsListSuccess API test...");
 
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
+		Response response = RestAssured.given().param("email", "").get("/api/getUserDetailByEmail");
+		System.out.println("testMissingEmailParameter" + response.getBody().asPrettyString());
+		Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
+		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
+
+		test.log(Status.INFO, "API test completed.");
+
 	}
-	
+
 	@Test
 	public void testInvalidEmailFormat() {
-	    String invalidEmail = "invalidemail";
+		test.log(Status.INFO, "Starting testInvalidEmailFormat API test...");
 
-	    Response response =RestAssured.
-		        given().
-		            param("email", invalidEmail).
-		            get("/api/getUserDetailByEmail");
-		    System.out.println("testMissingEmailParameter" + response.getBody().asPrettyString());
+		String invalidEmail = "invalidemail";
 
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
+		Response response = RestAssured.given().param("email", invalidEmail).get("/api/getUserDetailByEmail");
+		System.out.println("testMissingEmailParameter" + response.getBody().asPrettyString());
+
+		Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
+		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
+
+		test.log(Status.INFO, "API test completed.");
+
 	}
-
-
 
 }

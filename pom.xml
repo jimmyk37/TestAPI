@@ -47,6 +47,19 @@
 			<artifactId>jsoup</artifactId>
 			<version>1.17.2</version>
 		</dependency>
+		<!-- Extent Reports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>4.1.5</version> <!-- Update with the latest version -->
+		</dependency>
 
+		<!-- Log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version> <!-- Update with the latest version
+			compatible with your project -->
+		</dependency>
 	</dependencies>
 </project>

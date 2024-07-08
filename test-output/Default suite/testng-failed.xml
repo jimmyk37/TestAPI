@@ -3,14 +3,50 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sample.Product.BrandsListTest">
+      <class name="sample.User.CreateAccountTest">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="tearDown"/>
+          <include name="testCreateAccountSuccess"/>
+          <include name="tearDownSuite"/>
+          <include name="setup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- sample.User.CreateAccountTest -->
+      <class name="sample.User.GetUserDetailByEmailTest">
         <methods>
           <include name="setup"/>
-          <include name="testProductStructure"/>
-          <include name="testContentType"/>
-          <include name="testSpecificBrandDetails"/>
+          <include name="setUpSuite"/>
+          <include name="tearDown"/>
+          <include name="testMissingEmailParameter"/>
+          <include name="tearDownSuite"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- sample.Product.BrandsListTest -->
+      </class> <!-- sample.User.GetUserDetailByEmailTest -->
+      <class name="sample.User.VerifyLoginTest">
+        <methods>
+          <include name="testVerifyLoginSuccess"/>
+          <include name="testIncorrectPassword"/>
+          <include name="testMissingEmail"/>
+          <include name="setUpSuite"/>
+          <include name="tearDown"/>
+          <include name="testEmptyRequest"/>
+          <include name="tearDownSuite"/>
+          <include name="setUp"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- sample.User.VerifyLoginTest -->
+      <class name="sample.User.DeleteAccountTest">
+        <methods>
+          <include name="testIncorrectPassword"/>
+          <include name="setUpSuite"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testDeleteAccountSuccess"/>
+          <include name="tearDownSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- sample.User.DeleteAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
