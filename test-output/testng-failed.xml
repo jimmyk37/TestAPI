@@ -1,75 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [All]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sample.User.DeleteAccountTest">
-        <methods>
-          <include name="setUpSuite"/>
-          <include name="testIncorrectPassword"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="testDeleteAccountSuccess"/>
-          <include name="tearDownSuite"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- sample.User.DeleteAccountTest -->
-      <class name="sample.User.VerifyLoginTest">
-        <methods>
-          <include name="testVerifyLoginSuccess"/>
-          <include name="setUpSuite"/>
-          <include name="tearDown"/>
-          <include name="tearDownSuite"/>
-          <include name="setUp"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- sample.User.VerifyLoginTest -->
-      <class name="sample.Product.ProductsListTest">
-        <methods>
-          <include name="testInvalidEndpoint"/>
-          <include name="setUpSuite"/>
-          <include name="testContentType"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="testSpecificProductDetails"/>
-          <include name="tearDownSuite"/>
-          <include name="setUp"/>
-          <include name="testFilterByCategory"/>
-        </methods>
-      </class> <!-- sample.Product.ProductsListTest -->
-      <class name="sample.User.CreateAccountTest">
-        <methods>
-          <include name="setUpSuite"/>
-          <include name="tearDown"/>
-          <include name="testCreateAccountSuccess"/>
-          <include name="tearDownSuite"/>
-          <include name="setup"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- sample.User.CreateAccountTest -->
-      <class name="sample.User.GetUserDetailByEmailTest">
-        <methods>
-          <include name="setup"/>
-          <include name="setUpSuite"/>
-          <include name="tearDown"/>
-          <include name="testMissingEmailParameter"/>
-          <include name="tearDownSuite"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- sample.User.GetUserDetailByEmailTest -->
       <class name="sample.Product.SearchProductTest">
         <methods>
           <include name="testSpecificProductDetails"/>
           <include name="setUpSuite"/>
           <include name="tearDown"/>
-          <include name="testMissingRequiredParameter"/>
           <include name="testContentType"/>
           <include name="tearDownSuite"/>
           <include name="setUp"/>
           <include name="setup"/>
-          <include name="testSpecialCharactersInProductName"/>
         </methods>
       </class> <!-- sample.Product.SearchProductTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [All] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

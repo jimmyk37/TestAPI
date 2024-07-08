@@ -19,10 +19,9 @@ public class DeleteAccountTest extends BaseTestClass {
 
 	@Test
 	public void testDeleteAccountSuccess() {
-		test.log(Status.INFO, "Starting testDeleteAccountSuccess API test...");
 
 		String email = "jimmy@example.com";
-		String password = "password123";
+		String password = "jimmy12345";
 //	 
 		Response response = given().formParam("email", email).formParam("password", password).when()
 				.delete("/api/deleteAccount").then().extract().response();
@@ -30,15 +29,11 @@ public class DeleteAccountTest extends BaseTestClass {
 		System.out.println(response.getBody().asPrettyString());
 
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 200);
-		Assert.assertEquals(response.jsonPath().getString("message"), "Account deleted!");	
-
-		test.log(Status.INFO, "API test completed.");
-	
+		Assert.assertEquals(response.jsonPath().getString("message"), "Account deleted!");
 	}
 	
 	@Test
 	public void testNonexistentEmail() {
-		test.log(Status.INFO, "Starting testNonexistentEmail API test...");
 
 	    String email = "nonexistent@example.com";
 	    String password = "password123";
@@ -54,15 +49,10 @@ public class DeleteAccountTest extends BaseTestClass {
 
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
-
-		test.log(Status.INFO, "API test completed.");
-
 	}
 	
 	@Test
 	public void testMissingEmailParameter() {
-		test.log(Status.INFO, "Starting testMissingEmailParameter API test...");
-
 	    String password = "password123";
 
 	    Response response =
@@ -76,13 +66,10 @@ public class DeleteAccountTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
 
-		test.log(Status.INFO, "API test completed.");
-
 	}
 	
 	@Test
 	public void testMissingPasswordParameter() {
-		test.log(Status.INFO, "Starting testMissingPasswordParameter API test...");
 
 	    String email = "jimmy@example.com";
 
@@ -96,8 +83,6 @@ public class DeleteAccountTest extends BaseTestClass {
 
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
-
-		test.log(Status.INFO, "API test completed.");
 
 	}
     
@@ -120,14 +105,10 @@ public class DeleteAccountTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
 
-		test.log(Status.INFO, "API test completed.");
-
 	}
     
 	@Test
 	public void testIncorrectPassword() {
-		test.log(Status.INFO, "Starting testIncorrectPassword API test...");
-
 	    String email = "jimmy@example.com";
 	    String password = "wrongpassword";
 
@@ -142,8 +123,6 @@ public class DeleteAccountTest extends BaseTestClass {
 
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 401, "Expected status code is 401 Unauthorized");
-
-		test.log(Status.INFO, "API test completed.");
 
 	}
 

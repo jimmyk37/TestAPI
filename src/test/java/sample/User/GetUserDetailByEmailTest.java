@@ -19,8 +19,6 @@ public class GetUserDetailByEmailTest extends BaseTestClass {
 
 	@Test
 	public void testGetUserDetailByEmailSuccess() {
-		test.log(Status.INFO, "Starting testGetAllBrandsListSuccess API test...");
-
 		String email = "jimmy@example.com";
 
 		Response response = RestAssured.given().param("email", email).get("/api/getUserDetailByEmail");
@@ -30,13 +28,10 @@ public class GetUserDetailByEmailTest extends BaseTestClass {
 		Assert.assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
 		Assert.assertEquals(response.jsonPath().getString("user.email"), email);
 
-		test.log(Status.INFO, "API test completed.");
-
 	}
 
 	@Test
 	public void testNonexistentEmail() {
-		test.log(Status.INFO, "Starting testGetAllBrandsListSuccess API test...");
 
 		String email = "nonexistent@example.com";
 
@@ -46,26 +41,20 @@ public class GetUserDetailByEmailTest extends BaseTestClass {
 		Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
 
-		test.log(Status.INFO, "API test completed.");
-
 	}
 
 	@Test
 	public void testMissingEmailParameter() {
-		test.log(Status.INFO, "Starting testGetAllBrandsListSuccess API test...");
 
 		Response response = RestAssured.given().param("email", "").get("/api/getUserDetailByEmail");
 		System.out.println("testMissingEmailParameter" + response.getBody().asPrettyString());
 		Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
 
-		test.log(Status.INFO, "API test completed.");
-
 	}
 
 	@Test
 	public void testInvalidEmailFormat() {
-		test.log(Status.INFO, "Starting testInvalidEmailFormat API test...");
 
 		String invalidEmail = "invalidemail";
 
@@ -74,8 +63,6 @@ public class GetUserDetailByEmailTest extends BaseTestClass {
 
 		Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
-
-		test.log(Status.INFO, "API test completed.");
 
 	}
 

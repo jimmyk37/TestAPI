@@ -1,50 +1,515 @@
-2024-06-28 17:35:37 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:35:43 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:41:10 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:41:16 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:44:33 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:44:39 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:45:37 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:45:42 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:48:26 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:48:31 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:49:23 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:49:29 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:50:28 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:50:34 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:51:03 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:51:08 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:17:19 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:17:40 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:22:52 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:22:57 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:24:05 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:24:09 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:25:08 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:25:14 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:27:09 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:27:15 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:28:11 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:28:17 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:30:14 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:30:21 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:32:12 INFO  BaseTestClass:38 - Extent Report initialized successfully.
-2024-07-05 12:32:18 INFO  BaseTestClass:44 - Extent Report flushed successfully.
-2024-07-05 12:34:45 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:34:59 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:37:46 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:37:52 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:41:34 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:41:41 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:51:17 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:51:23 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:52:23 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:52:28 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:53:19 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:53:25 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-08 11:04:19 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-08 11:04:50 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-08 11:10:07 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-08 11:10:44 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-08 11:21:47 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-08 11:22:28 INFO  BaseTestClass:43 - Extent Report flushed successfully.
+2024-07-08 16:10:05 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:10:08 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:10:08 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-07-08 16:10:08 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:10:08 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
+2024-07-08 16:10:11 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
+2024-07-08 16:10:12 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
+2024-07-08 16:10:12 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
+2024-07-08 16:10:12 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:10:13 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
+2024-07-08 16:10:13 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
+2024-07-08 16:10:14 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
+2024-07-08 16:10:14 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
+2024-07-08 16:10:14 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
+2024-07-08 16:10:14 INFO  BaseTestClass:79 - API Request: null
+2024-07-08 16:10:14 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
+2024-07-08 16:10:15 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:10:16 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:14:15 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:14:19 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:14:19 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-07-08 16:14:19 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:14:19 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
+2024-07-08 16:14:21 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
+2024-07-08 16:14:21 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
+2024-07-08 16:14:22 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
+2024-07-08 16:14:22 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:14:22 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
+2024-07-08 16:14:22 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
+2024-07-08 16:14:22 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
+2024-07-08 16:14:22 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
+2024-07-08 16:14:22 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
+2024-07-08 16:14:22 INFO  BaseTestClass:79 - API Request: null
+2024-07-08 16:14:22 INFO  BaseTestClass:80 - API Response: null
+2024-07-08 16:14:24 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:14:24 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:16:01 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:16:04 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:16:04 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-07-08 16:16:04 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:16:04 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@3ae126d1
+2024-07-08 16:16:06 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
+2024-07-08 16:16:07 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
+2024-07-08 16:16:08 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
+2024-07-08 16:16:08 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:16:08 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
+2024-07-08 16:16:08 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
+2024-07-08 16:16:09 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
+2024-07-08 16:16:09 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
+2024-07-08 16:16:09 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
+2024-07-08 16:16:09 INFO  BaseTestClass:79 - API Request: null
+2024-07-08 16:16:09 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@3ae126d1
+2024-07-08 16:16:10 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:16:11 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:17:18 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:17:22 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:17:22 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-07-08 16:17:22 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:17:22 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
+2024-07-08 16:17:24 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
+2024-07-08 16:17:25 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
+2024-07-08 16:17:25 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
+2024-07-08 16:17:25 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:17:26 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
+2024-07-08 16:17:26 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
+2024-07-08 16:17:27 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
+2024-07-08 16:17:27 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
+2024-07-08 16:17:27 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
+2024-07-08 16:17:27 INFO  BaseTestClass:79 - API Request: null
+2024-07-08 16:17:27 INFO  BaseTestClass:80 - API Response: null
+2024-07-08 16:17:28 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:17:28 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:19:23 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:19:27 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:19:27 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-07-08 16:19:27 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:19:27 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
+2024-07-08 16:19:29 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
+2024-07-08 16:19:30 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
+2024-07-08 16:19:30 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
+2024-07-08 16:19:31 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:19:31 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
+2024-07-08 16:19:31 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
+2024-07-08 16:19:32 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
+2024-07-08 16:19:32 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
+2024-07-08 16:19:32 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
+2024-07-08 16:19:32 INFO  BaseTestClass:79 - API Request: null
+2024-07-08 16:19:32 INFO  BaseTestClass:80 - API Response: null
+2024-07-08 16:19:33 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:19:33 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:20:11 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:20:14 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:20:14 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-07-08 16:20:14 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:20:14 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
+2024-07-08 16:20:16 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
+2024-07-08 16:20:18 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
+2024-07-08 16:20:18 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
+2024-07-08 16:20:18 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:20:18 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
+2024-07-08 16:20:18 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
+2024-07-08 16:20:19 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
+2024-07-08 16:20:19 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
+2024-07-08 16:20:19 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
+2024-07-08 16:20:19 INFO  BaseTestClass:79 - API Request: null
+2024-07-08 16:20:19 INFO  BaseTestClass:80 - API Response: null
+2024-07-08 16:20:21 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:20:21 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:21:22 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:21:25 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:21:25 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-07-08 16:21:25 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:21:25 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@56399b9e
+2024-07-08 16:21:27 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
+2024-07-08 16:21:29 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
+2024-07-08 16:21:29 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
+2024-07-08 16:21:29 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:21:29 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
+2024-07-08 16:21:29 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
+2024-07-08 16:21:30 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
+2024-07-08 16:21:30 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
+2024-07-08 16:21:30 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
+2024-07-08 16:21:30 INFO  BaseTestClass:79 - API Request: 
+2024-07-08 16:21:30 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@56399b9e
+2024-07-08 16:21:31 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:21:31 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:23:22 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:23:25 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:23:25 ERROR BaseTestClass:78 - Failure Reason: expected [application/json] but found [text/html; charset=utf-8]
+2024-07-08 16:23:25 INFO  BaseTestClass:79 - API Request: Request method:	GET
+Request URI:	https://automationexercise.com/api/productsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:23:25 INFO  BaseTestClass:80 - API Response: <html>
+  <body>{"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testFilterByCategory
+2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testGetAllProductsListSuccess
+2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
+2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
+2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testSpecificProductDetails
+2024-07-08 16:23:28 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:23:28 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:23:50 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:23:53 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:23:53 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-07-08 16:23:53 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:23:53 INFO  BaseTestClass:80 - API Response: <html>
+  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-07-08 16:23:56 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
+2024-07-08 16:23:57 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
+2024-07-08 16:23:57 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
+2024-07-08 16:23:57 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:23:57 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
+2024-07-08 16:23:57 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
+2024-07-08 16:23:58 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
+2024-07-08 16:23:58 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
+2024-07-08 16:23:58 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
+2024-07-08 16:23:58 INFO  BaseTestClass:79 - API Request: 
+2024-07-08 16:23:58 INFO  BaseTestClass:80 - API Response: 
+2024-07-08 16:23:59 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:23:59 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:29:03 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:29:07 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:29:07 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-07-08 16:29:07 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:29:07 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@3ae126d1
+2024-07-08 16:29:09 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
+2024-07-08 16:29:10 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
+2024-07-08 16:29:10 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
+2024-07-08 16:29:10 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:29:10 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
+2024-07-08 16:29:11 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
+2024-07-08 16:29:12 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
+2024-07-08 16:29:12 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
+2024-07-08 16:29:12 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
+2024-07-08 16:29:12 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:29:12 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@3ae126d1
+2024-07-08 16:29:13 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:29:13 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:32:19 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:32:23 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:32:23 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-07-08 16:32:23 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:32:23 INFO  BaseTestClass:80 - API Response: <html>
+  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-07-08 16:32:26 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
+2024-07-08 16:32:27 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
+2024-07-08 16:32:28 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
+2024-07-08 16:32:28 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:32:28 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
+2024-07-08 16:32:28 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
+2024-07-08 16:32:29 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
+2024-07-08 16:32:29 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
+2024-07-08 16:32:29 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
+2024-07-08 16:32:29 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:32:29 INFO  BaseTestClass:80 - API Response: <html>
+  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-07-08 16:32:31 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:32:31 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:33:28 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:33:32 INFO  BaseTestClass:76 - Test Case Failed: testCreateAccountSuccess
+2024-07-08 16:33:32 ERROR BaseTestClass:78 - Failure Reason: expected [201] but found [400]
+2024-07-08 16:33:32 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/createAccount
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	name=Jimmy
+				email=jimmy@example.com
+				password=jimmy12345
+				title=Mr
+				birth_date=1
+				birth_month=January
+				birth_year=1990
+				firstname=John
+				lastname=Doe
+				company=Example Corp
+				address1=123 Main St
+				address2=Apt 4B
+				country=United States
+				zipcode=12345
+				state=California
+				city=Los Angeles
+				mobile_number=1234567890
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:33:32 INFO  BaseTestClass:80 - API Response: <html>
+  <body>{"responseCode": 400, "message": "Email already exists!"}</body>
+</html>
+
+2024-07-08 16:33:34 INFO  BaseTestClass:84 - Test Case Passed: testExistingEmail
+2024-07-08 16:33:36 INFO  BaseTestClass:84 - Test Case Passed: testInvalidEmailFormat
+2024-07-08 16:33:38 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredFields
+2024-07-08 16:33:38 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:41:29 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:41:33 INFO  BaseTestClass:84 - Test Case Passed: testDeleteAccountSuccess
+2024-07-08 16:41:35 INFO  BaseTestClass:76 - Test Case Failed: testIncorrectPassword
+2024-07-08 16:41:35 ERROR BaseTestClass:78 - Failure Reason: Expected status code is 401 Unauthorized expected [401] but found [404]
+2024-07-08 16:41:35 INFO  BaseTestClass:79 - API Request: Request method:	DELETE
+Request URI:	https://automationexercise.com/api/deleteAccount
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	email=jimmy@example.com
+				password=wrongpassword
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:41:35 INFO  BaseTestClass:80 - API Response: <html>
+  <body>{"responseCode": 404, "message": "Account not found!"}</body>
+</html>
+
+2024-07-08 16:41:36 INFO  BaseTestClass:84 - Test Case Passed: testInvalidEmailFormat
+2024-07-08 16:41:37 INFO  BaseTestClass:84 - Test Case Passed: testMissingEmailParameter
+2024-07-08 16:41:39 INFO  BaseTestClass:84 - Test Case Passed: testMissingPasswordParameter
+2024-07-08 16:41:40 INFO  BaseTestClass:84 - Test Case Passed: testNonexistentEmail
+2024-07-08 16:41:40 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:41:47 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:41:51 INFO  BaseTestClass:76 - Test Case Failed: testCreateAccountSuccess
+2024-07-08 16:41:51 ERROR BaseTestClass:78 - Failure Reason: expected [application/json] but found [text/html; charset=utf-8]
+2024-07-08 16:41:51 INFO  BaseTestClass:79 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/createAccount
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	name=Jimmy
+				email=jimmy@example.com
+				password=jimmy12345
+				title=Mr
+				birth_date=1
+				birth_month=January
+				birth_year=1990
+				firstname=John
+				lastname=Doe
+				company=Example Corp
+				address1=123 Main St
+				address2=Apt 4B
+				country=United States
+				zipcode=12345
+				state=California
+				city=Los Angeles
+				mobile_number=1234567890
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:41:51 INFO  BaseTestClass:80 - API Response: <html>
+  <body>{"responseCode": 201, "message": "User created!"}</body>
+</html>
+
+2024-07-08 16:41:53 INFO  BaseTestClass:84 - Test Case Passed: testExistingEmail
+2024-07-08 16:41:54 INFO  BaseTestClass:84 - Test Case Passed: testInvalidEmailFormat
+2024-07-08 16:41:56 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredFields
+2024-07-08 16:41:56 INFO  BaseTestClass:56 - Extent Report flushed successfully.
+2024-07-08 16:45:35 INFO  BaseTestClass:50 - Extent Report initialized successfully.
+2024-07-08 16:45:38 INFO  BaseTestClass:76 - Test Case Failed: testContentType
+2024-07-08 16:45:38 ERROR BaseTestClass:80 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-07-08 16:45:38 INFO  BaseTestClass:81 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:45:38 INFO  BaseTestClass:82 - API Response: <html>
+  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-07-08 16:45:41 INFO  BaseTestClass:86 - Test Case Passed: testInvalidProductName
+2024-07-08 16:45:42 INFO  BaseTestClass:86 - Test Case Passed: testMissingRequiredParameter
+2024-07-08 16:45:42 INFO  BaseTestClass:86 - Test Case Passed: testProductStructure
+2024-07-08 16:45:42 INFO  BaseTestClass:86 - Test Case Passed: testResponseContainsProducts
+2024-07-08 16:45:42 INFO  BaseTestClass:86 - Test Case Passed: testResponseTime
+2024-07-08 16:45:42 INFO  BaseTestClass:86 - Test Case Passed: testSearchProductSuccess
+2024-07-08 16:45:44 INFO  BaseTestClass:86 - Test Case Passed: testSpecialCharactersInProductName
+2024-07-08 16:45:44 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
+2024-07-08 16:45:44 ERROR BaseTestClass:80 - Failure Reason: expected [Blue Top] but found [null]
+2024-07-08 16:45:44 INFO  BaseTestClass:81 - API Request: Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-08 16:45:44 INFO  BaseTestClass:82 - API Response: <html>
+  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-07-08 16:45:45 INFO  BaseTestClass:86 - Test Case Passed: testUnsupportedMethod
+2024-07-08 16:45:45 INFO  BaseTestClass:56 - Extent Report flushed successfully.
