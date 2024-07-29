@@ -21,8 +21,6 @@ public class CreateAccountTest extends BaseTestClass {
 
 	@Test()
 	public void testCreateAccountSuccess() {
-		test.log(Status.INFO, "Starting testCreateAccountSuccess API test...");
-
 		Response response = given().formParam("name", "Jimmy").formParam("email", "jimmy@example.com")
 				.formParam("password", "jimmy12345").formParam("title", "Mr").formParam("birth_date", "1")
 				.formParam("birth_month", "January").formParam("birth_year", "1990").formParam("firstname", "John")
@@ -38,14 +36,10 @@ public class CreateAccountTest extends BaseTestClass {
 		Assert.assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
 		Assert.assertEquals(response.getContentType(), "application/json");
 
-		test.log(Status.INFO, "API test completed.");
-
 	}
 
 	@Test
 	public void testMissingRequiredFields() {
-		test.log(Status.INFO, "Starting testMissingRequiredFields API test...");
-
 		Response responsen = RestAssured.given()
 				.params("name", "John Doe", "email", "johndoe@example.com", "password", "password123", "title", "Mr")
 				.post("/api/createAccount");
@@ -55,14 +49,10 @@ public class CreateAccountTest extends BaseTestClass {
 		Assert.assertEquals(responsen.jsonPath().getInt("responseCode"), 400,
 				"Expected status code is 400 Bad Request");
 
-		test.log(Status.INFO, "API test completed.");
-
 	}
 
 	@Test
 	public void testInvalidEmailFormat() {
-		test.log(Status.INFO, "Starting testInvalidEmailFormat API test...");
-
 		Response responsen = RestAssured.given()
 				.params("name", "John Doe", "email", "johndoe", "password", "password123", "title", "Mr", "birth_date",
 						"1", "birth_month", "January", "birth_year", "1990", "firstname", "John", "lastname", "Doe",
@@ -75,14 +65,10 @@ public class CreateAccountTest extends BaseTestClass {
 		Assert.assertNotEquals(responsen.jsonPath().getInt("responseCode"), 201);
 		Assert.assertEquals(responsen.jsonPath().getInt("responseCode"), 400,
 				"Expected status code is 400 Bad Request");
-
-		test.log(Status.INFO, "API test completed.");
-
 	}
 
 	@Test
 	public void testExistingEmail() {
-		test.log(Status.INFO, "Starting testExistingEmail API test...");
 
 		Response responsen = RestAssured.given()
 				.params("name", "John Doe", "email", "johndoe@example.com", "password", "password123", "title", "Mr",
@@ -95,8 +81,6 @@ public class CreateAccountTest extends BaseTestClass {
 		System.out.println("testExistingEmail" + body);
 		Assert.assertNotEquals(responsen.jsonPath().getInt("responseCode"), 201);
 		Assert.assertEquals(responsen.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Conflict");
-
-		test.log(Status.INFO, "API test completed.");
 
 	}
 }

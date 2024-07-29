@@ -1,50 +1,1629 @@
-2024-06-28 17:35:37 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:35:43 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:41:10 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:41:16 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:44:33 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:44:39 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:45:37 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:45:42 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:48:26 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:48:31 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:49:23 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:49:29 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:50:28 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:50:34 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-06-28 17:51:03 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-06-28 17:51:08 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:17:19 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:17:40 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:22:52 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:22:57 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:24:05 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:24:09 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:25:08 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:25:14 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:27:09 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:27:15 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:28:11 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:28:17 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:30:14 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:30:21 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:32:12 INFO  BaseTestClass:38 - Extent Report initialized successfully.
-2024-07-05 12:32:18 INFO  BaseTestClass:44 - Extent Report flushed successfully.
-2024-07-05 12:34:45 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:34:59 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:37:46 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:37:52 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:41:34 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:41:41 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:51:17 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:51:23 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:52:23 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:52:28 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-05 12:53:19 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-05 12:53:25 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-08 11:04:19 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-08 11:04:50 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-08 11:10:07 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-08 11:10:44 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-08 11:21:47 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-08 11:22:28 INFO  BaseTestClass:43 - Extent Report flushed successfully.
+2024-07-29 17:09:15 INFO  BaseTestClass:37 - Extent Report initialized successfully.
+2024-07-29 17:09:16 INFO  BaseTestClass:51 - Test Case Started: testContentType
+2024-07-29 17:09:20 INFO  BaseTestClass:67 - Test Case Passed: testContentType
+2024-07-29 17:09:20 INFO  BaseTestClass:51 - Test Case Started: testFilterByCategory
+2024-07-29 17:09:23 INFO  BaseTestClass:61 - Test Case Failed: testFilterByCategory
+2024-07-29 17:09:23 INFO  BaseTestClass:62 - Failure Reason: No products found for the category expected [false] but found [true]
+2024-07-29 17:09:23 INFO  BaseTestClass:63 - Request Log:
+Request method:	GET
+Request URI:	https://automationexercise.com/api/productsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://automationexercise.com/api/productsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-29 17:09:23 INFO  BaseTestClass:64 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 29 Jul 2024 11:39:22 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, PUT, OPTIONS, GET, POST
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=76qUFWWDo0ZX3q2jbyxW7nADNtE1JGYtnPiPd710si02klLYqNf8TDBLKn93ukNvJIWhiYKwG9eE3C8T0Uw8%2F5Ur7zsIQMqnT3q4Iw%2FLQxl0DwsYbcSrzKCXmP%2BRqLzkO%2BPQ4%2FQ%2FHCo8"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8aacd3f17d3e47eb-BOM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+HTTP/1.1 200 OK
+Date: Mon, 29 Jul 2024 11:39:22 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, PUT, OPTIONS, GET, POST
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=76qUFWWDo0ZX3q2jbyxW7nADNtE1JGYtnPiPd710si02klLYqNf8TDBLKn93ukNvJIWhiYKwG9eE3C8T0Uw8%2F5Ur7zsIQMqnT3q4Iw%2FLQxl0DwsYbcSrzKCXmP%2BRqLzkO%2BPQ4%2FQ%2FHCo8"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8aacd3f17d3e47eb-BOM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-07-29 17:09:23 INFO  BaseTestClass:51 - Test Case Started: testGetAllProductsListSuccess
+2024-07-29 17:09:24 INFO  BaseTestClass:67 - Test Case Passed: testGetAllProductsListSuccess
+2024-07-29 17:09:24 INFO  BaseTestClass:51 - Test Case Started: testInvalidEndpoint
+2024-07-29 17:09:26 INFO  BaseTestClass:61 - Test Case Failed: testInvalidEndpoint
+2024-07-29 17:09:26 INFO  BaseTestClass:62 - Failure Reason: Failed to parse the JSON document
+2024-07-29 17:09:26 INFO  BaseTestClass:63 - Request Log:
+Request method:	GET
+Request URI:	https://automationexercise.com/api/productsList111
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://automationexercise.com/api/productsList111
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://automationexercise.com/api/productsList111
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://automationexercise.com/api/productsList111
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-29 17:09:26 INFO  BaseTestClass:64 - Response Log:
+HTTP/1.1 404 Not Found
+Date: Mon, 29 Jul 2024 11:39:26 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 404 Not Found
+vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3ouD3fwJukiZF5pSuOfg7N6Z8Azl5LW7umCX9ZZ9BuNuQ2E7okDJbBXTEXCQqaEp3vyeWUBP4inuUSqUKbs6pT7JG5QIefOLnzf%2F%2BCDl65iZ5oKWdfOTuJAsXsPUSIKuONHGoD2faPBs"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8aacd409ae5f4710-BOM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Page not found at /api/productsList111</title>
+    <meta name="robots" content="NONE,NOARCHIVE"/>
+    <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+  </head>
+  <body>
+    <div id="summary">
+      <h1>
+Page not found         <span>(404)</span>
+      </h1>
+      <table class="meta">
+        <tr>
+          <th colspan="1" rowspan="1">Request Method:</th>
+          <td colspan="1" rowspan="1">GET</td>
+        </tr>
+        <tr>
+          <th colspan="1" rowspan="1">Request URL:</th>
+          <td colspan="1" rowspan="1">https://automationexercise.com/api/productsList111</td>
+        </tr>
+      </table>
+    </div>
+    <div id="info">
+      <p>
+
+      Using the URLconf defined in         <code>automation_exercise.urls</code>
+,
+      Django tried these URL patterns, in this order:
+            </p>
+      <ol>
+        <li>
+            
+                admin/
+                
+            
+          </li>
+        <li/>
+        <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                products
+                
+            
+          </li>
+        <li>
+            
+                contact_us
+                
+            
+          </li>
+        <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                view_cart
+                
+            
+          </li>
+        <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                login
+                
+            
+          </li>
+        <li>
+            
+                signup
+                
+            
+          </li>
+        <li>
+            
+                account_created
+                
+            
+          </li>
+        <li>
+            
+                logout
+                
+            
+          </li>
+        <li>
+            
+                checkout
+                
+            
+          </li>
+        <li>
+            
+                payment
+                
+            
+          </li>
+        <li>
+            
+                delete_account
+                
+            
+          </li>
+        <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                test_cases
+                
+            
+          </li>
+        <li>
+            
+                api_list
+                
+            
+          </li>
+        <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        <li>
+            
+                api/productsList
+                
+            
+          </li>
+        <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+      </ol>
+      <p>
+
+        
+          The current path,         <code>api/productsList111</code>
+,
+        
+        didn’t match any of these.
+            </p>
+    </div>
+    <div id="explanation">
+      <p>
+
+      You’re seeing this error because you have         <code>DEBUG = True</code>
+ in
+      your Django settings file. Change that to         <code>False</code>
+, and Django
+      will display a standard 404 page.
+          </p>
+    </div>
+  </body>
+</html>
+HTTP/1.1 404 Not Found
+Date: Mon, 29 Jul 2024 11:39:26 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 404 Not Found
+vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3ouD3fwJukiZF5pSuOfg7N6Z8Azl5LW7umCX9ZZ9BuNuQ2E7okDJbBXTEXCQqaEp3vyeWUBP4inuUSqUKbs6pT7JG5QIefOLnzf%2F%2BCDl65iZ5oKWdfOTuJAsXsPUSIKuONHGoD2faPBs"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8aacd409ae5f4710-BOM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Page not found at /api/productsList111</title>
+    <meta name="robots" content="NONE,NOARCHIVE"/>
+    <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+  </head>
+  <body>
+    <div id="summary">
+      <h1>
+Page not found         <span>(404)</span>
+      </h1>
+      <table class="meta">
+        <tr>
+          <th colspan="1" rowspan="1">Request Method:</th>
+          <td colspan="1" rowspan="1">GET</td>
+        </tr>
+        <tr>
+          <th colspan="1" rowspan="1">Request URL:</th>
+          <td colspan="1" rowspan="1">https://automationexercise.com/api/productsList111</td>
+        </tr>
+      </table>
+    </div>
+    <div id="info">
+      <p>
+
+      Using the URLconf defined in         <code>automation_exercise.urls</code>
+,
+      Django tried these URL patterns, in this order:
+            </p>
+      <ol>
+        <li>
+            
+                admin/
+                
+            
+          </li>
+        <li/>
+        <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                products
+                
+            
+          </li>
+        <li>
+            
+                contact_us
+                
+            
+          </li>
+        <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                view_cart
+                
+            
+          </li>
+        <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                login
+                
+            
+          </li>
+        <li>
+            
+                signup
+                
+            
+          </li>
+        <li>
+            
+                account_created
+                
+            
+          </li>
+        <li>
+            
+                logout
+                
+            
+          </li>
+        <li>
+            
+                checkout
+                
+            
+          </li>
+        <li>
+            
+                payment
+                
+            
+          </li>
+        <li>
+            
+                delete_account
+                
+            
+          </li>
+        <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                test_cases
+                
+            
+          </li>
+        <li>
+            
+                api_list
+                
+            
+          </li>
+        <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        <li>
+            
+                api/productsList
+                
+            
+          </li>
+        <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+      </ol>
+      <p>
+
+        
+          The current path,         <code>api/productsList111</code>
+,
+        
+        didn’t match any of these.
+            </p>
+    </div>
+    <div id="explanation">
+      <p>
+
+      You’re seeing this error because you have         <code>DEBUG = True</code>
+ in
+      your Django settings file. Change that to         <code>False</code>
+, and Django
+      will display a standard 404 page.
+          </p>
+    </div>
+  </body>
+</html>
+HTTP/1.1 404 Not Found
+Date: Mon, 29 Jul 2024 11:39:26 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 404 Not Found
+vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3ouD3fwJukiZF5pSuOfg7N6Z8Azl5LW7umCX9ZZ9BuNuQ2E7okDJbBXTEXCQqaEp3vyeWUBP4inuUSqUKbs6pT7JG5QIefOLnzf%2F%2BCDl65iZ5oKWdfOTuJAsXsPUSIKuONHGoD2faPBs"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8aacd409ae5f4710-BOM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Page not found at /api/productsList111</title>
+    <meta name="robots" content="NONE,NOARCHIVE"/>
+    <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+  </head>
+  <body>
+    <div id="summary">
+      <h1>
+Page not found         <span>(404)</span>
+      </h1>
+      <table class="meta">
+        <tr>
+          <th colspan="1" rowspan="1">Request Method:</th>
+          <td colspan="1" rowspan="1">GET</td>
+        </tr>
+        <tr>
+          <th colspan="1" rowspan="1">Request URL:</th>
+          <td colspan="1" rowspan="1">https://automationexercise.com/api/productsList111</td>
+        </tr>
+      </table>
+    </div>
+    <div id="info">
+      <p>
+
+      Using the URLconf defined in         <code>automation_exercise.urls</code>
+,
+      Django tried these URL patterns, in this order:
+            </p>
+      <ol>
+        <li>
+            
+                admin/
+                
+            
+          </li>
+        <li/>
+        <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                products
+                
+            
+          </li>
+        <li>
+            
+                contact_us
+                
+            
+          </li>
+        <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                view_cart
+                
+            
+          </li>
+        <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                login
+                
+            
+          </li>
+        <li>
+            
+                signup
+                
+            
+          </li>
+        <li>
+            
+                account_created
+                
+            
+          </li>
+        <li>
+            
+                logout
+                
+            
+          </li>
+        <li>
+            
+                checkout
+                
+            
+          </li>
+        <li>
+            
+                payment
+                
+            
+          </li>
+        <li>
+            
+                delete_account
+                
+            
+          </li>
+        <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                test_cases
+                
+            
+          </li>
+        <li>
+            
+                api_list
+                
+            
+          </li>
+        <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        <li>
+            
+                api/productsList
+                
+            
+          </li>
+        <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+      </ol>
+      <p>
+
+        
+          The current path,         <code>api/productsList111</code>
+,
+        
+        didn’t match any of these.
+            </p>
+    </div>
+    <div id="explanation">
+      <p>
+
+      You’re seeing this error because you have         <code>DEBUG = True</code>
+ in
+      your Django settings file. Change that to         <code>False</code>
+, and Django
+      will display a standard 404 page.
+          </p>
+    </div>
+  </body>
+</html>
+HTTP/1.1 404 Not Found
+Date: Mon, 29 Jul 2024 11:39:26 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 404 Not Found
+vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3ouD3fwJukiZF5pSuOfg7N6Z8Azl5LW7umCX9ZZ9BuNuQ2E7okDJbBXTEXCQqaEp3vyeWUBP4inuUSqUKbs6pT7JG5QIefOLnzf%2F%2BCDl65iZ5oKWdfOTuJAsXsPUSIKuONHGoD2faPBs"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8aacd409ae5f4710-BOM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Page not found at /api/productsList111</title>
+    <meta name="robots" content="NONE,NOARCHIVE"/>
+    <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+  </head>
+  <body>
+    <div id="summary">
+      <h1>
+Page not found         <span>(404)</span>
+      </h1>
+      <table class="meta">
+        <tr>
+          <th colspan="1" rowspan="1">Request Method:</th>
+          <td colspan="1" rowspan="1">GET</td>
+        </tr>
+        <tr>
+          <th colspan="1" rowspan="1">Request URL:</th>
+          <td colspan="1" rowspan="1">https://automationexercise.com/api/productsList111</td>
+        </tr>
+      </table>
+    </div>
+    <div id="info">
+      <p>
+
+      Using the URLconf defined in         <code>automation_exercise.urls</code>
+,
+      Django tried these URL patterns, in this order:
+            </p>
+      <ol>
+        <li>
+            
+                admin/
+                
+            
+          </li>
+        <li/>
+        <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                products
+                
+            
+          </li>
+        <li>
+            
+                contact_us
+                
+            
+          </li>
+        <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                view_cart
+                
+            
+          </li>
+        <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                login
+                
+            
+          </li>
+        <li>
+            
+                signup
+                
+            
+          </li>
+        <li>
+            
+                account_created
+                
+            
+          </li>
+        <li>
+            
+                logout
+                
+            
+          </li>
+        <li>
+            
+                checkout
+                
+            
+          </li>
+        <li>
+            
+                payment
+                
+            
+          </li>
+        <li>
+            
+                delete_account
+                
+            
+          </li>
+        <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                test_cases
+                
+            
+          </li>
+        <li>
+            
+                api_list
+                
+            
+          </li>
+        <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        <li>
+            
+                api/productsList
+                
+            
+          </li>
+        <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+      </ol>
+      <p>
+
+        
+          The current path,         <code>api/productsList111</code>
+,
+        
+        didn’t match any of these.
+            </p>
+    </div>
+    <div id="explanation">
+      <p>
+
+      You’re seeing this error because you have         <code>DEBUG = True</code>
+ in
+      your Django settings file. Change that to         <code>False</code>
+, and Django
+      will display a standard 404 page.
+          </p>
+    </div>
+  </body>
+</html>
+
+2024-07-29 17:09:26 INFO  BaseTestClass:51 - Test Case Started: testProductStructure
+2024-07-29 17:09:28 INFO  BaseTestClass:67 - Test Case Passed: testProductStructure
+2024-07-29 17:09:28 INFO  BaseTestClass:51 - Test Case Started: testResponseContainsProducts
+2024-07-29 17:09:29 INFO  BaseTestClass:67 - Test Case Passed: testResponseContainsProducts
+2024-07-29 17:09:29 INFO  BaseTestClass:51 - Test Case Started: testResponseTime
+2024-07-29 17:09:30 INFO  BaseTestClass:67 - Test Case Passed: testResponseTime
+2024-07-29 17:09:30 INFO  BaseTestClass:51 - Test Case Started: testSpecificProductDetails
+2024-07-29 17:09:32 INFO  BaseTestClass:67 - Test Case Passed: testSpecificProductDetails
+2024-07-29 17:09:32 INFO  BaseTestClass:51 - Test Case Started: testUnsupportedMethod
+2024-07-29 17:09:33 INFO  BaseTestClass:67 - Test Case Passed: testUnsupportedMethod
+2024-07-29 17:09:33 INFO  BaseTestClass:43 - Extent Report flushed successfully.
+2024-07-29 17:11:41 INFO  BaseTestClass:37 - Extent Report initialized successfully.
+2024-07-29 17:11:43 INFO  BaseTestClass:43 - Extent Report flushed successfully.
+2024-07-29 17:12:49 INFO  BaseTestClass:37 - Extent Report initialized successfully.
+2024-07-29 17:12:50 INFO  BaseTestClass:51 - Test Case Started: testContentType
+2024-07-29 17:12:55 INFO  BaseTestClass:67 - Test Case Passed: testContentType
+2024-07-29 17:12:56 INFO  BaseTestClass:51 - Test Case Started: testFilterByCategory
+2024-07-29 17:12:59 INFO  BaseTestClass:61 - Test Case Failed: testFilterByCategory
+2024-07-29 17:12:59 INFO  BaseTestClass:62 - Failure Reason: No products found for the category expected [false] but found [true]
+2024-07-29 17:12:59 INFO  BaseTestClass:63 - Request Log:
+Request method:	GET
+Request URI:	https://automationexercise.com/api/productsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-29 17:12:59 INFO  BaseTestClass:64 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 29 Jul 2024 11:42:57 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: POST, GET, OPTIONS, PUT, DELETE
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=DmfZU8fajRk2bgWJsIC%2FUIdnmCd852MNIzbRpxq0NDUhhKFbuykfVeyEx6jLgDK2JrNg9pezowvF1wVrYotsqBzVdQujcS%2Fa%2FLF36lDTVlO1JFm8j%2FQNeWIxLvCgiJxDsOYljnJYYLLu"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8aacd93319de400f-BOM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-07-29 17:12:59 INFO  BaseTestClass:51 - Test Case Started: testGetAllProductsListSuccess
+2024-07-29 17:13:00 INFO  BaseTestClass:67 - Test Case Passed: testGetAllProductsListSuccess
+2024-07-29 17:13:00 INFO  BaseTestClass:51 - Test Case Started: testInvalidEndpoint
+2024-07-29 17:13:01 INFO  BaseTestClass:61 - Test Case Failed: testInvalidEndpoint
+2024-07-29 17:13:01 INFO  BaseTestClass:62 - Failure Reason: Failed to parse the JSON document
+2024-07-29 17:13:01 INFO  BaseTestClass:63 - Request Log:
+Request method:	GET
+Request URI:	https://automationexercise.com/api/productsList111
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-07-29 17:13:01 INFO  BaseTestClass:64 - Response Log:
+HTTP/1.1 404 Not Found
+Date: Mon, 29 Jul 2024 11:43:01 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 404 Not Found
+vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=80bkv%2F9B%2FGaKlKwFxZ0aS81YJTkx5e23vs9CKgbYnzeRt1UUIplZU1nsAnwL5g9Hrs%2FB3X7aNiDpduNcqhwLTmtKu%2FoDQl8E97lgBNv5tX9rKnp%2F83L6qlZI%2Bs4eSvq2InG%2FB6pUjJL5"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8aacd94d0f0c3b8b-BOM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Page not found at /api/productsList111</title>
+    <meta name="robots" content="NONE,NOARCHIVE"/>
+    <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+  </head>
+  <body>
+    <div id="summary">
+      <h1>
+Page not found         <span>(404)</span>
+      </h1>
+      <table class="meta">
+        <tr>
+          <th colspan="1" rowspan="1">Request Method:</th>
+          <td colspan="1" rowspan="1">GET</td>
+        </tr>
+        <tr>
+          <th colspan="1" rowspan="1">Request URL:</th>
+          <td colspan="1" rowspan="1">https://automationexercise.com/api/productsList111</td>
+        </tr>
+      </table>
+    </div>
+    <div id="info">
+      <p>
+
+      Using the URLconf defined in         <code>automation_exercise.urls</code>
+,
+      Django tried these URL patterns, in this order:
+            </p>
+      <ol>
+        <li>
+            
+                admin/
+                
+            
+          </li>
+        <li/>
+        <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                products
+                
+            
+          </li>
+        <li>
+            
+                contact_us
+                
+            
+          </li>
+        <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                view_cart
+                
+            
+          </li>
+        <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                login
+                
+            
+          </li>
+        <li>
+            
+                signup
+                
+            
+          </li>
+        <li>
+            
+                account_created
+                
+            
+          </li>
+        <li>
+            
+                logout
+                
+            
+          </li>
+        <li>
+            
+                checkout
+                
+            
+          </li>
+        <li>
+            
+                payment
+                
+            
+          </li>
+        <li>
+            
+                delete_account
+                
+            
+          </li>
+        <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                test_cases
+                
+            
+          </li>
+        <li>
+            
+                api_list
+                
+            
+          </li>
+        <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        <li>
+            
+                api/productsList
+                
+            
+          </li>
+        <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+      </ol>
+      <p>
+
+        
+          The current path,         <code>api/productsList111</code>
+,
+        
+        didn’t match any of these.
+            </p>
+    </div>
+    <div id="explanation">
+      <p>
+
+      You’re seeing this error because you have         <code>DEBUG = True</code>
+ in
+      your Django settings file. Change that to         <code>False</code>
+, and Django
+      will display a standard 404 page.
+          </p>
+    </div>
+  </body>
+</html>
+
+2024-07-29 17:13:01 INFO  BaseTestClass:51 - Test Case Started: testProductStructure
+2024-07-29 17:13:03 INFO  BaseTestClass:67 - Test Case Passed: testProductStructure
+2024-07-29 17:13:03 INFO  BaseTestClass:51 - Test Case Started: testResponseContainsProducts
+2024-07-29 17:13:04 INFO  BaseTestClass:67 - Test Case Passed: testResponseContainsProducts
+2024-07-29 17:13:04 INFO  BaseTestClass:51 - Test Case Started: testResponseTime
+2024-07-29 17:13:05 INFO  BaseTestClass:67 - Test Case Passed: testResponseTime
+2024-07-29 17:13:05 INFO  BaseTestClass:51 - Test Case Started: testSpecificProductDetails
+2024-07-29 17:13:07 INFO  BaseTestClass:67 - Test Case Passed: testSpecificProductDetails
+2024-07-29 17:13:07 INFO  BaseTestClass:51 - Test Case Started: testUnsupportedMethod
+2024-07-29 17:13:08 INFO  BaseTestClass:67 - Test Case Passed: testUnsupportedMethod
+2024-07-29 17:13:08 INFO  BaseTestClass:43 - Extent Report flushed successfully.

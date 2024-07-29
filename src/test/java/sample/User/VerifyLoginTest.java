@@ -19,8 +19,6 @@ public class VerifyLoginTest extends BaseTestClass {
 	
 	@Test
 	public void testVerifyLoginSuccess() {
-		test.log(Status.INFO, "Starting testVerifyLoginSuccess API test...");
-
 	    Response response =RestAssured.given()
 	    		.params("email", "jimmy@example.com","password", "jimmy12345")
 	    		.post("/api/verifyLogin");	    
@@ -31,13 +29,11 @@ public class VerifyLoginTest extends BaseTestClass {
 	    Assert.assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
 	    Assert.assertEquals(response.getContentType(), "application/json");
 
-		test.log(Status.INFO, "API test completed.");
 
 	}
 	
 	@Test
 	public void testIncorrectPassword() {
-		test.log(Status.INFO, "Starting testIncorrectPassword API test...");
 
 		Response response =RestAssured.given()
 	    		.params("email", "johndoe@example.com","password", "incorrectPassword")
@@ -47,13 +43,11 @@ public class VerifyLoginTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Unauthorized");
 
-		test.log(Status.INFO, "API test completed.");
 
 	}
 	
 	@Test
 	public void testNonexistentUser() {
-		test.log(Status.INFO, "Starting testNonexistentUser API test...");
 
 		Response response =RestAssured.given()
 	    		.params("email", "johndoe@example1.com","password", "incorrectPassword")
@@ -63,13 +57,11 @@ public class VerifyLoginTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
 
-		test.log(Status.INFO, "API test completed.");
 
 	}
 	
 	@Test
 	public void testMissingEmail() {
-		test.log(Status.INFO, "Starting testMissingEmail API test...");
 
 		Response response =RestAssured.given()
 	    		.params("email", "johndoe@example1.com","password", "")
@@ -79,14 +71,11 @@ public class VerifyLoginTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
 
-		test.log(Status.INFO, "API test completed.");
 
 	}
     
 	@Test
 	public void testEmptyRequest() {
-		test.log(Status.INFO, "Starting testEmptyRequest API test...");
-
 		Response response =RestAssured.given()
 	    		.params("email", "","password", "")
 	    		.post("/api/verifyLogin");	    
@@ -95,7 +84,6 @@ public class VerifyLoginTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
 
-		test.log(Status.INFO, "API test completed.");
 
 	}
 

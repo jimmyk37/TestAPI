@@ -28,7 +28,7 @@ public class BaseTestClass {
         
         extent.attachReporter(sparkReporter);
         
-     // Set system information
+        // Set system information
         extent.setSystemInfo("HostName", "MyHost");
         extent.setSystemInfo("ProjectName", "ECom API Sample");
         extent.setSystemInfo("Tester", "Jimmy Gupta");
@@ -45,19 +45,31 @@ public class BaseTestClass {
     
     @BeforeMethod
     public void setUp(ITestResult result) {
-        test = extent.createTest(getClass().getSimpleName()+"."+result.getMethod().getMethodName());
+    	ApiLoggingUtil.clearLogs();
+        test = extent.createTest(getClass().getSimpleName() + "." + result.getMethod().getMethodName());
+        ApiLoggingUtil.configureLogging();
+        logger.info("Test Case Started: " + result.getMethod().getMethodName());
+        test.log(Status.INFO, "Test Case Started: " + result.getMethod().getMethodName());
     }
     
     @AfterMethod
     public void tearDown(ITestResult result) {
-    	if (result.getStatus() == ITestResult.FAILURE) {
+    	
+        if (result.getStatus() == ITestResult.FAILURE) {
             test.log(Status.FAIL, "Test Case Failed: " + result.getMethod().getMethodName());
             test.log(Status.FAIL, "Failure Reason: " + result.getThrowable().getMessage());
+            logger.info("Test Case Failed: " + result.getMethod().getMethodName());
+            logger.info("Failure Reason: " + result.getThrowable().getMessage());
+            logger.info("Request Log:\n" + ApiLoggingUtil.getRequestLog());
+            logger.info("Response Log:\n" + ApiLoggingUtil.getResponseLog());
         } else if (result.getStatus() == ITestResult.SUCCESS) {
             test.log(Status.PASS, "Test Case Passed: " + result.getMethod().getMethodName());
+            logger.info("Test Case Passed: " + result.getMethod().getMethodName());
+            test.log(Status.INFO, "API test completed.");
         }
 
-
+        // Clear logs after test execution
+        ApiLoggingUtil.clearLogs();
         extent.flush();
     }
 }
