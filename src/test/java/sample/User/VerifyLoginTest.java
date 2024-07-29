@@ -29,7 +29,10 @@ public class VerifyLoginTest extends BaseTestClass {
 	    Assert.assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
 	    Assert.assertEquals(response.getContentType(), "application/json");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 	}
 	
 	@Test
@@ -43,7 +46,10 @@ public class VerifyLoginTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Unauthorized");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 	}
 	
 	@Test
@@ -57,7 +63,10 @@ public class VerifyLoginTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 	}
 	
 	@Test
@@ -71,7 +80,10 @@ public class VerifyLoginTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 	}
     
 	@Test
@@ -84,7 +96,10 @@ public class VerifyLoginTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 	}
 
 

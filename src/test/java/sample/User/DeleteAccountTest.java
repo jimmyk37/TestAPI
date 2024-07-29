@@ -19,8 +19,12 @@ public class DeleteAccountTest extends BaseTestClass {
 
 	@Test
 	public void testDeleteAccountSuccess() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 		String email = "jimmy@example.com";
-		String password = "password123";
+		String password = "jimmy12345";
 //	 
 		Response response = given().formParam("email", email).formParam("password", password).when()
 				.delete("/api/deleteAccount").then().extract().response();
@@ -28,13 +32,21 @@ public class DeleteAccountTest extends BaseTestClass {
 		System.out.println(response.getBody().asPrettyString());
 
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 200);
+<<<<<<< HEAD
 		Assert.assertEquals(response.jsonPath().getString("message"), "Account deleted!");	
 
 	
+=======
+		Assert.assertEquals(response.jsonPath().getString("message"), "Account deleted!");
+>>>>>>> origin/main
 	}
 	
 	@Test
 	public void testNonexistentEmail() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 	    String email = "nonexistent@example.com";
 	    String password = "password123";
 
@@ -49,8 +61,11 @@ public class DeleteAccountTest extends BaseTestClass {
 
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/main
 	}
 	
 	@Test
@@ -68,11 +83,18 @@ public class DeleteAccountTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 	}
 	
 	@Test
 	public void testMissingPasswordParameter() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 	    String email = "jimmy@example.com";
 
 	    Response response =
@@ -86,7 +108,10 @@ public class DeleteAccountTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 	}
     
 	@Test
@@ -106,7 +131,10 @@ public class DeleteAccountTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 	}
     
 	@Test
@@ -126,7 +154,10 @@ public class DeleteAccountTest extends BaseTestClass {
 	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 401, "Expected status code is 401 Unauthorized");
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 	}
 
 

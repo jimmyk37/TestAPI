@@ -21,6 +21,10 @@ public class CreateAccountTest extends BaseTestClass {
 
 	@Test()
 	public void testCreateAccountSuccess() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 		Response response = given().formParam("name", "Jimmy").formParam("email", "jimmy@example.com")
 				.formParam("password", "jimmy12345").formParam("title", "Mr").formParam("birth_date", "1")
 				.formParam("birth_month", "January").formParam("birth_year", "1990").formParam("firstname", "John")
@@ -40,6 +44,10 @@ public class CreateAccountTest extends BaseTestClass {
 
 	@Test
 	public void testMissingRequiredFields() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 		Response responsen = RestAssured.given()
 				.params("name", "John Doe", "email", "johndoe@example.com", "password", "password123", "title", "Mr")
 				.post("/api/createAccount");
@@ -48,11 +56,18 @@ public class CreateAccountTest extends BaseTestClass {
 		Assert.assertNotEquals(responsen.jsonPath().getInt("responseCode"), 201);
 		Assert.assertEquals(responsen.jsonPath().getInt("responseCode"), 400,
 				"Expected status code is 400 Bad Request");
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 	}
 
 	@Test
 	public void testInvalidEmailFormat() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 		Response responsen = RestAssured.given()
 				.params("name", "John Doe", "email", "johndoe", "password", "password123", "title", "Mr", "birth_date",
 						"1", "birth_month", "January", "birth_year", "1990", "firstname", "John", "lastname", "Doe",
@@ -81,6 +96,9 @@ public class CreateAccountTest extends BaseTestClass {
 		System.out.println("testExistingEmail" + body);
 		Assert.assertNotEquals(responsen.jsonPath().getInt("responseCode"), 201);
 		Assert.assertEquals(responsen.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Conflict");
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 	}
 }
