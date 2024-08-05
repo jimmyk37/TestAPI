@@ -1,382 +1,28 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
+<testng-results ignored="0" total="10" passed="7" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-29T17:12:49 IST" name="Default suite" finished-at="2024-07-29T17:13:08 IST" duration-ms="18852">
+  <suite started-at="2024-08-05T17:29:26 IST" name="Default suite" finished-at="2024-08-05T17:29:41 IST" duration-ms="15635">
     <groups>
     </groups>
-    <test started-at="2024-07-29T17:12:49 IST" name="Default test" finished-at="2024-07-29T17:13:08 IST" duration-ms="18852">
-      <class name="sample.Product.ProductsListTest">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:12:49 IST" name="setUpSuite" finished-at="2024-07-29T17:12:49 IST" duration-ms="218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:12:49 IST" name="setup" finished-at="2024-07-29T17:12:50 IST" duration-ms="841" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:12:50 IST" name="setUp" finished-at="2024-07-29T17:12:50 IST" duration-ms="22" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ProductsListTest.testContentType()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testContentType()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:12:50 IST" name="testContentType" finished-at="2024-07-29T17:12:55 IST" duration-ms="5085" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testContentType -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:12:55 IST" name="tearDown" finished-at="2024-07-29T17:12:56 IST" duration-ms="572" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testContentType status=SUCCESS method=ProductsListTest.testContentType()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:12:56 IST" name="setUp" finished-at="2024-07-29T17:12:56 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ProductsListTest.testFilterByCategory()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testFilterByCategory()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:12:56 IST" name="testFilterByCategory" finished-at="2024-07-29T17:12:59 IST" duration-ms="2814" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[No products found for the category expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: No products found for the category expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertFalse(Assert.java:78)
-at sample.Product.ProductsListTest.testFilterByCategory(ProductsListTest.java:87)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFilterByCategory -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:12:59 IST" name="tearDown" finished-at="2024-07-29T17:12:59 IST" duration-ms="34" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testFilterByCategory status=FAILURE method=ProductsListTest.testFilterByCategory()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:12:59 IST" name="setUp" finished-at="2024-07-29T17:12:59 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ProductsListTest.testGetAllProductsListSuccess()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testGetAllProductsListSuccess()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:12:59 IST" name="testGetAllProductsListSuccess" finished-at="2024-07-29T17:13:00 IST" duration-ms="1233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetAllProductsListSuccess -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:00 IST" name="tearDown" finished-at="2024-07-29T17:13:00 IST" duration-ms="19" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testGetAllProductsListSuccess status=SUCCESS method=ProductsListTest.testGetAllProductsListSuccess()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:00 IST" name="setUp" finished-at="2024-07-29T17:13:00 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ProductsListTest.testInvalidEndpoint()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testInvalidEndpoint()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:00 IST" name="testInvalidEndpoint" finished-at="2024-07-29T17:13:01 IST" duration-ms="1234" status="FAIL">
-          <exception class="io.restassured.path.json.exception.JsonPathException">
-            <message>
-              <![CDATA[Failed to parse the JSON document]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-at io.restassured.path.json.JsonPath.getInt(JsonPath.java:237)
-at sample.Product.ProductsListTest.testInvalidEndpoint(ProductsListTest.java:96)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading '<', no possible valid JSON value or punctuation could be recognized.
-at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- io.restassured.path.json.exception.JsonPathException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidEndpoint -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:01 IST" name="tearDown" finished-at="2024-07-29T17:13:01 IST" duration-ms="43" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testInvalidEndpoint status=FAILURE method=ProductsListTest.testInvalidEndpoint()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:01 IST" name="setUp" finished-at="2024-07-29T17:13:01 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ProductsListTest.testProductStructure()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testProductStructure()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:01 IST" name="testProductStructure" finished-at="2024-07-29T17:13:03 IST" duration-ms="1392" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testProductStructure -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:03 IST" name="tearDown" finished-at="2024-07-29T17:13:03 IST" duration-ms="90" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testProductStructure status=SUCCESS method=ProductsListTest.testProductStructure()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:03 IST" name="setUp" finished-at="2024-07-29T17:13:03 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ProductsListTest.testResponseContainsProducts()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testResponseContainsProducts()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:03 IST" name="testResponseContainsProducts" finished-at="2024-07-29T17:13:04 IST" duration-ms="1326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResponseContainsProducts -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:04 IST" name="tearDown" finished-at="2024-07-29T17:13:04 IST" duration-ms="29" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testResponseContainsProducts status=SUCCESS method=ProductsListTest.testResponseContainsProducts()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:04 IST" name="setUp" finished-at="2024-07-29T17:13:04 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ProductsListTest.testResponseTime()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testResponseTime()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:04 IST" name="testResponseTime" finished-at="2024-07-29T17:13:05 IST" duration-ms="1183" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResponseTime -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:05 IST" name="tearDown" finished-at="2024-07-29T17:13:05 IST" duration-ms="14" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testResponseTime status=SUCCESS method=ProductsListTest.testResponseTime()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:05 IST" name="setUp" finished-at="2024-07-29T17:13:05 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ProductsListTest.testSpecificProductDetails()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testSpecificProductDetails()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:05 IST" name="testSpecificProductDetails" finished-at="2024-07-29T17:13:07 IST" duration-ms="1372" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSpecificProductDetails -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:07 IST" name="tearDown" finished-at="2024-07-29T17:13:07 IST" duration-ms="38" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testSpecificProductDetails status=SUCCESS method=ProductsListTest.testSpecificProductDetails()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:07 IST" name="setUp" finished-at="2024-07-29T17:13:07 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=ProductsListTest.testUnsupportedMethod()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testUnsupportedMethod()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:07 IST" name="testUnsupportedMethod" finished-at="2024-07-29T17:13:08 IST" duration-ms="1220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUnsupportedMethod -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:08 IST" name="tearDown" finished-at="2024-07-29T17:13:08 IST" duration-ms="18" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testUnsupportedMethod status=SUCCESS method=ProductsListTest.testUnsupportedMethod()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:sample.Product.ProductsListTest@5f9edf14]" started-at="2024-07-29T17:13:08 IST" name="tearDownSuite" finished-at="2024-07-29T17:13:08 IST" duration-ms="26" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownSuite -->
-      </class> <!-- sample.Product.ProductsListTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-</testng-results>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2024-07-08T16:45:35 IST" name="Default suite" finished-at="2024-07-08T16:45:45 IST" duration-ms="9892">
-    <groups>
-    </groups>
-    <test started-at="2024-07-08T16:45:35 IST" name="Default test" finished-at="2024-07-08T16:45:45 IST" duration-ms="9892">
+    <test started-at="2024-08-05T17:29:26 IST" name="Default test" finished-at="2024-08-05T17:29:41 IST" duration-ms="15635">
       <class name="sample.Product.SearchProductTest">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:35 IST" name="setUpSuite" finished-at="2024-07-08T16:45:35 IST" duration-ms="656" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:25 IST" name="setUpSuite" finished-at="2024-08-05T17:29:26 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:35 IST" name="setup" finished-at="2024-07-08T16:45:38 IST" duration-ms="3119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:38 IST" name="setUp" finished-at="2024-07-08T16:45:38 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:26 IST" name="setUp" finished-at="2024-08-05T17:29:26 IST" duration-ms="529" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testContentType()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testContentType()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testContentType()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:38 IST" name="testContentType" finished-at="2024-07-08T16:45:38 IST" duration-ms="22" status="FAIL">
+        <test-method signature="testContentType()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:26 IST" name="testContentType" finished-at="2024-08-05T17:29:30 IST" duration-ms="3669" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [text/html] but found [text/html; charset=utf-8]]]>
@@ -389,11 +35,9 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
-at sample.Product.SearchProductTest.testContentType(SearchProductTest.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at sample.Product.SearchProductTest.testContentType(SearchProductTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -402,7 +46,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
@@ -424,200 +68,250 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContentType -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:38 IST" name="tearDown" finished-at="2024-07-08T16:45:39 IST" duration-ms="465" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:30 IST" name="tearDown" finished-at="2024-08-05T17:29:30 IST" duration-ms="474" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testContentType status=FAILURE method=SearchProductTest.testContentType()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=testContentType status=FAILURE method=SearchProductTest.testContentType()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:39 IST" name="setUp" finished-at="2024-07-08T16:45:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:30 IST" name="setUp" finished-at="2024-08-05T17:29:30 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testInvalidProductName()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testInvalidProductName()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidProductName()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:39 IST" name="testInvalidProductName" finished-at="2024-07-08T16:45:41 IST" duration-ms="1911" status="PASS">
+        <test-method signature="testInvalidProductName()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:30 IST" name="testInvalidProductName" finished-at="2024-08-05T17:29:32 IST" duration-ms="1969" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidProductName -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:41 IST" name="tearDown" finished-at="2024-07-08T16:45:41 IST" duration-ms="21" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:32 IST" name="tearDown" finished-at="2024-08-05T17:29:32 IST" duration-ms="34" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvalidProductName status=SUCCESS method=SearchProductTest.testInvalidProductName()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=testInvalidProductName status=SUCCESS method=SearchProductTest.testInvalidProductName()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:41 IST" name="setUp" finished-at="2024-07-08T16:45:41 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:32 IST" name="setUp" finished-at="2024-08-05T17:29:32 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testMissingRequiredParameter()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testMissingRequiredParameter()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testMissingRequiredParameter()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:41 IST" name="testMissingRequiredParameter" finished-at="2024-07-08T16:45:42 IST" duration-ms="1229" status="PASS">
+        <test-method signature="testMissingRequiredParameter()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:32 IST" name="testMissingRequiredParameter" finished-at="2024-08-05T17:29:34 IST" duration-ms="1165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMissingRequiredParameter -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="tearDown" finished-at="2024-07-08T16:45:42 IST" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:34 IST" name="tearDown" finished-at="2024-08-05T17:29:34 IST" duration-ms="19" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMissingRequiredParameter status=SUCCESS method=SearchProductTest.testMissingRequiredParameter()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=testMissingRequiredParameter status=SUCCESS method=SearchProductTest.testMissingRequiredParameter()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="setUp" finished-at="2024-07-08T16:45:42 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:34 IST" name="setUp" finished-at="2024-08-05T17:29:34 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testProductStructure()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testProductStructure()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testProductStructure()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="testProductStructure" finished-at="2024-07-08T16:45:42 IST" duration-ms="169" status="PASS">
+        <test-method signature="testProductStructure()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:34 IST" name="testProductStructure" finished-at="2024-08-05T17:29:35 IST" duration-ms="1334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductStructure -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="tearDown" finished-at="2024-07-08T16:45:42 IST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:35 IST" name="tearDown" finished-at="2024-08-05T17:29:35 IST" duration-ms="18" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testProductStructure status=SUCCESS method=SearchProductTest.testProductStructure()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=testProductStructure status=SUCCESS method=SearchProductTest.testProductStructure()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="testResponseContainsProducts()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="testResponseContainsProducts" finished-at="2024-07-08T16:45:42 IST" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:35 IST" name="setUp" finished-at="2024-08-05T17:29:35 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testResponseContainsProducts()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testResponseContainsProducts()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:35 IST" name="testResponseContainsProducts" finished-at="2024-08-05T17:29:36 IST" duration-ms="1133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResponseContainsProducts -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="setUp" finished-at="2024-07-08T16:45:42 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:36 IST" name="tearDown" finished-at="2024-08-05T17:29:36 IST" duration-ms="42" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testResponseContainsProducts()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="tearDown" finished-at="2024-07-08T16:45:42 IST" duration-ms="17" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testResponseContainsProducts status=SUCCESS method=SearchProductTest.testResponseContainsProducts()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=testResponseContainsProducts status=SUCCESS method=SearchProductTest.testResponseContainsProducts()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="setUp" finished-at="2024-07-08T16:45:42 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:36 IST" name="setUp" finished-at="2024-08-05T17:29:36 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testResponseTime()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testResponseTime()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testResponseTime()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="testResponseTime" finished-at="2024-07-08T16:45:42 IST" duration-ms="3" status="PASS">
+        <test-method signature="testResponseTime()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:36 IST" name="testResponseTime" finished-at="2024-08-05T17:29:37 IST" duration-ms="1070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResponseTime -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="tearDown" finished-at="2024-07-08T16:45:42 IST" duration-ms="35" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:37 IST" name="tearDown" finished-at="2024-08-05T17:29:37 IST" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testResponseTime status=SUCCESS method=SearchProductTest.testResponseTime()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=testResponseTime status=SUCCESS method=SearchProductTest.testResponseTime()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="setUp" finished-at="2024-07-08T16:45:42 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:37 IST" name="setUp" finished-at="2024-08-05T17:29:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testSearchProductSuccess()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testSearchProductSuccess()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSearchProductSuccess()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="testSearchProductSuccess" finished-at="2024-07-08T16:45:42 IST" duration-ms="36" status="PASS">
+        <test-method signature="testSearchProductSuccess()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:37 IST" name="testSearchProductSuccess" finished-at="2024-08-05T17:29:38 IST" duration-ms="1130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchProductSuccess -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="tearDown" finished-at="2024-07-08T16:45:42 IST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:38 IST" name="tearDown" finished-at="2024-08-05T17:29:38 IST" duration-ms="18" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSearchProductSuccess status=SUCCESS method=SearchProductTest.testSearchProductSuccess()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=testSearchProductSuccess status=SUCCESS method=SearchProductTest.testSearchProductSuccess()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="setUp" finished-at="2024-07-08T16:45:42 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:38 IST" name="setUp" finished-at="2024-08-05T17:29:38 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testSpecialCharactersInProductName()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testSpecialCharactersInProductName()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSpecialCharactersInProductName()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:42 IST" name="testSpecialCharactersInProductName" finished-at="2024-07-08T16:45:44 IST" duration-ms="1198" status="PASS">
+        <test-method signature="testSpecialCharactersInProductName()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:38 IST" name="testSpecialCharactersInProductName" finished-at="2024-08-05T17:29:39 IST" duration-ms="1074" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Products list is not empty expected [null] but found [[]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Products list is not empty expected [null] but found [[]]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotSame(Assert.java:1573)
+at org.testng.Assert.assertNull(Assert.java:1506)
+at sample.Product.SearchProductTest.testSpecialCharactersInProductName(SearchProductTest.java:112)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSpecialCharactersInProductName -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:44 IST" name="tearDown" finished-at="2024-07-08T16:45:44 IST" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:39 IST" name="tearDown" finished-at="2024-08-05T17:29:39 IST" duration-ms="26" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSpecialCharactersInProductName status=SUCCESS method=SearchProductTest.testSpecialCharactersInProductName()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=testSpecialCharactersInProductName status=FAILURE method=SearchProductTest.testSpecialCharactersInProductName()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="testSpecificProductDetails()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:44 IST" name="testSpecificProductDetails" finished-at="2024-07-08T16:45:44 IST" duration-ms="166" status="FAIL">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:39 IST" name="setUp" finished-at="2024-08-05T17:29:39 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testSpecificProductDetails()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSpecificProductDetails()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:39 IST" name="testSpecificProductDetails" finished-at="2024-08-05T17:29:40 IST" duration-ms="669" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Blue Top] but found [null]]]>
@@ -630,11 +324,9 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
 at org.testng.Assert.assertEquals(Assert.java:655)
 at org.testng.Assert.assertEquals(Assert.java:665)
-at sample.Product.SearchProductTest.testSpecificProductDetails(SearchProductTest.java:70)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at sample.Product.SearchProductTest.testSpecificProductDetails(SearchProductTest.java:71)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
@@ -643,7 +335,7 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
@@ -665,55 +357,44 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSpecificProductDetails -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:44 IST" name="setUp" finished-at="2024-07-08T16:45:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:40 IST" name="tearDown" finished-at="2024-08-05T17:29:40 IST" duration-ms="23" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testSpecificProductDetails()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:44 IST" name="tearDown" finished-at="2024-07-08T16:45:44 IST" duration-ms="36" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testSpecificProductDetails status=FAILURE method=SearchProductTest.testSpecificProductDetails()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=testSpecificProductDetails status=FAILURE method=SearchProductTest.testSpecificProductDetails()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="testUnsupportedMethod()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:44 IST" name="testUnsupportedMethod" finished-at="2024-07-08T16:45:45 IST" duration-ms="1169" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:40 IST" name="setUp" finished-at="2024-08-05T17:29:40 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testUnsupportedMethod()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUnsupportedMethod()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:40 IST" name="testUnsupportedMethod" finished-at="2024-08-05T17:29:41 IST" duration-ms="1085" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUnsupportedMethod -->
-        <test-method is-config="true" signature="setUp(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:44 IST" name="setUp" finished-at="2024-07-08T16:45:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:41 IST" name="tearDown" finished-at="2024-08-05T17:29:41 IST" duration-ms="29" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=SearchProductTest.testUnsupportedMethod()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:45 IST" name="tearDown" finished-at="2024-07-08T16:45:45 IST" duration-ms="22" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testUnsupportedMethod status=SUCCESS method=SearchProductTest.testUnsupportedMethod()[pri:0, instance:sample.Product.SearchProductTest@1f59a598] output={null}]]]>
+                <![CDATA[[TestResult name=testUnsupportedMethod status=SUCCESS method=SearchProductTest.testUnsupportedMethod()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:sample.Product.SearchProductTest@1f59a598]" started-at="2024-07-08T16:45:45 IST" name="tearDownSuite" finished-at="2024-07-08T16:45:45 IST" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:sample.Product.SearchProductTest@3f1d2e23]" started-at="2024-08-05T17:29:41 IST" name="tearDownSuite" finished-at="2024-08-05T17:29:41 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
@@ -721,4 +402,3 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
->>>>>>> origin/main

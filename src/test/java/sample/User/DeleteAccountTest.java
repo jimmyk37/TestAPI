@@ -1,166 +1,79 @@
 package sample.User;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.Status;
-
-import static io.restassured.RestAssured.*;
-import io.restassured.RestAssured;
+import java.util.HashMap;
+import java.util.Map;
 import io.restassured.response.Response;
 import sample.base.BaseTestClass;
 
 public class DeleteAccountTest extends BaseTestClass {
-	@BeforeClass
-	public void setup() {
-		RestAssured.baseURI = "https://automationexercise.com";
-	}
 
-	@Test
+	private static final String DELETE_ACCOUNT_ENDPOINT = "/api/deleteAccount";
+
 	public void testDeleteAccountSuccess() {
-<<<<<<< HEAD
-=======
+		Map<String, String> formParams = new HashMap<>();
+		formParams.put("email", "jimmy@example.com");
+		formParams.put("password", "jimmy12345");
 
->>>>>>> origin/main
-		String email = "jimmy@example.com";
-		String password = "jimmy12345";
-//	 
-		Response response = given().formParam("email", email).formParam("password", password).when()
-				.delete("/api/deleteAccount").then().extract().response();
-
-		System.out.println(response.getBody().asPrettyString());
+		Response response = requestHandler.sendDeleteRequest(DELETE_ACCOUNT_ENDPOINT, formParams);
 
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 200);
-<<<<<<< HEAD
-		Assert.assertEquals(response.jsonPath().getString("message"), "Account deleted!");	
-
-	
-=======
 		Assert.assertEquals(response.jsonPath().getString("message"), "Account deleted!");
->>>>>>> origin/main
 	}
-	
+
 	@Test
 	public void testNonexistentEmail() {
-<<<<<<< HEAD
-=======
+		Map<String, String> formParams = new HashMap<>();
+		formParams.put("email", "nonexistent@example.com");
+		formParams.put("password", "password123");
 
->>>>>>> origin/main
-	    String email = "nonexistent@example.com";
-	    String password = "password123";
+		Response response = requestHandler.sendDeleteRequest(DELETE_ACCOUNT_ENDPOINT, formParams);
 
-	    Response response =
-	        given().
-	            formParam("email", email).
-	            formParam("password", password).
-	        when().
-	            delete("/api/deleteAccount").
-	        then().
-	            extract().response();
-
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/main
+		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
 	}
-	
+
 	@Test
 	public void testMissingEmailParameter() {
-	    String password = "password123";
+		Map<String, String> formParams = new HashMap<>();
+		formParams.put("password", "password123");
 
-	    Response response =
-	        given().
-	            formParam("password", password).
-	        when().
-	            delete("/api/deleteAccount").
-	        then().
-	            extract().response();
+		Response response = requestHandler.sendDeleteRequest(DELETE_ACCOUNT_ENDPOINT, formParams);
 
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
-
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
+		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
 	}
-	
+
 	@Test
 	public void testMissingPasswordParameter() {
-<<<<<<< HEAD
-=======
+		Map<String, String> formParams = new HashMap<>();
+		formParams.put("email", "jimmy@example.com");
 
->>>>>>> origin/main
-	    String email = "jimmy@example.com";
+		Response response = requestHandler.sendDeleteRequest(DELETE_ACCOUNT_ENDPOINT, formParams);
 
-	    Response response =
-	        given().
-	            formParam("email", email).
-	        when().
-	            delete("/api/deleteAccount").
-	        then().
-	            extract().response();
-
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
-
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
+		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
 	}
-    
+
 	@Test
 	public void testInvalidEmailFormat() {
-	    String email = "invalidemail";
-	    String password = "password123";
+		Map<String, String> formParams = new HashMap<>();
+		formParams.put("email", "invalidemail");
+		formParams.put("password", "password123");
 
-	    Response response =
-	        given().
-	            formParam("email", email).
-	            formParam("password", password).
-	        when().
-	            delete("/api/deleteAccount").
-	        then().
-	            extract().response();
+		Response response = requestHandler.sendDeleteRequest(DELETE_ACCOUNT_ENDPOINT, formParams);
 
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
-
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
+		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
 	}
-    
+
 	@Test
 	public void testIncorrectPassword() {
-	    String email = "jimmy@example.com";
-	    String password = "wrongpassword";
+		Map<String, String> formParams = new HashMap<>();
+		formParams.put("email", "jimmy@example.com");
+		formParams.put("password", "wrongpassword");
 
-	    Response response =
-	        given().
-	            formParam("email", email).
-	            formParam("password", password).
-	        when().
-	            delete("/api/deleteAccount").
-	        then().
-	            extract().response();
+		Response response = requestHandler.sendDeleteRequest(DELETE_ACCOUNT_ENDPOINT, formParams);
 
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 401, "Expected status code is 401 Unauthorized");
-
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
+		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 401,
+				"Expected status code is 401 Unauthorized");
 	}
-
-
-
 
 }

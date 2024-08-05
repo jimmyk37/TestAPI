@@ -1,24 +1,24 @@
-<<<<<<< HEAD
-2024-07-29 17:09:15 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-29 17:09:16 INFO  BaseTestClass:51 - Test Case Started: testContentType
-2024-07-29 17:09:20 INFO  BaseTestClass:67 - Test Case Passed: testContentType
-2024-07-29 17:09:20 INFO  BaseTestClass:51 - Test Case Started: testFilterByCategory
-2024-07-29 17:09:23 INFO  BaseTestClass:61 - Test Case Failed: testFilterByCategory
-2024-07-29 17:09:23 INFO  BaseTestClass:62 - Failure Reason: No products found for the category expected [false] but found [true]
-2024-07-29 17:09:23 INFO  BaseTestClass:63 - Request Log:
+2024-08-05 16:20:01 INFO  BaseTestClass:52 - Extent Report initialized successfully.
+2024-08-05 16:20:02 INFO  BaseTestClass:66 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:20:08 INFO  BaseTestClass:82 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:20:08 INFO  BaseTestClass:58 - Extent Report flushed successfully.
+2024-08-05 16:20:42 INFO  BaseTestClass:52 - Extent Report initialized successfully.
+2024-08-05 16:20:43 INFO  BaseTestClass:66 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:20:47 INFO  BaseTestClass:82 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:20:48 INFO  BaseTestClass:58 - Extent Report flushed successfully.
+2024-08-05 16:21:17 INFO  BaseTestClass:51 - Extent Report initialized successfully.
+2024-08-05 16:21:17 INFO  BaseTestClass:65 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:21:22 INFO  BaseTestClass:81 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:21:23 INFO  BaseTestClass:57 - Extent Report flushed successfully.
+2024-08-05 16:22:34 INFO  BaseTestClass:53 - Extent Report initialized successfully.
+2024-08-05 16:22:35 INFO  BaseTestClass:67 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:22:40 INFO  BaseTestClass:83 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:22:40 INFO  BaseTestClass:67 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:22:41 INFO  BaseTestClass:77 - Test Case Failed: testInvalidEndpoint
+2024-08-05 16:22:41 INFO  BaseTestClass:78 - Failure Reason: Failed to parse the JSON document
+2024-08-05 16:22:41 INFO  BaseTestClass:79 - Request Log:
 Request method:	GET
-Request URI:	https://automationexercise.com/api/productsList
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	https://automationexercise.com/api/productsList
+Request URI:	https://automationexercise.com/api/brandsList1111
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -29,9 +29,310 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 
-2024-07-29 17:09:23 INFO  BaseTestClass:64 - Response Log:
+2024-08-05 16:22:41 INFO  BaseTestClass:80 - Response Log:
+HTTP/1.1 404 Not Found
+Date: Mon, 05 Aug 2024 10:52:42 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 404 Not Found
+vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=F9czuNClkoihWIssdbwy75hn6oOdCg5JDeR%2F3Cz1T%2Bi94b14nje9VEg%2B3CnDgCmNdNxtBYKZQpGowo%2BvkE8k2dUi570FwwVCc%2FFtaNkU8ryz7V%2Fq0GMxiWuG%2FBNc2NGkhEUxpJuOj8Zo"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae63d396c9c03f9-CDG
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Page not found at /api/brandsList1111</title>
+    <meta name="robots" content="NONE,NOARCHIVE"/>
+    <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+  </head>
+  <body>
+    <div id="summary">
+      <h1>
+Page not found         <span>(404)</span>
+      </h1>
+      <table class="meta">
+        <tr>
+          <th colspan="1" rowspan="1">Request Method:</th>
+          <td colspan="1" rowspan="1">GET</td>
+        </tr>
+        <tr>
+          <th colspan="1" rowspan="1">Request URL:</th>
+          <td colspan="1" rowspan="1">https://automationexercise.com/api/brandsList1111</td>
+        </tr>
+      </table>
+    </div>
+    <div id="info">
+      <p>
+
+      Using the URLconf defined in         <code>automation_exercise.urls</code>
+,
+      Django tried these URL patterns, in this order:
+            </p>
+      <ol>
+        <li>
+            
+                admin/
+                
+            
+          </li>
+        <li/>
+        <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                products
+                
+            
+          </li>
+        <li>
+            
+                contact_us
+                
+            
+          </li>
+        <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                view_cart
+                
+            
+          </li>
+        <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                login
+                
+            
+          </li>
+        <li>
+            
+                signup
+                
+            
+          </li>
+        <li>
+            
+                account_created
+                
+            
+          </li>
+        <li>
+            
+                logout
+                
+            
+          </li>
+        <li>
+            
+                checkout
+                
+            
+          </li>
+        <li>
+            
+                payment
+                
+            
+          </li>
+        <li>
+            
+                delete_account
+                
+            
+          </li>
+        <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                test_cases
+                
+            
+          </li>
+        <li>
+            
+                api_list
+                
+            
+          </li>
+        <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        <li>
+            
+                api/productsList
+                
+            
+          </li>
+        <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+      </ol>
+      <p>
+
+        
+          The current path,         <code>api/brandsList1111</code>
+,
+        
+        didn’t match any of these.
+            </p>
+    </div>
+    <div id="explanation">
+      <p>
+
+      You’re seeing this error because you have         <code>DEBUG = True</code>
+ in
+      your Django settings file. Change that to         <code>False</code>
+, and Django
+      will display a standard 404 page.
+          </p>
+    </div>
+  </body>
+</html>
+
+2024-08-05 16:22:41 INFO  BaseTestClass:67 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:22:42 INFO  BaseTestClass:77 - Test Case Failed: testUnsupportedMethod
+2024-08-05 16:22:42 INFO  BaseTestClass:78 - Failure Reason: did not expect [200] but found [200]
+2024-08-05 16:22:42 INFO  BaseTestClass:79 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/brandsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 16:22:42 INFO  BaseTestClass:80 - Response Log:
 HTTP/1.1 200 OK
-Date: Mon, 29 Jul 2024 11:39:22 GMT
+Date: Mon, 05 Aug 2024 10:52:43 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -39,22 +340,345 @@ vary: Accept,Cookie,Accept-Encoding
 referrer-policy: same-origin
 x-frame-options: DENY
 x-content-type-options: nosniff
-allow: DELETE, PUT, OPTIONS, GET, POST
+allow: DELETE, OPTIONS, POST, GET, PUT
 x-powered-by: Phusion Passenger(R) 6.0.22
 status: 200 OK
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=76qUFWWDo0ZX3q2jbyxW7nADNtE1JGYtnPiPd710si02klLYqNf8TDBLKn93ukNvJIWhiYKwG9eE3C8T0Uw8%2F5Ur7zsIQMqnT3q4Iw%2FLQxl0DwsYbcSrzKCXmP%2BRqLzkO%2BPQ4%2FQ%2FHCo8"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=MO%2BohXTVLkAMzRJRRvtskhu%2FSO5W6k99eg4KKBkNutCUfUa2W51ZNI3Muke7O58XOsln%2FJqiTvwRnxsiug6GGQu6haJ5OIOR5BLkS4FooZ5PxS34E7I8kBw4oeEg2U34yImIkA6ZgmB8"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 8aacd3f17d3e47eb-BOM
+CF-RAY: 8ae63d40685a99e8-CDG
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
 <html>
-  <body>{"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+  <body>{"responseCode": 405, "message": "This request method is not supported."}</body>
 </html>
+
+2024-08-05 16:22:42 INFO  BaseTestClass:59 - Extent Report flushed successfully.
+2024-08-05 16:24:18 INFO  BaseTestClass:53 - Extent Report initialized successfully.
+2024-08-05 16:24:18 INFO  BaseTestClass:67 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:24:23 INFO  BaseTestClass:83 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:24:24 INFO  BaseTestClass:67 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:24:25 INFO  BaseTestClass:77 - Test Case Failed: testInvalidEndpoint
+2024-08-05 16:24:25 INFO  BaseTestClass:78 - Failure Reason: Failed to parse the JSON document
+2024-08-05 16:24:25 INFO  BaseTestClass:79 - Request Log:
+Request method:	GET
+Request URI:	https://automationexercise.com/api/brandsList1111
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 16:24:25 INFO  BaseTestClass:80 - Response Log:
+HTTP/1.1 404 Not Found
+Date: Mon, 05 Aug 2024 10:54:26 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 404 Not Found
+vary: Accept-Encoding
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Nmlvl6vYX%2Buu9mqG4ARgLXteFFMGnwa%2BEn6yYXy%2FbSQpGlI5T2udQD%2BNV%2BDFfD9dXplTvaRyGkrs1yrumVszafWVj3SAq0UYlfXGsWkEO9Kc6sDflksQVbOTIkO4RRWb9YzTAvykN0Tk"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae63fc15c913c89-CDG
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Page not found at /api/brandsList1111</title>
+    <meta name="robots" content="NONE,NOARCHIVE"/>
+    <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body&gt;div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+  </style>
+  </head>
+  <body>
+    <div id="summary">
+      <h1>
+Page not found         <span>(404)</span>
+      </h1>
+      <table class="meta">
+        <tr>
+          <th colspan="1" rowspan="1">Request Method:</th>
+          <td colspan="1" rowspan="1">GET</td>
+        </tr>
+        <tr>
+          <th colspan="1" rowspan="1">Request URL:</th>
+          <td colspan="1" rowspan="1">https://automationexercise.com/api/brandsList1111</td>
+        </tr>
+      </table>
+    </div>
+    <div id="info">
+      <p>
+
+      Using the URLconf defined in         <code>automation_exercise.urls</code>
+,
+      Django tried these URL patterns, in this order:
+            </p>
+      <ol>
+        <li>
+            
+                admin/
+                
+            
+          </li>
+        <li/>
+        <li>
+            
+                get_product_picture/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                product_details/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                products
+                
+            
+          </li>
+        <li>
+            
+                contact_us
+                
+            
+          </li>
+        <li>
+            
+                add_to_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                view_cart
+                
+            
+          </li>
+        <li>
+            
+                delete_cart/&lt;int:product_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                login
+                
+            
+          </li>
+        <li>
+            
+                signup
+                
+            
+          </li>
+        <li>
+            
+                account_created
+                
+            
+          </li>
+        <li>
+            
+                logout
+                
+            
+          </li>
+        <li>
+            
+                checkout
+                
+            
+          </li>
+        <li>
+            
+                payment
+                
+            
+          </li>
+        <li>
+            
+                delete_account
+                
+            
+          </li>
+        <li>
+            
+                brand_products/&lt;str:brand&gt;
+                
+            
+          </li>
+        <li>
+            
+                category_products/&lt;int:category_id&gt;
+                
+            
+          </li>
+        <li>
+            
+                test_cases
+                
+            
+          </li>
+        <li>
+            
+                api_list
+                
+            
+          </li>
+        <li>
+            
+                download_invoice/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                payment_done/&lt;int:overall_amount&gt;
+                
+            
+          </li>
+        <li>
+            
+                video_tutorials
+                
+            
+          </li>
+        <li>
+            
+                api/productsList
+                
+            
+          </li>
+        <li>
+            
+                api/brandsList
+                
+            
+          </li>
+        <li>
+            
+                api/searchProduct
+                
+            
+          </li>
+        <li>
+            
+                api/verifyLogin
+                
+            
+          </li>
+        <li>
+            
+                api/createAccount
+                
+            
+          </li>
+        <li>
+            
+                api/deleteAccount
+                
+            
+          </li>
+        <li>
+            
+                api/updateAccount
+                
+            
+          </li>
+        <li>
+            
+                api/getUserDetailByEmail
+                
+            
+          </li>
+        <li>
+            
+                &lt;str:random_string&gt;
+                
+            
+          </li>
+        <li>
+            
+                ^static/(?P&lt;path&gt;.*)$
+                
+            
+          </li>
+      </ol>
+      <p>
+
+        
+          The current path,         <code>api/brandsList1111</code>
+,
+        
+        didn’t match any of these.
+            </p>
+    </div>
+    <div id="explanation">
+      <p>
+
+      You’re seeing this error because you have         <code>DEBUG = True</code>
+ in
+      your Django settings file. Change that to         <code>False</code>
+, and Django
+      will display a standard 404 page.
+          </p>
+    </div>
+  </body>
+</html>
+
+2024-08-05 16:24:25 INFO  BaseTestClass:67 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:24:26 INFO  BaseTestClass:77 - Test Case Failed: testUnsupportedMethod
+2024-08-05 16:24:26 INFO  BaseTestClass:78 - Failure Reason: did not expect [200] but found [200]
+2024-08-05 16:24:26 INFO  BaseTestClass:79 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/brandsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 16:24:26 INFO  BaseTestClass:80 - Response Log:
 HTTP/1.1 200 OK
-Date: Mon, 29 Jul 2024 11:39:22 GMT
+Date: Mon, 05 Aug 2024 10:54:27 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -62,62 +686,31 @@ vary: Accept,Cookie,Accept-Encoding
 referrer-policy: same-origin
 x-frame-options: DENY
 x-content-type-options: nosniff
-allow: DELETE, PUT, OPTIONS, GET, POST
+allow: DELETE, OPTIONS, POST, GET, PUT
 x-powered-by: Phusion Passenger(R) 6.0.22
 status: 200 OK
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=76qUFWWDo0ZX3q2jbyxW7nADNtE1JGYtnPiPd710si02klLYqNf8TDBLKn93ukNvJIWhiYKwG9eE3C8T0Uw8%2F5Ur7zsIQMqnT3q4Iw%2FLQxl0DwsYbcSrzKCXmP%2BRqLzkO%2BPQ4%2FQ%2FHCo8"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=o2Wggi%2BhD15J5Y68jIs8I9hsoxNyJ5UdFxmiMoRNpCOZgom3x%2FbjOMOIZOK2MZs7ozm0QPmgKOw4qbRFOQYvTcaZMC%2Bvw1HRKTombl%2BPb%2FYPYiTgu1T%2BOtZroTWx43bpEld0516TO8Y%2F"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 8aacd3f17d3e47eb-BOM
+CF-RAY: 8ae63fc9ef2e99b4-CDG
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
 <html>
-  <body>{"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+  <body>{"responseCode": 405, "message": "This request method is not supported."}</body>
 </html>
 
-2024-07-29 17:09:23 INFO  BaseTestClass:51 - Test Case Started: testGetAllProductsListSuccess
-2024-07-29 17:09:24 INFO  BaseTestClass:67 - Test Case Passed: testGetAllProductsListSuccess
-2024-07-29 17:09:24 INFO  BaseTestClass:51 - Test Case Started: testInvalidEndpoint
-2024-07-29 17:09:26 INFO  BaseTestClass:61 - Test Case Failed: testInvalidEndpoint
-2024-07-29 17:09:26 INFO  BaseTestClass:62 - Failure Reason: Failed to parse the JSON document
-2024-07-29 17:09:26 INFO  BaseTestClass:63 - Request Log:
+2024-08-05 16:24:26 INFO  BaseTestClass:59 - Extent Report flushed successfully.
+2024-08-05 16:25:50 INFO  BaseTestClass:53 - Extent Report initialized successfully.
+2024-08-05 16:25:51 INFO  BaseTestClass:67 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:25:56 INFO  BaseTestClass:83 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:25:56 INFO  BaseTestClass:67 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:25:58 INFO  BaseTestClass:77 - Test Case Failed: testInvalidEndpoint
+2024-08-05 16:25:58 INFO  BaseTestClass:78 - Failure Reason: Failed to parse the JSON document
+2024-08-05 16:25:58 INFO  BaseTestClass:79 - Request Log:
 Request method:	GET
-Request URI:	https://automationexercise.com/api/productsList111
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	https://automationexercise.com/api/productsList111
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	https://automationexercise.com/api/productsList111
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-Request method:	GET
-Request URI:	https://automationexercise.com/api/productsList111
+Request URI:	https://automationexercise.com/api/brandsList1111
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -128,9 +721,9 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 
-2024-07-29 17:09:26 INFO  BaseTestClass:64 - Response Log:
+2024-08-05 16:25:58 INFO  BaseTestClass:80 - Response Log:
 HTTP/1.1 404 Not Found
-Date: Mon, 29 Jul 2024 11:39:26 GMT
+Date: Mon, 05 Aug 2024 10:55:58 GMT
 Content-Type: text/html
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -141,17 +734,17 @@ x-powered-by: Phusion Passenger(R) 6.0.22
 status: 404 Not Found
 vary: Accept-Encoding
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3ouD3fwJukiZF5pSuOfg7N6Z8Azl5LW7umCX9ZZ9BuNuQ2E7okDJbBXTEXCQqaEp3vyeWUBP4inuUSqUKbs6pT7JG5QIefOLnzf%2F%2BCDl65iZ5oKWdfOTuJAsXsPUSIKuONHGoD2faPBs"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=HrdCseCYR2vwbgng4rTrCBjoIEZrKBsQEFBm7wqlzLKKLLzDjzZF%2BfCgEmKE4NLMiBzMRTaypCC9WGN25Mcs9aI4Q7MUMywKxxVjQemIekOsnQeOX5xgl5szYGeHq5hp0Dz5tjxQeG5v"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 8aacd409ae5f4710-BOM
+CF-RAY: 8ae6420478b43675-FRA
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Page not found at /api/productsList111</title>
+    <title>Page not found at /api/brandsList1111</title>
     <meta name="robots" content="NONE,NOARCHIVE"/>
     <style type="text/css">
     html * { padding:0; margin:0; }
@@ -184,7 +777,7 @@ Page not found         <span>(404)</span>
         </tr>
         <tr>
           <th colspan="1" rowspan="1">Request URL:</th>
-          <td colspan="1" rowspan="1">https://automationexercise.com/api/productsList111</td>
+          <td colspan="1" rowspan="1">https://automationexercise.com/api/brandsList1111</td>
         </tr>
       </table>
     </div>
@@ -393,853 +986,7 @@ Page not found         <span>(404)</span>
       <p>
 
         
-          The current path,         <code>api/productsList111</code>
-,
-        
-        didn’t match any of these.
-            </p>
-    </div>
-    <div id="explanation">
-      <p>
-
-      You’re seeing this error because you have         <code>DEBUG = True</code>
- in
-      your Django settings file. Change that to         <code>False</code>
-, and Django
-      will display a standard 404 page.
-          </p>
-    </div>
-  </body>
-</html>
-HTTP/1.1 404 Not Found
-Date: Mon, 29 Jul 2024 11:39:26 GMT
-Content-Type: text/html
-Transfer-Encoding: chunked
-Connection: keep-alive
-referrer-policy: same-origin
-x-frame-options: DENY
-x-content-type-options: nosniff
-x-powered-by: Phusion Passenger(R) 6.0.22
-status: 404 Not Found
-vary: Accept-Encoding
-CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3ouD3fwJukiZF5pSuOfg7N6Z8Azl5LW7umCX9ZZ9BuNuQ2E7okDJbBXTEXCQqaEp3vyeWUBP4inuUSqUKbs6pT7JG5QIefOLnzf%2F%2BCDl65iZ5oKWdfOTuJAsXsPUSIKuONHGoD2faPBs"}],"group":"cf-nel","max_age":604800}
-NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Server: cloudflare
-CF-RAY: 8aacd409ae5f4710-BOM
-Content-Encoding: gzip
-alt-svc: h3=":443"; ma=86400
-
-<html lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Page not found at /api/productsList111</title>
-    <meta name="robots" content="NONE,NOARCHIVE"/>
-    <style type="text/css">
-    html * { padding:0; margin:0; }
-    body * { padding:10px 20px; }
-    body * * { padding:0; }
-    body { font:small sans-serif; background:#eee; color:#000; }
-    body&gt;div { border-bottom:1px solid #ddd; }
-    h1 { font-weight:normal; margin-bottom:.4em; }
-    h1 span { font-size:60%; color:#666; font-weight:normal; }
-    table { border:none; border-collapse: collapse; width:100%; }
-    td, th { vertical-align:top; padding:2px 3px; }
-    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
-    #info { background:#f6f6f6; }
-    #info ol { margin: 0.5em 4em; }
-    #info ol li { font-family: monospace; }
-    #summary { background: #ffc; }
-    #explanation { background:#eee; border-bottom: 0px none; }
-    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
-  </style>
-  </head>
-  <body>
-    <div id="summary">
-      <h1>
-Page not found         <span>(404)</span>
-      </h1>
-      <table class="meta">
-        <tr>
-          <th colspan="1" rowspan="1">Request Method:</th>
-          <td colspan="1" rowspan="1">GET</td>
-        </tr>
-        <tr>
-          <th colspan="1" rowspan="1">Request URL:</th>
-          <td colspan="1" rowspan="1">https://automationexercise.com/api/productsList111</td>
-        </tr>
-      </table>
-    </div>
-    <div id="info">
-      <p>
-
-      Using the URLconf defined in         <code>automation_exercise.urls</code>
-,
-      Django tried these URL patterns, in this order:
-            </p>
-      <ol>
-        <li>
-            
-                admin/
-                
-            
-          </li>
-        <li/>
-        <li>
-            
-                get_product_picture/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                product_details/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                products
-                
-            
-          </li>
-        <li>
-            
-                contact_us
-                
-            
-          </li>
-        <li>
-            
-                add_to_cart/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                view_cart
-                
-            
-          </li>
-        <li>
-            
-                delete_cart/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                login
-                
-            
-          </li>
-        <li>
-            
-                signup
-                
-            
-          </li>
-        <li>
-            
-                account_created
-                
-            
-          </li>
-        <li>
-            
-                logout
-                
-            
-          </li>
-        <li>
-            
-                checkout
-                
-            
-          </li>
-        <li>
-            
-                payment
-                
-            
-          </li>
-        <li>
-            
-                delete_account
-                
-            
-          </li>
-        <li>
-            
-                brand_products/&lt;str:brand&gt;
-                
-            
-          </li>
-        <li>
-            
-                category_products/&lt;int:category_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                test_cases
-                
-            
-          </li>
-        <li>
-            
-                api_list
-                
-            
-          </li>
-        <li>
-            
-                download_invoice/&lt;int:overall_amount&gt;
-                
-            
-          </li>
-        <li>
-            
-                payment_done/&lt;int:overall_amount&gt;
-                
-            
-          </li>
-        <li>
-            
-                video_tutorials
-                
-            
-          </li>
-        <li>
-            
-                api/productsList
-                
-            
-          </li>
-        <li>
-            
-                api/brandsList
-                
-            
-          </li>
-        <li>
-            
-                api/searchProduct
-                
-            
-          </li>
-        <li>
-            
-                api/verifyLogin
-                
-            
-          </li>
-        <li>
-            
-                api/createAccount
-                
-            
-          </li>
-        <li>
-            
-                api/deleteAccount
-                
-            
-          </li>
-        <li>
-            
-                api/updateAccount
-                
-            
-          </li>
-        <li>
-            
-                api/getUserDetailByEmail
-                
-            
-          </li>
-        <li>
-            
-                &lt;str:random_string&gt;
-                
-            
-          </li>
-        <li>
-            
-                ^static/(?P&lt;path&gt;.*)$
-                
-            
-          </li>
-      </ol>
-      <p>
-
-        
-          The current path,         <code>api/productsList111</code>
-,
-        
-        didn’t match any of these.
-            </p>
-    </div>
-    <div id="explanation">
-      <p>
-
-      You’re seeing this error because you have         <code>DEBUG = True</code>
- in
-      your Django settings file. Change that to         <code>False</code>
-, and Django
-      will display a standard 404 page.
-          </p>
-    </div>
-  </body>
-</html>
-HTTP/1.1 404 Not Found
-Date: Mon, 29 Jul 2024 11:39:26 GMT
-Content-Type: text/html
-Transfer-Encoding: chunked
-Connection: keep-alive
-referrer-policy: same-origin
-x-frame-options: DENY
-x-content-type-options: nosniff
-x-powered-by: Phusion Passenger(R) 6.0.22
-status: 404 Not Found
-vary: Accept-Encoding
-CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3ouD3fwJukiZF5pSuOfg7N6Z8Azl5LW7umCX9ZZ9BuNuQ2E7okDJbBXTEXCQqaEp3vyeWUBP4inuUSqUKbs6pT7JG5QIefOLnzf%2F%2BCDl65iZ5oKWdfOTuJAsXsPUSIKuONHGoD2faPBs"}],"group":"cf-nel","max_age":604800}
-NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Server: cloudflare
-CF-RAY: 8aacd409ae5f4710-BOM
-Content-Encoding: gzip
-alt-svc: h3=":443"; ma=86400
-
-<html lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Page not found at /api/productsList111</title>
-    <meta name="robots" content="NONE,NOARCHIVE"/>
-    <style type="text/css">
-    html * { padding:0; margin:0; }
-    body * { padding:10px 20px; }
-    body * * { padding:0; }
-    body { font:small sans-serif; background:#eee; color:#000; }
-    body&gt;div { border-bottom:1px solid #ddd; }
-    h1 { font-weight:normal; margin-bottom:.4em; }
-    h1 span { font-size:60%; color:#666; font-weight:normal; }
-    table { border:none; border-collapse: collapse; width:100%; }
-    td, th { vertical-align:top; padding:2px 3px; }
-    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
-    #info { background:#f6f6f6; }
-    #info ol { margin: 0.5em 4em; }
-    #info ol li { font-family: monospace; }
-    #summary { background: #ffc; }
-    #explanation { background:#eee; border-bottom: 0px none; }
-    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
-  </style>
-  </head>
-  <body>
-    <div id="summary">
-      <h1>
-Page not found         <span>(404)</span>
-      </h1>
-      <table class="meta">
-        <tr>
-          <th colspan="1" rowspan="1">Request Method:</th>
-          <td colspan="1" rowspan="1">GET</td>
-        </tr>
-        <tr>
-          <th colspan="1" rowspan="1">Request URL:</th>
-          <td colspan="1" rowspan="1">https://automationexercise.com/api/productsList111</td>
-        </tr>
-      </table>
-    </div>
-    <div id="info">
-      <p>
-
-      Using the URLconf defined in         <code>automation_exercise.urls</code>
-,
-      Django tried these URL patterns, in this order:
-            </p>
-      <ol>
-        <li>
-            
-                admin/
-                
-            
-          </li>
-        <li/>
-        <li>
-            
-                get_product_picture/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                product_details/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                products
-                
-            
-          </li>
-        <li>
-            
-                contact_us
-                
-            
-          </li>
-        <li>
-            
-                add_to_cart/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                view_cart
-                
-            
-          </li>
-        <li>
-            
-                delete_cart/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                login
-                
-            
-          </li>
-        <li>
-            
-                signup
-                
-            
-          </li>
-        <li>
-            
-                account_created
-                
-            
-          </li>
-        <li>
-            
-                logout
-                
-            
-          </li>
-        <li>
-            
-                checkout
-                
-            
-          </li>
-        <li>
-            
-                payment
-                
-            
-          </li>
-        <li>
-            
-                delete_account
-                
-            
-          </li>
-        <li>
-            
-                brand_products/&lt;str:brand&gt;
-                
-            
-          </li>
-        <li>
-            
-                category_products/&lt;int:category_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                test_cases
-                
-            
-          </li>
-        <li>
-            
-                api_list
-                
-            
-          </li>
-        <li>
-            
-                download_invoice/&lt;int:overall_amount&gt;
-                
-            
-          </li>
-        <li>
-            
-                payment_done/&lt;int:overall_amount&gt;
-                
-            
-          </li>
-        <li>
-            
-                video_tutorials
-                
-            
-          </li>
-        <li>
-            
-                api/productsList
-                
-            
-          </li>
-        <li>
-            
-                api/brandsList
-                
-            
-          </li>
-        <li>
-            
-                api/searchProduct
-                
-            
-          </li>
-        <li>
-            
-                api/verifyLogin
-                
-            
-          </li>
-        <li>
-            
-                api/createAccount
-                
-            
-          </li>
-        <li>
-            
-                api/deleteAccount
-                
-            
-          </li>
-        <li>
-            
-                api/updateAccount
-                
-            
-          </li>
-        <li>
-            
-                api/getUserDetailByEmail
-                
-            
-          </li>
-        <li>
-            
-                &lt;str:random_string&gt;
-                
-            
-          </li>
-        <li>
-            
-                ^static/(?P&lt;path&gt;.*)$
-                
-            
-          </li>
-      </ol>
-      <p>
-
-        
-          The current path,         <code>api/productsList111</code>
-,
-        
-        didn’t match any of these.
-            </p>
-    </div>
-    <div id="explanation">
-      <p>
-
-      You’re seeing this error because you have         <code>DEBUG = True</code>
- in
-      your Django settings file. Change that to         <code>False</code>
-, and Django
-      will display a standard 404 page.
-          </p>
-    </div>
-  </body>
-</html>
-HTTP/1.1 404 Not Found
-Date: Mon, 29 Jul 2024 11:39:26 GMT
-Content-Type: text/html
-Transfer-Encoding: chunked
-Connection: keep-alive
-referrer-policy: same-origin
-x-frame-options: DENY
-x-content-type-options: nosniff
-x-powered-by: Phusion Passenger(R) 6.0.22
-status: 404 Not Found
-vary: Accept-Encoding
-CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3ouD3fwJukiZF5pSuOfg7N6Z8Azl5LW7umCX9ZZ9BuNuQ2E7okDJbBXTEXCQqaEp3vyeWUBP4inuUSqUKbs6pT7JG5QIefOLnzf%2F%2BCDl65iZ5oKWdfOTuJAsXsPUSIKuONHGoD2faPBs"}],"group":"cf-nel","max_age":604800}
-NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Server: cloudflare
-CF-RAY: 8aacd409ae5f4710-BOM
-Content-Encoding: gzip
-alt-svc: h3=":443"; ma=86400
-
-<html lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Page not found at /api/productsList111</title>
-    <meta name="robots" content="NONE,NOARCHIVE"/>
-    <style type="text/css">
-    html * { padding:0; margin:0; }
-    body * { padding:10px 20px; }
-    body * * { padding:0; }
-    body { font:small sans-serif; background:#eee; color:#000; }
-    body&gt;div { border-bottom:1px solid #ddd; }
-    h1 { font-weight:normal; margin-bottom:.4em; }
-    h1 span { font-size:60%; color:#666; font-weight:normal; }
-    table { border:none; border-collapse: collapse; width:100%; }
-    td, th { vertical-align:top; padding:2px 3px; }
-    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
-    #info { background:#f6f6f6; }
-    #info ol { margin: 0.5em 4em; }
-    #info ol li { font-family: monospace; }
-    #summary { background: #ffc; }
-    #explanation { background:#eee; border-bottom: 0px none; }
-    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
-  </style>
-  </head>
-  <body>
-    <div id="summary">
-      <h1>
-Page not found         <span>(404)</span>
-      </h1>
-      <table class="meta">
-        <tr>
-          <th colspan="1" rowspan="1">Request Method:</th>
-          <td colspan="1" rowspan="1">GET</td>
-        </tr>
-        <tr>
-          <th colspan="1" rowspan="1">Request URL:</th>
-          <td colspan="1" rowspan="1">https://automationexercise.com/api/productsList111</td>
-        </tr>
-      </table>
-    </div>
-    <div id="info">
-      <p>
-
-      Using the URLconf defined in         <code>automation_exercise.urls</code>
-,
-      Django tried these URL patterns, in this order:
-            </p>
-      <ol>
-        <li>
-            
-                admin/
-                
-            
-          </li>
-        <li/>
-        <li>
-            
-                get_product_picture/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                product_details/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                products
-                
-            
-          </li>
-        <li>
-            
-                contact_us
-                
-            
-          </li>
-        <li>
-            
-                add_to_cart/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                view_cart
-                
-            
-          </li>
-        <li>
-            
-                delete_cart/&lt;int:product_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                login
-                
-            
-          </li>
-        <li>
-            
-                signup
-                
-            
-          </li>
-        <li>
-            
-                account_created
-                
-            
-          </li>
-        <li>
-            
-                logout
-                
-            
-          </li>
-        <li>
-            
-                checkout
-                
-            
-          </li>
-        <li>
-            
-                payment
-                
-            
-          </li>
-        <li>
-            
-                delete_account
-                
-            
-          </li>
-        <li>
-            
-                brand_products/&lt;str:brand&gt;
-                
-            
-          </li>
-        <li>
-            
-                category_products/&lt;int:category_id&gt;
-                
-            
-          </li>
-        <li>
-            
-                test_cases
-                
-            
-          </li>
-        <li>
-            
-                api_list
-                
-            
-          </li>
-        <li>
-            
-                download_invoice/&lt;int:overall_amount&gt;
-                
-            
-          </li>
-        <li>
-            
-                payment_done/&lt;int:overall_amount&gt;
-                
-            
-          </li>
-        <li>
-            
-                video_tutorials
-                
-            
-          </li>
-        <li>
-            
-                api/productsList
-                
-            
-          </li>
-        <li>
-            
-                api/brandsList
-                
-            
-          </li>
-        <li>
-            
-                api/searchProduct
-                
-            
-          </li>
-        <li>
-            
-                api/verifyLogin
-                
-            
-          </li>
-        <li>
-            
-                api/createAccount
-                
-            
-          </li>
-        <li>
-            
-                api/deleteAccount
-                
-            
-          </li>
-        <li>
-            
-                api/updateAccount
-                
-            
-          </li>
-        <li>
-            
-                api/getUserDetailByEmail
-                
-            
-          </li>
-        <li>
-            
-                &lt;str:random_string&gt;
-                
-            
-          </li>
-        <li>
-            
-                ^static/(?P&lt;path&gt;.*)$
-                
-            
-          </li>
-      </ol>
-      <p>
-
-        
-          The current path,         <code>api/productsList111</code>
+          The current path,         <code>api/brandsList1111</code>
 ,
         
         didn’t match any of these.
@@ -1258,41 +1005,26 @@ Page not found         <span>(404)</span>
   </body>
 </html>
 
-2024-07-29 17:09:26 INFO  BaseTestClass:51 - Test Case Started: testProductStructure
-2024-07-29 17:09:28 INFO  BaseTestClass:67 - Test Case Passed: testProductStructure
-2024-07-29 17:09:28 INFO  BaseTestClass:51 - Test Case Started: testResponseContainsProducts
-2024-07-29 17:09:29 INFO  BaseTestClass:67 - Test Case Passed: testResponseContainsProducts
-2024-07-29 17:09:29 INFO  BaseTestClass:51 - Test Case Started: testResponseTime
-2024-07-29 17:09:30 INFO  BaseTestClass:67 - Test Case Passed: testResponseTime
-2024-07-29 17:09:30 INFO  BaseTestClass:51 - Test Case Started: testSpecificProductDetails
-2024-07-29 17:09:32 INFO  BaseTestClass:67 - Test Case Passed: testSpecificProductDetails
-2024-07-29 17:09:32 INFO  BaseTestClass:51 - Test Case Started: testUnsupportedMethod
-2024-07-29 17:09:33 INFO  BaseTestClass:67 - Test Case Passed: testUnsupportedMethod
-2024-07-29 17:09:33 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-29 17:11:41 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-29 17:11:43 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-2024-07-29 17:12:49 INFO  BaseTestClass:37 - Extent Report initialized successfully.
-2024-07-29 17:12:50 INFO  BaseTestClass:51 - Test Case Started: testContentType
-2024-07-29 17:12:55 INFO  BaseTestClass:67 - Test Case Passed: testContentType
-2024-07-29 17:12:56 INFO  BaseTestClass:51 - Test Case Started: testFilterByCategory
-2024-07-29 17:12:59 INFO  BaseTestClass:61 - Test Case Failed: testFilterByCategory
-2024-07-29 17:12:59 INFO  BaseTestClass:62 - Failure Reason: No products found for the category expected [false] but found [true]
-2024-07-29 17:12:59 INFO  BaseTestClass:63 - Request Log:
-Request method:	GET
-Request URI:	https://automationexercise.com/api/productsList
+2024-08-05 16:25:58 INFO  BaseTestClass:67 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:25:59 INFO  BaseTestClass:77 - Test Case Failed: testUnsupportedMethod
+2024-08-05 16:25:59 INFO  BaseTestClass:78 - Failure Reason: did not expect [200] but found [200]
+2024-08-05 16:25:59 INFO  BaseTestClass:79 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/brandsList
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 
-2024-07-29 17:12:59 INFO  BaseTestClass:64 - Response Log:
+2024-08-05 16:25:59 INFO  BaseTestClass:80 - Response Log:
 HTTP/1.1 200 OK
-Date: Mon, 29 Jul 2024 11:42:57 GMT
+Date: Mon, 05 Aug 2024 10:56:00 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1300,29 +1032,326 @@ vary: Accept,Cookie,Accept-Encoding
 referrer-policy: same-origin
 x-frame-options: DENY
 x-content-type-options: nosniff
-allow: POST, GET, OPTIONS, PUT, DELETE
+allow: DELETE, OPTIONS, POST, GET, PUT
 x-powered-by: Phusion Passenger(R) 6.0.22
 status: 200 OK
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=DmfZU8fajRk2bgWJsIC%2FUIdnmCd852MNIzbRpxq0NDUhhKFbuykfVeyEx6jLgDK2JrNg9pezowvF1wVrYotsqBzVdQujcS%2Fa%2FLF36lDTVlO1JFm8j%2FQNeWIxLvCgiJxDsOYljnJYYLLu"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=oEohEBdyaHigt%2BKDCGleuXd27dq9DJ9yDlRy1fnCxeVvUVsAj%2BWJWO5c%2Bn86zf2cnmN93RF28MF1VUCdWhhjAVhj5VPaDQt9woaftng%2FKFlPSUrVmoHw6OlUVKdX2ivk5ClUrTSVpgaT"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 8aacd93319de400f-BOM
+CF-RAY: 8ae6420cbef15d7f-FRA
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
 <html>
-  <body>{"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+  <body>{"responseCode": 405, "message": "This request method is not supported."}</body>
 </html>
 
-2024-07-29 17:12:59 INFO  BaseTestClass:51 - Test Case Started: testGetAllProductsListSuccess
-2024-07-29 17:13:00 INFO  BaseTestClass:67 - Test Case Passed: testGetAllProductsListSuccess
-2024-07-29 17:13:00 INFO  BaseTestClass:51 - Test Case Started: testInvalidEndpoint
-2024-07-29 17:13:01 INFO  BaseTestClass:61 - Test Case Failed: testInvalidEndpoint
-2024-07-29 17:13:01 INFO  BaseTestClass:62 - Failure Reason: Failed to parse the JSON document
-2024-07-29 17:13:01 INFO  BaseTestClass:63 - Request Log:
+2024-08-05 16:25:59 INFO  BaseTestClass:59 - Extent Report flushed successfully.
+2024-08-05 16:27:21 INFO  BaseTestClass:53 - Extent Report initialized successfully.
+2024-08-05 16:27:22 INFO  BaseTestClass:67 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:27:27 INFO  BaseTestClass:83 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:27:27 INFO  BaseTestClass:67 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:27:28 INFO  BaseTestClass:83 - Test Case Passed: testInvalidEndpoint
+2024-08-05 16:27:28 INFO  BaseTestClass:67 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:27:29 INFO  BaseTestClass:77 - Test Case Failed: testUnsupportedMethod
+2024-08-05 16:27:29 INFO  BaseTestClass:78 - Failure Reason: did not expect [200] but found [200]
+2024-08-05 16:27:29 INFO  BaseTestClass:79 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/brandsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 16:27:29 INFO  BaseTestClass:80 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 10:57:30 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=mGvS0xwDhz7SQnp6%2FdXBAc9wOI3eWw%2F4c8JB%2BdoZYxh0%2BNJ84sMMC%2BniEi5E2IvJQOVtWDZCS00bmRxzBPmVt6JDSpJQmLEL9Lb7L5qJv7KZdmV3mvHu5H54R0T8XnvSRlrIKgYKdQ5P"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae644439c0103e1-CDG
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 405, "message": "This request method is not supported."}</body>
+</html>
+
+2024-08-05 16:27:29 INFO  BaseTestClass:59 - Extent Report flushed successfully.
+2024-08-05 16:28:14 INFO  BaseTestClass:53 - Extent Report initialized successfully.
+2024-08-05 16:28:15 INFO  BaseTestClass:67 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:28:19 INFO  BaseTestClass:83 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:28:20 INFO  BaseTestClass:67 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:28:21 INFO  BaseTestClass:83 - Test Case Passed: testInvalidEndpoint
+2024-08-05 16:28:21 INFO  BaseTestClass:67 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:28:22 INFO  BaseTestClass:77 - Test Case Failed: testUnsupportedMethod
+2024-08-05 16:28:22 INFO  BaseTestClass:78 - Failure Reason: did not expect [200] but found [200]
+2024-08-05 16:28:22 INFO  BaseTestClass:79 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/brandsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 16:28:22 INFO  BaseTestClass:80 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 10:58:23 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=TWa6TE3amlfGoj2CgizGqHCd9qedH0rUpATSSTocSsumdakWIUIZl7GcmAxJXyz3JGImk8AwdG86GVEbcDsnT6R5enRFW%2ByJtb%2BjChkuzl1x67cSKHODTv1lBezLwYGs%2B%2FmU4OfbZoLB"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae6458ddc419f48-FRA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 405, "message": "This request method is not supported."}</body>
+</html>
+
+2024-08-05 16:28:22 INFO  BaseTestClass:59 - Extent Report flushed successfully.
+2024-08-05 16:29:22 INFO  BaseTestClass:52 - Extent Report initialized successfully.
+2024-08-05 16:29:22 INFO  BaseTestClass:66 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:29:27 INFO  BaseTestClass:82 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:29:28 INFO  BaseTestClass:66 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:29:29 INFO  BaseTestClass:82 - Test Case Passed: testInvalidEndpoint
+2024-08-05 16:29:29 INFO  BaseTestClass:66 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:29:30 INFO  BaseTestClass:76 - Test Case Failed: testUnsupportedMethod
+2024-08-05 16:29:30 INFO  BaseTestClass:77 - Failure Reason: did not expect [200] but found [200]
+2024-08-05 16:29:30 INFO  BaseTestClass:78 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/brandsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 16:29:30 INFO  BaseTestClass:79 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 10:59:31 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Wm1BzPPgd6CPg0tsULzvO9nog9PowU5yvfjJQhbRf4OWSlsGjqIZqOJ61KmIdpCZNJd0lOH8tFze3bFkmXNFSz%2FMaeHxYxlQZipwdyYM23KUFShMtgItlrgOyR3y6R9GslRqZ5xHOZov"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae64734bad94d56-FRA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 405, "message": "This request method is not supported."}</body>
+</html>
+
+2024-08-05 16:29:30 INFO  BaseTestClass:58 - Extent Report flushed successfully.
+2024-08-05 16:30:01 INFO  BaseTestClass:52 - Extent Report initialized successfully.
+2024-08-05 16:30:01 INFO  BaseTestClass:66 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:30:01 INFO  BaseTestClass:76 - Test Case Failed: testGetAllBrandsListSuccess
+2024-08-05 16:30:01 INFO  BaseTestClass:77 - Failure Reason: Unresolved compilation problem: 
+	softAssert cannot be resolved
+
+2024-08-05 16:30:01 INFO  BaseTestClass:78 - Request Log:
+
+2024-08-05 16:30:01 INFO  BaseTestClass:79 - Response Log:
+
+2024-08-05 16:30:02 INFO  BaseTestClass:66 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:30:05 INFO  BaseTestClass:82 - Test Case Passed: testInvalidEndpoint
+2024-08-05 16:30:05 INFO  BaseTestClass:66 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:30:07 INFO  BaseTestClass:76 - Test Case Failed: testUnsupportedMethod
+2024-08-05 16:30:07 INFO  BaseTestClass:77 - Failure Reason: did not expect [200] but found [200]
+2024-08-05 16:30:07 INFO  BaseTestClass:78 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/brandsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 16:30:07 INFO  BaseTestClass:79 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:00:07 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=wxZxy7tLgkvGucNGGKdoAgTmlEysKOgvJJU0pvI5zL%2BLNAjcduSGFDDf3GvgKLiyzX1zMDA7eC1xl1p7AuErjZpf42zHrwCvY4OqHUGAo0%2F7epHHup08TP%2FGwWAeHceEyfE44%2FCpvcq8"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae64819385103a6-FRA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 405, "message": "This request method is not supported."}</body>
+</html>
+
+2024-08-05 16:30:07 INFO  BaseTestClass:58 - Extent Report flushed successfully.
+2024-08-05 16:30:50 INFO  BaseTestClass:52 - Extent Report initialized successfully.
+2024-08-05 16:30:51 INFO  BaseTestClass:66 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:30:55 INFO  BaseTestClass:82 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:30:56 INFO  BaseTestClass:66 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:30:57 INFO  BaseTestClass:82 - Test Case Passed: testInvalidEndpoint
+2024-08-05 16:30:57 INFO  BaseTestClass:66 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:30:58 INFO  BaseTestClass:76 - Test Case Failed: testUnsupportedMethod
+2024-08-05 16:30:58 INFO  BaseTestClass:77 - Failure Reason: did not expect [200] but found [200]
+2024-08-05 16:30:58 INFO  BaseTestClass:78 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/brandsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 16:30:58 INFO  BaseTestClass:79 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:00:59 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=f93AnxXyHmon8O%2FhB%2BKzLogWZh%2Bwos5Kec3T6nOBDTXxANaTMGmPnCG2K4LIBgFc7a52N9%2FC2%2FmQvFqNQUIYpftgL5COlEw2vVsoaNIT7P5ykKgBtqLasbt4vA6qNWzuhpplE1wnno9h"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae6495c9b1565de-FRA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 405, "message": "This request method is not supported."}</body>
+</html>
+
+2024-08-05 16:30:58 INFO  BaseTestClass:58 - Extent Report flushed successfully.
+2024-08-05 16:31:51 INFO  BaseTestClass:52 - Extent Report initialized successfully.
+2024-08-05 16:31:51 INFO  BaseTestClass:66 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:31:56 INFO  BaseTestClass:82 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:31:57 INFO  BaseTestClass:66 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:31:58 INFO  BaseTestClass:82 - Test Case Passed: testInvalidEndpoint
+2024-08-05 16:31:58 INFO  BaseTestClass:66 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:31:59 INFO  BaseTestClass:76 - Test Case Failed: testUnsupportedMethod
+2024-08-05 16:31:59 INFO  BaseTestClass:77 - Failure Reason: did not expect [200] but found [200]
+2024-08-05 16:31:59 INFO  BaseTestClass:78 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/brandsList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 16:31:59 INFO  BaseTestClass:79 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:02:00 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=qTVR8exaA17TBIU1zEMvGo0upVY%2BIxNpb2yTAvspdLXhvg9KHhv4kqBP803QIUd4KFyVTwLoDtofanKROcMe0yCbt3zD0FdOcVoC6YSCwOA8lmniKRFK%2F2dV3QpY00G%2FiHqo0BR7DuR7"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae64ad95cf2a073-FRA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 405, "message": "This request method is not supported."}</body>
+</html>
+
+2024-08-05 16:31:59 INFO  BaseTestClass:58 - Extent Report flushed successfully.
+2024-08-05 16:32:22 INFO  BaseTestClass:52 - Extent Report initialized successfully.
+2024-08-05 16:32:22 INFO  BaseTestClass:66 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:32:27 INFO  BaseTestClass:82 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:32:28 INFO  BaseTestClass:66 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:32:29 INFO  BaseTestClass:76 - Test Case Failed: testInvalidEndpoint
+2024-08-05 16:32:29 INFO  BaseTestClass:77 - Failure Reason: expected [200] but found [404]
+2024-08-05 16:32:29 INFO  BaseTestClass:78 - Request Log:
 Request method:	GET
-Request URI:	https://automationexercise.com/api/productsList111
+Request URI:	https://automationexercise.com/api/brandsList1111
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -1333,9 +1362,9 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 
-2024-07-29 17:13:01 INFO  BaseTestClass:64 - Response Log:
+2024-08-05 16:32:29 INFO  BaseTestClass:79 - Response Log:
 HTTP/1.1 404 Not Found
-Date: Mon, 29 Jul 2024 11:43:01 GMT
+Date: Mon, 05 Aug 2024 11:02:30 GMT
 Content-Type: text/html
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1346,17 +1375,17 @@ x-powered-by: Phusion Passenger(R) 6.0.22
 status: 404 Not Found
 vary: Accept-Encoding
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=80bkv%2F9B%2FGaKlKwFxZ0aS81YJTkx5e23vs9CKgbYnzeRt1UUIplZU1nsAnwL5g9Hrs%2FB3X7aNiDpduNcqhwLTmtKu%2FoDQl8E97lgBNv5tX9rKnp%2F83L6qlZI%2Bs4eSvq2InG%2FB6pUjJL5"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=SyhhDFNwoIWHxJxrrNww8uOuFHRZQ5XPR6rGlWf1%2By9KUu1VgXS11FloEeuWvXlcW69SghK8%2BxRE7sdPQOIV3KHthZLG7T8cuC1uKkirAHRMbUGV4FdLIzjSsbKlamkKRHhggyNkqcic"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 8aacd94d0f0c3b8b-BOM
+CF-RAY: 8ae64b927c24997a-FRA
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400
 
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Page not found at /api/productsList111</title>
+    <title>Page not found at /api/brandsList1111</title>
     <meta name="robots" content="NONE,NOARCHIVE"/>
     <style type="text/css">
     html * { padding:0; margin:0; }
@@ -1389,7 +1418,7 @@ Page not found         <span>(404)</span>
         </tr>
         <tr>
           <th colspan="1" rowspan="1">Request URL:</th>
-          <td colspan="1" rowspan="1">https://automationexercise.com/api/productsList111</td>
+          <td colspan="1" rowspan="1">https://automationexercise.com/api/brandsList1111</td>
         </tr>
       </table>
     </div>
@@ -1598,7 +1627,7 @@ Page not found         <span>(404)</span>
       <p>
 
         
-          The current path,         <code>api/productsList111</code>
+          The current path,         <code>api/brandsList1111</code>
 ,
         
         didn’t match any of these.
@@ -1617,262 +1646,62 @@ Page not found         <span>(404)</span>
   </body>
 </html>
 
-2024-07-29 17:13:01 INFO  BaseTestClass:51 - Test Case Started: testProductStructure
-2024-07-29 17:13:03 INFO  BaseTestClass:67 - Test Case Passed: testProductStructure
-2024-07-29 17:13:03 INFO  BaseTestClass:51 - Test Case Started: testResponseContainsProducts
-2024-07-29 17:13:04 INFO  BaseTestClass:67 - Test Case Passed: testResponseContainsProducts
-2024-07-29 17:13:04 INFO  BaseTestClass:51 - Test Case Started: testResponseTime
-2024-07-29 17:13:05 INFO  BaseTestClass:67 - Test Case Passed: testResponseTime
-2024-07-29 17:13:05 INFO  BaseTestClass:51 - Test Case Started: testSpecificProductDetails
-2024-07-29 17:13:07 INFO  BaseTestClass:67 - Test Case Passed: testSpecificProductDetails
-2024-07-29 17:13:07 INFO  BaseTestClass:51 - Test Case Started: testUnsupportedMethod
-2024-07-29 17:13:08 INFO  BaseTestClass:67 - Test Case Passed: testUnsupportedMethod
-2024-07-29 17:13:08 INFO  BaseTestClass:43 - Extent Report flushed successfully.
-=======
-2024-07-08 16:10:05 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:10:08 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:10:08 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
-2024-07-08 16:10:08 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
-Proxy:			<none>
-Request params:	search_product=tshirt
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-2024-07-08 16:10:08 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
-2024-07-08 16:10:11 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
-2024-07-08 16:10:12 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
-2024-07-08 16:10:12 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
-2024-07-08 16:10:12 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:10:13 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
-2024-07-08 16:10:13 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
-2024-07-08 16:10:14 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
-2024-07-08 16:10:14 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
-2024-07-08 16:10:14 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
-2024-07-08 16:10:14 INFO  BaseTestClass:79 - API Request: null
-2024-07-08 16:10:14 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
-2024-07-08 16:10:15 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:10:16 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:14:15 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:14:19 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:14:19 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
-2024-07-08 16:14:19 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
-Proxy:			<none>
-Request params:	search_product=tshirt
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-2024-07-08 16:14:19 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
-2024-07-08 16:14:21 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
-2024-07-08 16:14:21 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
-2024-07-08 16:14:22 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
-2024-07-08 16:14:22 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:14:22 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
-2024-07-08 16:14:22 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
-2024-07-08 16:14:22 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
-2024-07-08 16:14:22 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
-2024-07-08 16:14:22 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
-2024-07-08 16:14:22 INFO  BaseTestClass:79 - API Request: null
-2024-07-08 16:14:22 INFO  BaseTestClass:80 - API Response: null
-2024-07-08 16:14:24 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:14:24 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:16:01 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:16:04 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:16:04 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
-2024-07-08 16:16:04 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
-Proxy:			<none>
-Request params:	search_product=tshirt
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-2024-07-08 16:16:04 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@3ae126d1
-2024-07-08 16:16:06 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
-2024-07-08 16:16:07 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
-2024-07-08 16:16:08 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
-2024-07-08 16:16:08 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:16:08 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
-2024-07-08 16:16:08 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
-2024-07-08 16:16:09 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
-2024-07-08 16:16:09 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
-2024-07-08 16:16:09 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
-2024-07-08 16:16:09 INFO  BaseTestClass:79 - API Request: null
-2024-07-08 16:16:09 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@3ae126d1
-2024-07-08 16:16:10 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:16:11 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:17:18 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:17:22 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:17:22 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
-2024-07-08 16:17:22 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
-Proxy:			<none>
-Request params:	search_product=tshirt
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-2024-07-08 16:17:22 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
-2024-07-08 16:17:24 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
-2024-07-08 16:17:25 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
-2024-07-08 16:17:25 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
-2024-07-08 16:17:25 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:17:26 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
-2024-07-08 16:17:26 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
-2024-07-08 16:17:27 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
-2024-07-08 16:17:27 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
-2024-07-08 16:17:27 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
-2024-07-08 16:17:27 INFO  BaseTestClass:79 - API Request: null
-2024-07-08 16:17:27 INFO  BaseTestClass:80 - API Response: null
-2024-07-08 16:17:28 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:17:28 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:19:23 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:19:27 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:19:27 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
-2024-07-08 16:19:27 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
-Proxy:			<none>
-Request params:	search_product=tshirt
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-2024-07-08 16:19:27 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
-2024-07-08 16:19:29 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
-2024-07-08 16:19:30 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
-2024-07-08 16:19:30 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
-2024-07-08 16:19:31 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:19:31 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
-2024-07-08 16:19:31 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
-2024-07-08 16:19:32 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
-2024-07-08 16:19:32 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
-2024-07-08 16:19:32 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
-2024-07-08 16:19:32 INFO  BaseTestClass:79 - API Request: null
-2024-07-08 16:19:32 INFO  BaseTestClass:80 - API Response: null
-2024-07-08 16:19:33 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:19:33 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:20:11 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:20:14 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:20:14 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
-2024-07-08 16:20:14 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
-Proxy:			<none>
-Request params:	search_product=tshirt
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-2024-07-08 16:20:14 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@65ddee5a
-2024-07-08 16:20:16 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
-2024-07-08 16:20:18 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
-2024-07-08 16:20:18 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
-2024-07-08 16:20:18 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:20:18 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
-2024-07-08 16:20:18 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
-2024-07-08 16:20:19 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
-2024-07-08 16:20:19 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
-2024-07-08 16:20:19 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
-2024-07-08 16:20:19 INFO  BaseTestClass:79 - API Request: null
-2024-07-08 16:20:19 INFO  BaseTestClass:80 - API Response: null
-2024-07-08 16:20:21 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:20:21 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:21:22 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:21:25 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:21:25 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
-2024-07-08 16:21:25 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
-Proxy:			<none>
-Request params:	search_product=tshirt
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-2024-07-08 16:21:25 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@56399b9e
-2024-07-08 16:21:27 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
-2024-07-08 16:21:29 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
-2024-07-08 16:21:29 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
-2024-07-08 16:21:29 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:21:29 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
-2024-07-08 16:21:29 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
-2024-07-08 16:21:30 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
-2024-07-08 16:21:30 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
-2024-07-08 16:21:30 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
-2024-07-08 16:21:30 INFO  BaseTestClass:79 - API Request: 
-2024-07-08 16:21:30 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@56399b9e
-2024-07-08 16:21:31 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:21:31 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:23:22 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:23:25 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:23:25 ERROR BaseTestClass:78 - Failure Reason: expected [application/json] but found [text/html; charset=utf-8]
-2024-07-08 16:23:25 INFO  BaseTestClass:79 - API Request: Request method:	GET
-Request URI:	https://automationexercise.com/api/productsList
+2024-08-05 16:32:29 INFO  BaseTestClass:66 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:32:30 INFO  BaseTestClass:76 - Test Case Failed: testUnsupportedMethod
+2024-08-05 16:32:30 INFO  BaseTestClass:77 - Failure Reason: did not expect [200] but found [200]
+2024-08-05 16:32:30 INFO  BaseTestClass:78 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/brandsList
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 
-2024-07-08 16:23:25 INFO  BaseTestClass:80 - API Response: <html>
-  <body>{"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+2024-08-05 16:32:30 INFO  BaseTestClass:79 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:02:31 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=%2FnImR%2FKUzg1qvIFyT2IAvrFhN%2BTqaDt8sHOPq40lnpwCnJvfMj%2FOBC8G%2BHmKuoEL97TqZGGsUY2Hs3kOH2lpHUoycQcA4DH%2FTCycRjGj7%2BJX2St6tkt6E6MfqjUDPHOZnIZQseSzlLx2"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae64b9a2dec9752-FRA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 405, "message": "This request method is not supported."}</body>
 </html>
 
-2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testFilterByCategory
-2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testGetAllProductsListSuccess
-2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
-2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
-2024-07-08 16:23:27 INFO  BaseTestClass:84 - Test Case Passed: testSpecificProductDetails
-2024-07-08 16:23:28 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:23:28 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:23:50 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:23:53 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:23:53 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
-2024-07-08 16:23:53 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
+2024-08-05 16:32:30 INFO  BaseTestClass:58 - Extent Report flushed successfully.
+2024-08-05 16:34:54 INFO  BaseTestClass:52 - Extent Report initialized successfully.
+2024-08-05 16:34:55 INFO  BaseTestClass:66 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:35:00 INFO  BaseTestClass:82 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:35:00 INFO  BaseTestClass:66 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:35:01 INFO  BaseTestClass:82 - Test Case Passed: testInvalidEndpoint
+2024-08-05 16:35:01 INFO  BaseTestClass:66 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:35:03 INFO  BaseTestClass:76 - Test Case Failed: testUnsupportedMethod
+2024-08-05 16:35:03 INFO  BaseTestClass:77 - Failure Reason: Expected status code is 405 Not Found expected [407] but found [405]
+2024-08-05 16:35:03 INFO  BaseTestClass:78 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/brandsList
 Proxy:			<none>
-Request params:	search_product=tshirt
+Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
@@ -1882,164 +1711,113 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 
-2024-07-08 16:23:53 INFO  BaseTestClass:80 - API Response: <html>
-  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+2024-08-05 16:35:03 INFO  BaseTestClass:79 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:05:03 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=TStdipn52mXKAwQCWFcn5ojuZidfNcnnB7Jb2QC9kJCSdxw7DhMPMWV76TS5usKzk9RK7kzhle5d53KnQ0miBbwg21unOU7lZU7DImo5NdNJypKc1VRP1BxojBgjetebVAXGnToedxH0"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae64f53ab24153e-CDG
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 405, "message": "This request method is not supported."}</body>
 </html>
 
-2024-07-08 16:23:56 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
-2024-07-08 16:23:57 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
-2024-07-08 16:23:57 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
-2024-07-08 16:23:57 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:23:57 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
-2024-07-08 16:23:57 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
-2024-07-08 16:23:58 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
-2024-07-08 16:23:58 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
-2024-07-08 16:23:58 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
-2024-07-08 16:23:58 INFO  BaseTestClass:79 - API Request: 
-2024-07-08 16:23:58 INFO  BaseTestClass:80 - API Response: 
-2024-07-08 16:23:59 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:23:59 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:29:03 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:29:07 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:29:07 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
-2024-07-08 16:29:07 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
-Proxy:			<none>
-Request params:	search_product=tshirt
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-2024-07-08 16:29:07 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@3ae126d1
-2024-07-08 16:29:09 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
-2024-07-08 16:29:10 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
-2024-07-08 16:29:10 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
-2024-07-08 16:29:10 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:29:10 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
-2024-07-08 16:29:11 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
-2024-07-08 16:29:12 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
-2024-07-08 16:29:12 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
-2024-07-08 16:29:12 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
-2024-07-08 16:29:12 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
-Proxy:			<none>
-Request params:	search_product=tshirt
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-2024-07-08 16:29:12 INFO  BaseTestClass:80 - API Response: java.io.PrintStream@3ae126d1
-2024-07-08 16:29:13 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:29:13 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:32:19 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:32:23 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:32:23 ERROR BaseTestClass:78 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
-2024-07-08 16:32:23 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
-Proxy:			<none>
-Request params:	search_product=tshirt
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-2024-07-08 16:32:23 INFO  BaseTestClass:80 - API Response: <html>
-  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
-</html>
-
-2024-07-08 16:32:26 INFO  BaseTestClass:84 - Test Case Passed: testInvalidProductName
-2024-07-08 16:32:27 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredParameter
-2024-07-08 16:32:28 INFO  BaseTestClass:84 - Test Case Passed: testProductStructure
-2024-07-08 16:32:28 INFO  BaseTestClass:84 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:32:28 INFO  BaseTestClass:84 - Test Case Passed: testResponseTime
-2024-07-08 16:32:28 INFO  BaseTestClass:84 - Test Case Passed: testSearchProductSuccess
-2024-07-08 16:32:29 INFO  BaseTestClass:84 - Test Case Passed: testSpecialCharactersInProductName
-2024-07-08 16:32:29 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
-2024-07-08 16:32:29 ERROR BaseTestClass:78 - Failure Reason: expected [Blue Top] but found [null]
-2024-07-08 16:32:29 INFO  BaseTestClass:79 - API Request: Request method:	POST
-Request URI:	https://automationexercise.com/api/searchProduct
-Proxy:			<none>
-Request params:	search_product=tshirt
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-2024-07-08 16:32:29 INFO  BaseTestClass:80 - API Response: <html>
-  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
-</html>
-
-2024-07-08 16:32:31 INFO  BaseTestClass:84 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:32:31 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:33:28 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:33:32 INFO  BaseTestClass:76 - Test Case Failed: testCreateAccountSuccess
-2024-07-08 16:33:32 ERROR BaseTestClass:78 - Failure Reason: expected [201] but found [400]
-2024-07-08 16:33:32 INFO  BaseTestClass:79 - API Request: Request method:	POST
+2024-08-05 16:35:03 INFO  BaseTestClass:58 - Extent Report flushed successfully.
+2024-08-05 16:35:57 INFO  BaseTestClass:52 - Extent Report initialized successfully.
+2024-08-05 16:35:58 INFO  BaseTestClass:66 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 16:36:02 INFO  BaseTestClass:82 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 16:36:03 INFO  BaseTestClass:66 - Test Case Started: testInvalidEndpoint
+2024-08-05 16:36:04 INFO  BaseTestClass:82 - Test Case Passed: testInvalidEndpoint
+2024-08-05 16:36:04 INFO  BaseTestClass:66 - Test Case Started: testUnsupportedMethod
+2024-08-05 16:36:05 INFO  BaseTestClass:82 - Test Case Passed: testUnsupportedMethod
+2024-08-05 16:36:05 INFO  BaseTestClass:58 - Extent Report flushed successfully.
+2024-08-05 17:05:39 INFO  BaseTestClass:43 - Extent Report initialized successfully.
+2024-08-05 17:05:40 INFO  BaseTestClass:55 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 17:05:44 INFO  BaseTestClass:65 - Test Case Failed: testGetAllBrandsListSuccess
+2024-08-05 17:05:44 INFO  BaseTestClass:66 - Failure Reason: Cannot invoke "java.lang.Integer.intValue()" because the return value of "io.restassured.internal.common.path.ObjectConverter.convertObjectTo(Object, java.lang.Class)" is null
+2024-08-05 17:05:44 INFO  BaseTestClass:67 - Request Log:
+Request method:	GET
 Request URI:	https://automationexercise.com/api/createAccount
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
-Form params:	name=Jimmy
-				email=jimmy@example.com
-				password=jimmy12345
-				title=Mr
-				birth_date=1
-				birth_month=January
-				birth_year=1990
-				firstname=John
-				lastname=Doe
-				company=Example Corp
-				address1=123 Main St
-				address2=Apt 4B
-				country=United States
-				zipcode=12345
-				state=California
-				city=Los Angeles
-				mobile_number=1234567890
+Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 
-2024-07-08 16:33:32 INFO  BaseTestClass:80 - API Response: <html>
-  <body>{"responseCode": 400, "message": "Email already exists!"}</body>
-</html>
+2024-08-05 17:05:44 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 405 Method Not Allowed
+Date: Mon, 05 Aug 2024 11:35:44 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: POST, OPTIONS
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 405 Method Not Allowed
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=0CydtFjXeN2z1wtUtyw0a3TfTLdXRpIQWZzzkEYx%2B0nwQ%2FfDzq4qHHkoZlvS%2FwAgukLoMXUvt9z31Wv3ksuTC3Cohj2GvZ2epfFhLtg7hgm2gd4wWJv8nFnIOxhtmiQPWjkiRBoabDrz"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae67c42ced5bc47-ZRH
+alt-svc: h3=":443"; ma=86400
 
-2024-07-08 16:33:34 INFO  BaseTestClass:84 - Test Case Passed: testExistingEmail
-2024-07-08 16:33:36 INFO  BaseTestClass:84 - Test Case Passed: testInvalidEmailFormat
-2024-07-08 16:33:38 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredFields
-2024-07-08 16:33:38 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:41:29 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:41:33 INFO  BaseTestClass:84 - Test Case Passed: testDeleteAccountSuccess
-2024-07-08 16:41:35 INFO  BaseTestClass:76 - Test Case Failed: testIncorrectPassword
-2024-07-08 16:41:35 ERROR BaseTestClass:78 - Failure Reason: Expected status code is 401 Unauthorized expected [401] but found [404]
-2024-07-08 16:41:35 INFO  BaseTestClass:79 - API Request: Request method:	DELETE
-Request URI:	https://automationexercise.com/api/deleteAccount
+{
+    "detail": "Method \"GET\" not allowed."
+}
+
+2024-08-05 17:05:44 INFO  BaseTestClass:55 - Test Case Started: testInvalidEndpoint
+2024-08-05 17:05:46 INFO  BaseTestClass:71 - Test Case Passed: testInvalidEndpoint
+2024-08-05 17:05:46 INFO  BaseTestClass:55 - Test Case Started: testUnsupportedMethod
+2024-08-05 17:05:47 INFO  BaseTestClass:71 - Test Case Passed: testUnsupportedMethod
+2024-08-05 17:05:47 INFO  BaseTestClass:86 - Extent Report flushed successfully.
+2024-08-05 17:12:34 INFO  BaseTestClass:43 - Extent Report initialized successfully.
+2024-08-05 17:12:35 INFO  BaseTestClass:55 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 17:12:40 INFO  BaseTestClass:71 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 17:12:40 INFO  BaseTestClass:55 - Test Case Started: testInvalidEndpoint
+2024-08-05 17:12:41 INFO  BaseTestClass:71 - Test Case Passed: testInvalidEndpoint
+2024-08-05 17:12:41 INFO  BaseTestClass:55 - Test Case Started: testUnsupportedMethod
+2024-08-05 17:12:42 INFO  BaseTestClass:71 - Test Case Passed: testUnsupportedMethod
+2024-08-05 17:12:42 INFO  BaseTestClass:86 - Extent Report flushed successfully.
+2024-08-05 17:14:16 INFO  BaseTestClass:43 - Extent Report initialized successfully.
+2024-08-05 17:14:17 INFO  BaseTestClass:55 - Test Case Started: testGetAllBrandsListSuccess
+2024-08-05 17:14:22 INFO  BaseTestClass:71 - Test Case Passed: testGetAllBrandsListSuccess
+2024-08-05 17:14:22 INFO  BaseTestClass:55 - Test Case Started: testInvalidEndpoint
+2024-08-05 17:14:23 INFO  BaseTestClass:71 - Test Case Passed: testInvalidEndpoint
+2024-08-05 17:14:23 INFO  BaseTestClass:55 - Test Case Started: testUnsupportedMethod
+2024-08-05 17:14:24 INFO  BaseTestClass:71 - Test Case Passed: testUnsupportedMethod
+2024-08-05 17:14:25 INFO  BaseTestClass:86 - Extent Report flushed successfully.
+2024-08-05 17:17:47 INFO  BaseTestClass:43 - Extent Report initialized successfully.
+2024-08-05 17:17:48 INFO  BaseTestClass:55 - Test Case Started: testContentType
+2024-08-05 17:17:52 INFO  BaseTestClass:65 - Test Case Failed: testContentType
+2024-08-05 17:17:52 INFO  BaseTestClass:66 - Failure Reason: expected [application/json] but found [text/html; charset=utf-8]
+2024-08-05 17:17:52 INFO  BaseTestClass:67 - Request Log:
+Request method:	GET
+Request URI:	https://automationexercise.com/api/productsList
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
-Form params:	email=jimmy@example.com
-				password=wrongpassword
+Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
@@ -2047,40 +1825,159 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 
-2024-07-08 16:41:35 INFO  BaseTestClass:80 - API Response: <html>
-  <body>{"responseCode": 404, "message": "Account not found!"}</body>
+2024-08-05 17:17:52 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:47:52 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=J8YZpa6ixlrB3fBVPuu7C9hDf36%2F%2BdXM%2BvMdfnIaTUy7PGpWVmF4klhy27inVDdKb7HCmw%2FcQd0OSbvL5CjcVujtkv6Ibz09tZ3HmHeWfwdWwiDP0qFUfZA74BV%2FRViupTIfoFukdLmL"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae68e07edad99b7-CDG
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
 </html>
 
-2024-07-08 16:41:36 INFO  BaseTestClass:84 - Test Case Passed: testInvalidEmailFormat
-2024-07-08 16:41:37 INFO  BaseTestClass:84 - Test Case Passed: testMissingEmailParameter
-2024-07-08 16:41:39 INFO  BaseTestClass:84 - Test Case Passed: testMissingPasswordParameter
-2024-07-08 16:41:40 INFO  BaseTestClass:84 - Test Case Passed: testNonexistentEmail
-2024-07-08 16:41:40 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:41:47 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:41:51 INFO  BaseTestClass:76 - Test Case Failed: testCreateAccountSuccess
-2024-07-08 16:41:51 ERROR BaseTestClass:78 - Failure Reason: expected [application/json] but found [text/html; charset=utf-8]
-2024-07-08 16:41:51 INFO  BaseTestClass:79 - API Request: Request method:	POST
+2024-08-05 17:17:52 INFO  BaseTestClass:55 - Test Case Started: testFilterByCategory
+2024-08-05 17:17:54 INFO  BaseTestClass:71 - Test Case Passed: testFilterByCategory
+2024-08-05 17:17:54 INFO  BaseTestClass:55 - Test Case Started: testGetAllProductsListSuccess
+2024-08-05 17:17:55 INFO  BaseTestClass:71 - Test Case Passed: testGetAllProductsListSuccess
+2024-08-05 17:17:55 INFO  BaseTestClass:55 - Test Case Started: testProductStructure
+2024-08-05 17:17:57 INFO  BaseTestClass:71 - Test Case Passed: testProductStructure
+2024-08-05 17:17:57 INFO  BaseTestClass:55 - Test Case Started: testResponseContainsProducts
+2024-08-05 17:17:58 INFO  BaseTestClass:71 - Test Case Passed: testResponseContainsProducts
+2024-08-05 17:17:58 INFO  BaseTestClass:55 - Test Case Started: testResponseTime
+2024-08-05 17:17:59 INFO  BaseTestClass:71 - Test Case Passed: testResponseTime
+2024-08-05 17:17:59 INFO  BaseTestClass:55 - Test Case Started: testSpecificProductDetails
+2024-08-05 17:18:00 INFO  BaseTestClass:71 - Test Case Passed: testSpecificProductDetails
+2024-08-05 17:18:00 INFO  BaseTestClass:55 - Test Case Started: testUnsupportedMethod
+2024-08-05 17:18:02 INFO  BaseTestClass:71 - Test Case Passed: testUnsupportedMethod
+2024-08-05 17:18:02 INFO  BaseTestClass:86 - Extent Report flushed successfully.
+2024-08-05 17:22:40 INFO  BaseTestClass:43 - Extent Report initialized successfully.
+2024-08-05 17:22:41 INFO  BaseTestClass:55 - Test Case Started: testContentType
+2024-08-05 17:22:45 INFO  BaseTestClass:65 - Test Case Failed: testContentType
+2024-08-05 17:22:45 INFO  BaseTestClass:66 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-08-05 17:22:45 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:22:45 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:52:45 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ncWvxPTzk3WjCZNB%2F2sDPBU%2FvPrh%2FLcGwMkW%2BGF%2B6qJO8rTkintu0GaGX5nZRB0MCuzQKU0JVCpQC6AyUEi%2Bbbwdgex%2FSgqKPBGG4vyGWdLLxegzEVehRiPkISREKekfj01tPGM0mlgO"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae6952ffe57372e-FRA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-08-05 17:22:45 INFO  BaseTestClass:55 - Test Case Started: testInvalidProductName
+2024-08-05 17:22:47 INFO  BaseTestClass:71 - Test Case Passed: testInvalidProductName
+2024-08-05 17:22:47 INFO  BaseTestClass:55 - Test Case Started: testMissingRequiredParameter
+2024-08-05 17:22:48 INFO  BaseTestClass:71 - Test Case Passed: testMissingRequiredParameter
+2024-08-05 17:22:48 INFO  BaseTestClass:55 - Test Case Started: testProductStructure
+2024-08-05 17:22:50 INFO  BaseTestClass:71 - Test Case Passed: testProductStructure
+2024-08-05 17:22:50 INFO  BaseTestClass:55 - Test Case Started: testResponseContainsProducts
+2024-08-05 17:22:51 INFO  BaseTestClass:71 - Test Case Passed: testResponseContainsProducts
+2024-08-05 17:22:51 INFO  BaseTestClass:55 - Test Case Started: testResponseTime
+2024-08-05 17:22:52 INFO  BaseTestClass:71 - Test Case Passed: testResponseTime
+2024-08-05 17:22:52 INFO  BaseTestClass:55 - Test Case Started: testSearchProductSuccess
+2024-08-05 17:22:53 INFO  BaseTestClass:71 - Test Case Passed: testSearchProductSuccess
+2024-08-05 17:22:53 INFO  BaseTestClass:55 - Test Case Started: testSpecialCharactersInProductName
+2024-08-05 17:22:54 INFO  BaseTestClass:71 - Test Case Passed: testSpecialCharactersInProductName
+2024-08-05 17:22:54 INFO  BaseTestClass:55 - Test Case Started: testSpecificProductDetails
+2024-08-05 17:22:56 INFO  BaseTestClass:65 - Test Case Failed: testSpecificProductDetails
+2024-08-05 17:22:56 INFO  BaseTestClass:66 - Failure Reason: expected [Blue Top] but found [null]
+2024-08-05 17:22:56 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:22:56 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:52:56 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=S%2BVz1%2BUipsOEs8FwkOEqZjlzd8IqWN4hFFh9tTqRTkot9RlEUn5vgEIsjNi%2F%2BPQL5vMTaU0cS85Dc55T%2FDFy9zYSTJ1sedjwDG%2FjDqdnZqB6HGdjUioCdR7WYtrf1qTRf7gPeXrs2rSq"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae695772de92bd9-FRA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-08-05 17:22:56 INFO  BaseTestClass:55 - Test Case Started: testUnsupportedMethod
+2024-08-05 17:22:57 INFO  BaseTestClass:71 - Test Case Passed: testUnsupportedMethod
+2024-08-05 17:22:57 INFO  BaseTestClass:86 - Extent Report flushed successfully.
+2024-08-05 17:26:47 INFO  BaseTestClass:43 - Extent Report initialized successfully.
+2024-08-05 17:26:47 INFO  BaseTestClass:55 - Test Case Started: testContentType
+2024-08-05 17:26:51 INFO  BaseTestClass:65 - Test Case Failed: testContentType
+2024-08-05 17:26:51 INFO  BaseTestClass:66 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-08-05 17:26:51 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
 Request URI:	https://automationexercise.com/api/createAccount
 Proxy:			<none>
-Request params:	<none>
+Request params:	search_product=tshirt
 Query params:	<none>
-Form params:	name=Jimmy
-				email=jimmy@example.com
-				password=jimmy12345
-				title=Mr
-				birth_date=1
-				birth_month=January
-				birth_year=1990
-				firstname=John
-				lastname=Doe
-				company=Example Corp
-				address1=123 Main St
-				address2=Apt 4B
-				country=United States
-				zipcode=12345
-				state=California
-				city=Los Angeles
-				mobile_number=1234567890
+Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
@@ -2088,18 +1985,295 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 
-2024-07-08 16:41:51 INFO  BaseTestClass:80 - API Response: <html>
-  <body>{"responseCode": 201, "message": "User created!"}</body>
+2024-08-05 17:26:51 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:56:51 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: POST, OPTIONS
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=v3JpnkerqsYJniA4rqC%2FgLu8RUhoJIoBEJH92QYO%2B5AStWmPcNrTNQgHnSGZng6iyfdECBegoK%2FMpWDECVGmofGnfuiHMvmYFjCSKD8UDfSSmuUZ3r8RhIFkbljEbvMRdlRck4jaO%2FYb"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69b32e88687c0-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 400, "message": "Bad request, name parameter is missing in POST request."}</body>
 </html>
 
-2024-07-08 16:41:53 INFO  BaseTestClass:84 - Test Case Passed: testExistingEmail
-2024-07-08 16:41:54 INFO  BaseTestClass:84 - Test Case Passed: testInvalidEmailFormat
-2024-07-08 16:41:56 INFO  BaseTestClass:84 - Test Case Passed: testMissingRequiredFields
-2024-07-08 16:41:56 INFO  BaseTestClass:56 - Extent Report flushed successfully.
-2024-07-08 16:45:35 INFO  BaseTestClass:50 - Extent Report initialized successfully.
-2024-07-08 16:45:38 INFO  BaseTestClass:76 - Test Case Failed: testContentType
-2024-07-08 16:45:38 ERROR BaseTestClass:80 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
-2024-07-08 16:45:38 INFO  BaseTestClass:81 - API Request: Request method:	POST
+2024-08-05 17:26:52 INFO  BaseTestClass:55 - Test Case Started: testInvalidProductName
+2024-08-05 17:26:53 INFO  BaseTestClass:65 - Test Case Failed: testInvalidProductName
+2024-08-05 17:26:53 INFO  BaseTestClass:66 - Failure Reason: Cannot invoke "java.util.List.isEmpty()" because the return value of "io.restassured.path.json.JsonPath.getList(String)" is null
+2024-08-05 17:26:53 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/createAccount
+Proxy:			<none>
+Request params:	search_product=invalid Product
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:26:53 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:56:54 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: POST, OPTIONS
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ktd93LK%2FIGZqK6WnI0B4IkqqQOAjNcYJS7MHgyvNi%2FeGRljghcpRXDPnHv8AnEJwMmpk2fJJj01lmP%2Bl9psNqjdmkI2qH0vonBCtswR%2FS1Dp2a6o8bS0H671M90ag327rwkk7yI2Q4bu"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69b417f95484c-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 400, "message": "Bad request, name parameter is missing in POST request."}</body>
+</html>
+
+2024-08-05 17:26:53 INFO  BaseTestClass:55 - Test Case Started: testMissingRequiredParameter
+2024-08-05 17:26:55 INFO  BaseTestClass:71 - Test Case Passed: testMissingRequiredParameter
+2024-08-05 17:26:55 INFO  BaseTestClass:55 - Test Case Started: testProductStructure
+2024-08-05 17:26:56 INFO  BaseTestClass:65 - Test Case Failed: testProductStructure
+2024-08-05 17:26:56 INFO  BaseTestClass:66 - Failure Reason: Cannot invoke "java.util.Map.containsKey(Object)" because the return value of "io.restassured.path.json.JsonPath.getMap(String)" is null
+2024-08-05 17:26:56 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/createAccount
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:26:56 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:56:57 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: POST, OPTIONS
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=BN%2Bun8Co3zILvl5AVIq2I9R7c%2F8yQn7kviYroSSYj1cNFc4g3anfyeNp%2F6wxxZduafZ7wIZGyodHycs0%2B2gp37HE0%2BAODapKz37%2FIeRO3NjFQe8zQEQ%2BL2ys682bnDnrmg%2FJNi7quJ3Z"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69b545a398210-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 400, "message": "Bad request, name parameter is missing in POST request."}</body>
+</html>
+
+2024-08-05 17:26:56 INFO  BaseTestClass:55 - Test Case Started: testResponseContainsProducts
+2024-08-05 17:26:57 INFO  BaseTestClass:65 - Test Case Failed: testResponseContainsProducts
+2024-08-05 17:26:57 INFO  BaseTestClass:66 - Failure Reason: Products list is null expected object to not be null
+2024-08-05 17:26:57 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/createAccount
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:26:57 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:56:58 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: POST, OPTIONS
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=9kF17jlWV8mm1QkmNnKWA6EQogckxx6bdKzafLGQSeP%2B4f9dpTBFEPmmZDXB74Y2kRlrx%2Bd6%2BTjR1ddfJOlim8ocGRvHoshwfnQQM0TS2thHG1lbPLLDqNPPAzw%2BDbegpxeUbJbMkNSP"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69b5c282f5fe4-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 400, "message": "Bad request, name parameter is missing in POST request."}</body>
+</html>
+
+2024-08-05 17:26:57 INFO  BaseTestClass:55 - Test Case Started: testResponseTime
+2024-08-05 17:26:58 INFO  BaseTestClass:71 - Test Case Passed: testResponseTime
+2024-08-05 17:26:58 INFO  BaseTestClass:55 - Test Case Started: testSearchProductSuccess
+2024-08-05 17:26:59 INFO  BaseTestClass:65 - Test Case Failed: testSearchProductSuccess
+2024-08-05 17:26:59 INFO  BaseTestClass:66 - Failure Reason: expected [200] but found [400]
+2024-08-05 17:26:59 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/createAccount
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:26:59 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:57:00 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: POST, OPTIONS
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=kU7eubWlJkxOz1YJg44ijFzVzb%2FN%2F1Vma%2BOF8zNOVrEN0BeSwxSJaH%2FksYT6C8e2FVoHi%2FNVfreXu8uMgTKk9hvd1eFGS%2F2owijgl8tqDkTi8B4Z4MacRovT0UiwSvQ8iVvGGzK2V5G7"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69b6a9bc381ce-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 400, "message": "Bad request, name parameter is missing in POST request."}</body>
+</html>
+
+2024-08-05 17:26:59 INFO  BaseTestClass:55 - Test Case Started: testSpecialCharactersInProductName
+2024-08-05 17:27:01 INFO  BaseTestClass:71 - Test Case Passed: testSpecialCharactersInProductName
+2024-08-05 17:27:01 INFO  BaseTestClass:55 - Test Case Started: testSpecificProductDetails
+2024-08-05 17:27:02 INFO  BaseTestClass:65 - Test Case Failed: testSpecificProductDetails
+2024-08-05 17:27:02 INFO  BaseTestClass:66 - Failure Reason: expected [Blue Top] but found [null]
+2024-08-05 17:27:02 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/createAccount
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:27:02 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:57:03 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: POST, OPTIONS
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=3MXcnaTy7v3elHvMBn0wojSf6kDRXIpo%2BMvdbfyT8BDpblJxwt%2FNFvxkbs6zZVmZL0vnckf3Tcwg0ju3B0VN9%2F82EIEu%2F5Q35%2FvhFhEtxQx5WtDn14TnxmnC7Ow9s7tUqKWkVGzV1jhu"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69b793e4b81a4-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 400, "message": "Bad request, name parameter is missing in POST request."}</body>
+</html>
+
+2024-08-05 17:27:02 INFO  BaseTestClass:55 - Test Case Started: testUnsupportedMethod
+2024-08-05 17:27:03 INFO  BaseTestClass:65 - Test Case Failed: testUnsupportedMethod
+2024-08-05 17:27:03 INFO  BaseTestClass:66 - Failure Reason: expected [200] but found [405]
+2024-08-05 17:27:03 INFO  BaseTestClass:67 - Request Log:
+Request method:	GET
+Request URI:	https://automationexercise.com/api/createAccount?search_product=tshirt
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:27:03 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 405 Method Not Allowed
+Date: Mon, 05 Aug 2024 11:57:04 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: POST, OPTIONS
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 405 Method Not Allowed
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=9%2BCyU4BSo66hkJLRI9WuqWLSon9YYS3rtuMC8S3WxPZGUzI0NMo3EU04G01p5HUN%2BfqDog9BiG2aeO%2FgEWV%2F6ysLvtAGECPLxe%2B5hm1BrNjwxLmamhS3J6%2FynOsY1dovtRkhwLFa2zPz"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69b81586a3e62-SIN
+alt-svc: h3=":443"; ma=86400
+
+{
+    "detail": "Method \"GET\" not allowed."
+}
+
+2024-08-05 17:27:03 INFO  BaseTestClass:86 - Extent Report flushed successfully.
+2024-08-05 17:28:21 INFO  BaseTestClass:43 - Extent Report initialized successfully.
+2024-08-05 17:28:21 INFO  BaseTestClass:55 - Test Case Started: testContentType
+2024-08-05 17:28:25 INFO  BaseTestClass:65 - Test Case Failed: testContentType
+2024-08-05 17:28:25 INFO  BaseTestClass:66 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-08-05 17:28:25 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
 Request URI:	https://automationexercise.com/api/searchProduct
 Proxy:			<none>
 Request params:	search_product=tshirt
@@ -2112,20 +2286,90 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 
-2024-07-08 16:45:38 INFO  BaseTestClass:82 - API Response: <html>
+2024-08-05 17:28:25 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:58:25 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=t1Vp077782GFH5QMUmHIspecU3HAIFv%2B%2BrXFrafoDK4n%2BjBsxJNjQkeGJ4T2RqpDdVTJTlvYuvzNKSyg7q5PXmkAvuDnfEHT2PMHiec0fJ%2FsHIJjC%2F3IG25i2HOCTYWOK8EcEWOmvtjG"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69d7e4ca418e3-FRA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
   <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
 </html>
 
-2024-07-08 16:45:41 INFO  BaseTestClass:86 - Test Case Passed: testInvalidProductName
-2024-07-08 16:45:42 INFO  BaseTestClass:86 - Test Case Passed: testMissingRequiredParameter
-2024-07-08 16:45:42 INFO  BaseTestClass:86 - Test Case Passed: testProductStructure
-2024-07-08 16:45:42 INFO  BaseTestClass:86 - Test Case Passed: testResponseContainsProducts
-2024-07-08 16:45:42 INFO  BaseTestClass:86 - Test Case Passed: testResponseTime
-2024-07-08 16:45:42 INFO  BaseTestClass:86 - Test Case Passed: testSearchProductSuccess
-2024-07-08 16:45:44 INFO  BaseTestClass:86 - Test Case Passed: testSpecialCharactersInProductName
-2024-07-08 16:45:44 INFO  BaseTestClass:76 - Test Case Failed: testSpecificProductDetails
-2024-07-08 16:45:44 ERROR BaseTestClass:80 - Failure Reason: expected [Blue Top] but found [null]
-2024-07-08 16:45:44 INFO  BaseTestClass:81 - API Request: Request method:	POST
+2024-08-05 17:28:25 INFO  BaseTestClass:55 - Test Case Started: testInvalidProductName
+2024-08-05 17:28:27 INFO  BaseTestClass:71 - Test Case Passed: testInvalidProductName
+2024-08-05 17:28:27 INFO  BaseTestClass:55 - Test Case Started: testMissingRequiredParameter
+2024-08-05 17:28:28 INFO  BaseTestClass:71 - Test Case Passed: testMissingRequiredParameter
+2024-08-05 17:28:28 INFO  BaseTestClass:55 - Test Case Started: testProductStructure
+2024-08-05 17:28:30 INFO  BaseTestClass:71 - Test Case Passed: testProductStructure
+2024-08-05 17:28:30 INFO  BaseTestClass:55 - Test Case Started: testResponseContainsProducts
+2024-08-05 17:28:31 INFO  BaseTestClass:71 - Test Case Passed: testResponseContainsProducts
+2024-08-05 17:28:31 INFO  BaseTestClass:55 - Test Case Started: testResponseTime
+2024-08-05 17:28:32 INFO  BaseTestClass:71 - Test Case Passed: testResponseTime
+2024-08-05 17:28:32 INFO  BaseTestClass:55 - Test Case Started: testSearchProductSuccess
+2024-08-05 17:28:33 INFO  BaseTestClass:71 - Test Case Passed: testSearchProductSuccess
+2024-08-05 17:28:34 INFO  BaseTestClass:55 - Test Case Started: testSpecialCharactersInProductName
+2024-08-05 17:28:35 INFO  BaseTestClass:65 - Test Case Failed: testSpecialCharactersInProductName
+2024-08-05 17:28:35 INFO  BaseTestClass:66 - Failure Reason: Products list is not empty expected [null] but found [[]]
+2024-08-05 17:28:35 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=!@#$%^&*()
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:28:35 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:58:36 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=kmSvFxXQeFhah18nSr29uudw4MzV1PRapWZzxY2nEBGOhPiK%2Bwh50zulAiDv5RNiSaOR1gZFYX8ubjiy76JlH91e2s8iLq0cjOvPptP9WAMjKomtX120UvQWMomVxTi3Bo7hjhLKq2lM"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69dc01ec56946-FRA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 200, "products": []}</body>
+</html>
+
+2024-08-05 17:28:35 INFO  BaseTestClass:55 - Test Case Started: testSpecificProductDetails
+2024-08-05 17:28:36 INFO  BaseTestClass:65 - Test Case Failed: testSpecificProductDetails
+2024-08-05 17:28:36 INFO  BaseTestClass:66 - Failure Reason: expected [Blue Top] but found [null]
+2024-08-05 17:28:36 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
 Request URI:	https://automationexercise.com/api/searchProduct
 Proxy:			<none>
 Request params:	search_product=tshirt
@@ -2138,10 +2382,173 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 
-2024-07-08 16:45:44 INFO  BaseTestClass:82 - API Response: <html>
+2024-08-05 17:28:36 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:58:37 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=L%2FP3fgsFjj6OfKXW9oRUwDL8wD4ytvPKthQpOU6nofSvwUAPZccKwv5CfPnzrjOaBiGTyFXVju3TFkpg3eKbGmj03C9Q6%2FIhkmk56qkVfFtURQJX9WsvdsygT6afGQ%2BLUvWeYHV23iqY"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69dc7ba512bb6-FRA
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
   <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
 </html>
 
-2024-07-08 16:45:45 INFO  BaseTestClass:86 - Test Case Passed: testUnsupportedMethod
-2024-07-08 16:45:45 INFO  BaseTestClass:56 - Extent Report flushed successfully.
->>>>>>> origin/main
+2024-08-05 17:28:36 INFO  BaseTestClass:55 - Test Case Started: testUnsupportedMethod
+2024-08-05 17:28:37 INFO  BaseTestClass:71 - Test Case Passed: testUnsupportedMethod
+2024-08-05 17:28:38 INFO  BaseTestClass:86 - Extent Report flushed successfully.
+2024-08-05 17:29:26 INFO  BaseTestClass:43 - Extent Report initialized successfully.
+2024-08-05 17:29:26 INFO  BaseTestClass:55 - Test Case Started: testContentType
+2024-08-05 17:29:30 INFO  BaseTestClass:65 - Test Case Failed: testContentType
+2024-08-05 17:29:30 INFO  BaseTestClass:66 - Failure Reason: expected [text/html] but found [text/html; charset=utf-8]
+2024-08-05 17:29:30 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:29:30 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:59:30 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=cO3zyN%2FzeCcm73V%2F8VWiK%2FNxnZ5GiScVppktS%2FDZ02GgsdshRclWcNhvPAiYJFydnLcOLKf%2FUzYtN3vyEj2D6p2suA%2FYHtJbHSHa4TTEB7Zs234eIRE%2B09FyHOzeDzXt8%2F8hV%2FQRzoxx"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69f13fdff797f-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-08-05 17:29:30 INFO  BaseTestClass:55 - Test Case Started: testInvalidProductName
+2024-08-05 17:29:32 INFO  BaseTestClass:71 - Test Case Passed: testInvalidProductName
+2024-08-05 17:29:32 INFO  BaseTestClass:55 - Test Case Started: testMissingRequiredParameter
+2024-08-05 17:29:34 INFO  BaseTestClass:71 - Test Case Passed: testMissingRequiredParameter
+2024-08-05 17:29:34 INFO  BaseTestClass:55 - Test Case Started: testProductStructure
+2024-08-05 17:29:35 INFO  BaseTestClass:71 - Test Case Passed: testProductStructure
+2024-08-05 17:29:35 INFO  BaseTestClass:55 - Test Case Started: testResponseContainsProducts
+2024-08-05 17:29:36 INFO  BaseTestClass:71 - Test Case Passed: testResponseContainsProducts
+2024-08-05 17:29:36 INFO  BaseTestClass:55 - Test Case Started: testResponseTime
+2024-08-05 17:29:37 INFO  BaseTestClass:71 - Test Case Passed: testResponseTime
+2024-08-05 17:29:37 INFO  BaseTestClass:55 - Test Case Started: testSearchProductSuccess
+2024-08-05 17:29:38 INFO  BaseTestClass:71 - Test Case Passed: testSearchProductSuccess
+2024-08-05 17:29:38 INFO  BaseTestClass:55 - Test Case Started: testSpecialCharactersInProductName
+2024-08-05 17:29:39 INFO  BaseTestClass:65 - Test Case Failed: testSpecialCharactersInProductName
+2024-08-05 17:29:39 INFO  BaseTestClass:66 - Failure Reason: Products list is not empty expected [null] but found [[]]
+2024-08-05 17:29:39 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=!@#$%^&*()
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:29:39 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:59:40 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=A51wbv6AV2nO%2FaJsZqNFEgUF3rjUBYHTvC3sRmhK%2F7MjSffQ%2Fw%2BY2mIijFF6omitHImjKRrqbCc3cRLQcAYAJeWfhvKHK%2FRBJmMZUUS5hZjGneyuo6ES105c4rf97MZRyOOEN5OhkgyT"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69f53adce820d-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 200, "products": []}</body>
+</html>
+
+2024-08-05 17:29:39 INFO  BaseTestClass:55 - Test Case Started: testSpecificProductDetails
+2024-08-05 17:29:40 INFO  BaseTestClass:65 - Test Case Failed: testSpecificProductDetails
+2024-08-05 17:29:40 INFO  BaseTestClass:66 - Failure Reason: expected [Blue Top] but found [null]
+2024-08-05 17:29:40 INFO  BaseTestClass:67 - Request Log:
+Request method:	POST
+Request URI:	https://automationexercise.com/api/searchProduct
+Proxy:			<none>
+Request params:	search_product=tshirt
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2024-08-05 17:29:40 INFO  BaseTestClass:68 - Response Log:
+HTTP/1.1 200 OK
+Date: Mon, 05 Aug 2024 11:59:41 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: DELETE, OPTIONS, POST, GET, PUT
+x-powered-by: Phusion Passenger(R) 6.0.22
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=TzGqYvqE%2Bzh3ckp4LmcVEJq%2Fi4XHaK22cfvIvS8kvOzaoSYgm6S5E33HLJgStLsK4G25uF1MJMO36wOHYbkR7%2FLWmjOG8ubH2WSvA04Qjcwx9WQLqyrp%2FaglMdH47G6gdtc49FymH3gP"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 8ae69f5aadc89c33-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 200, "products": [{"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+
+2024-08-05 17:29:40 INFO  BaseTestClass:55 - Test Case Started: testUnsupportedMethod
+2024-08-05 17:29:41 INFO  BaseTestClass:71 - Test Case Passed: testUnsupportedMethod
+2024-08-05 17:29:41 INFO  BaseTestClass:86 - Extent Report flushed successfully.

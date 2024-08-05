@@ -1,110 +1,79 @@
 package sample.User;
 
-import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
-
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import sample.base.BaseTestClass;
 
 public class VerifyLoginTest extends BaseTestClass {
 	
-	@BeforeClass
-    public void setup() {
-        RestAssured.baseURI = "https://automationexercise.com";
+	
+	
+	private static final String VERIFY_LOGIN_ENDPOINT = "/api/verifyLogin";
+
+    @Test
+    public void testVerifyLoginSuccess() {
+        Map<String, String> formParams = new HashMap<>();
+        formParams.put("email", "jimmy@example.com");
+        formParams.put("password", "jimmy12345");
+
+        Response response = requestHandler.sendPostRequestWithParams(VERIFY_LOGIN_ENDPOINT, formParams);
+
+        getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 200);
+        getSoftAssert().assertEquals(response.jsonPath().getString("message"), "User exists!");
+        getSoftAssert().assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
+        getSoftAssert().assertEquals(response.getContentType(), "application/json");
     }
-	
-	@Test
-	public void testVerifyLoginSuccess() {
-	    Response response =RestAssured.given()
-	    		.params("email", "jimmy@example.com","password", "jimmy12345")
-	    		.post("/api/verifyLogin");	    
-	    System.out.println(response.getBody().asPrettyString());
 
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getString("message"), "User exists!");
-	    Assert.assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
-	    Assert.assertEquals(response.getContentType(), "application/json");
+    @Test
+    public void testIncorrectPassword() {
+        Map<String, String> formParams = new HashMap<>();
+        formParams.put("email", "johndoe@example.com");
+        formParams.put("password", "incorrectPassword");
 
-<<<<<<< HEAD
+        Response response = requestHandler.sendPostRequestWithParams(VERIFY_LOGIN_ENDPOINT, formParams);
 
-=======
->>>>>>> origin/main
-	}
-	
-	@Test
-	public void testIncorrectPassword() {
+        getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
+        getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Unauthorized");
+    }
 
-		Response response =RestAssured.given()
-	    		.params("email", "johndoe@example.com","password", "incorrectPassword")
-	    		.post("/api/verifyLogin");	    
-	    System.out.println(response.getBody().asPrettyString());
+    @Test
+    public void testNonexistentUser() {
+        Map<String, String> formParams = new HashMap<>();
+        formParams.put("email", "johndoe@example1.com");
+        formParams.put("password", "incorrectPassword");
 
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Unauthorized");
+        Response response = requestHandler.sendPostRequestWithParams(VERIFY_LOGIN_ENDPOINT, formParams);
 
-<<<<<<< HEAD
+        getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
+        getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
+    }
 
-=======
->>>>>>> origin/main
-	}
-	
-	@Test
-	public void testNonexistentUser() {
+    @Test
+    public void testMissingEmail() {
+        Map<String, String> formParams = new HashMap<>();
+        formParams.put("email", "johndoe@example1.com");
+        formParams.put("password", "");
 
-		Response response =RestAssured.given()
-	    		.params("email", "johndoe@example1.com","password", "incorrectPassword")
-	    		.post("/api/verifyLogin");	    
-	    System.out.println(response.getBody().asPrettyString());
+        Response response = requestHandler.sendPostRequestWithParams(VERIFY_LOGIN_ENDPOINT, formParams);
+        System.out.println("testMissingEmail: " + response.getBody().asPrettyString());
 
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
+        getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
+        getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
+    }
 
-<<<<<<< HEAD
+    @Test
+    public void testEmptyRequest() {
+        Map<String, String> formParams = new HashMap<>();
+        formParams.put("email", "");
+        formParams.put("password", "");
 
-=======
->>>>>>> origin/main
-	}
-	
-	@Test
-	public void testMissingEmail() {
-
-		Response response =RestAssured.given()
-	    		.params("email", "johndoe@example1.com","password", "")
-	    		.post("/api/verifyLogin");	    
-	    System.out.println(response.getBody().asPrettyString());
-
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
-
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
-	}
-    
-	@Test
-	public void testEmptyRequest() {
-		Response response =RestAssured.given()
-	    		.params("email", "","password", "")
-	    		.post("/api/verifyLogin");	    
-	    System.out.println(response.getBody().asPrettyString());
-
-	    Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-	    Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
-
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/main
-	}
-
-
-	
-
-
-	
+        Response response = requestHandler.sendPostRequestWithParams(VERIFY_LOGIN_ENDPOINT, formParams);
+        
+        getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
+        getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
+    }
 }

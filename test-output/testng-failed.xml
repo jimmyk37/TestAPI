@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
-    <classes>
-      <class name="sample.Product.ProductsListTest">
-        <methods>
-          <include name="testInvalidEndpoint"/>
-          <include name="setUpSuite"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="tearDownSuite"/>
-          <include name="testFilterByCategory"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- sample.Product.ProductsListTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
-=======
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
@@ -26,16 +5,15 @@
     <classes>
       <class name="sample.Product.SearchProductTest">
         <methods>
-          <include name="testSpecificProductDetails"/>
           <include name="setUpSuite"/>
+          <include name="testSpecificProductDetails"/>
           <include name="tearDown"/>
           <include name="testContentType"/>
           <include name="tearDownSuite"/>
           <include name="setUp"/>
-          <include name="setup"/>
+          <include name="testSpecialCharactersInProductName"/>
         </methods>
       </class> <!-- sample.Product.SearchProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
->>>>>>> origin/main
