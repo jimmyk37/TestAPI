@@ -15,37 +15,37 @@ public class ProductsListTest extends BaseTestClass{
 
 	@Test
 	public void testGetAllProductsListSuccess() {
-		response = requestHandler.sendGetRequest("/api/productsList");
+		response = requestHandler.getRequest("/api/productsList");
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 200);
 	}
 
 	public void testMinimumProducts() {
-		response = requestHandler.sendGetRequest("/api/productsList");
+		response = requestHandler.getRequest("/api/productsList");
 		Assert.assertFalse(response.jsonPath().getList("products").isEmpty(), "Products list is empty");
 	}
 
 	@Test
 	public void testResponseTime() {		
-		response = requestHandler.sendGetRequest("/api/productsList");
+		response = requestHandler.getRequest("/api/productsList");
 		Assert.assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
 	}
 
 	@Test
 	public void testContentType() {		
-		response = requestHandler.sendGetRequest("/api/productsList");
+		response = requestHandler.getRequest("/api/productsList");
 		Assert.assertEquals(response.getContentType(), "application/json");
 	}
 
 	@Test
 	public void testResponseContainsProducts() {	
-		response = requestHandler.sendGetRequest("/api/productsList");
+		response = requestHandler.getRequest("/api/productsList");
 		Assert.assertNotNull(response.jsonPath().getList("products"), "Products list is null");
 		
 	}
 
 	@Test
 	public void testProductStructure() {
-		response = requestHandler.sendGetRequest("/api/productsList");
+		response = requestHandler.getRequest("/api/productsList");
 		getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("id"), "Product ID is missing");
 		getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("name"), "Product name is missing");
 		getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("price"), "Product price is missing");
@@ -56,7 +56,7 @@ public class ProductsListTest extends BaseTestClass{
 
 	@Test
 	public void testSpecificProductDetails() {
-		response = requestHandler.sendGetRequest("/api/productsList");
+		response = requestHandler.getRequest("/api/productsList");
 		String productName = response.jsonPath().getString("products.find { it.id == 1 }.name");
 		String productPrice = response.jsonPath().getString("products.find { it.id == 1 }.price");
 		String productBrand = response.jsonPath().getString("products.find { it.id == 1 }.brand");
@@ -70,7 +70,7 @@ public class ProductsListTest extends BaseTestClass{
 
 	@Test
 	public void testFilterByCategory() {
-		response = requestHandler.sendGetRequest("/api/productsList");
+		response = requestHandler.getRequest("/api/productsList");
 		String category = "Electronic";
 		getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 200);
 		getSoftAssert().assertTrue(
@@ -81,7 +81,7 @@ public class ProductsListTest extends BaseTestClass{
 	
 	@Test(enabled = false)
 	public void testInvalidEndpoint() {		
-		Response responsen = requestHandler.sendGetRequest("/api/productsList111");
+		Response responsen = requestHandler.getRequest("/api/productsList111");
 	    getSoftAssert().assertNotEquals(responsen.getStatusCode(), 200);
 	    getSoftAssert().assertEquals(responsen.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
 

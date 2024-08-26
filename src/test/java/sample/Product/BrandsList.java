@@ -22,7 +22,7 @@ public class BrandsList extends BaseTestClass {
 
 	@Test
 	public void testGetAllBrandsListSuccess() {
-		response = requestHandler.sendGetRequest("/api/brandsList");
+		response = requestHandler.getRequest("/api/brandsList");
 		getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 200);
 		getSoftAssert().assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
 		getSoftAssert().assertEquals(response.getContentType(), "text/html; charset=utf-8");
@@ -36,7 +36,7 @@ public class BrandsList extends BaseTestClass {
     @Test
 	public void testInvalidEndpoint() {
 
-		Response responsen = requestHandler.sendGetRequest("/api/brandsList1111");
+		Response responsen = requestHandler.getRequest("/api/brandsList1111");
 		Assert.assertEquals(responsen.getStatusCode(), 404, "Expected status code is 404 Not Found");
 		
 	}

@@ -3,7 +3,6 @@ package sample.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -36,7 +35,7 @@ public class CreateAccountTest extends BaseTestClass {
         formParams.put("city", "Los Angeles");
         formParams.put("mobile_number", "1234567890");
 
-        Response response = requestHandler.sendPostRequestWithParams(CREATE_ACCOUNT_ENDPOINT, formParams);
+        Response response = requestHandler.postFormRequest(CREATE_ACCOUNT_ENDPOINT, formParams);
         
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 201);
 		Assert.assertEquals(response.jsonPath().getString("message"), "User created!");
@@ -54,7 +53,7 @@ public class CreateAccountTest extends BaseTestClass {
         params.put("password", "password123");
         params.put("title", "Mr");
         
-        Response response = requestHandler.sendPostRequestWithParams(CREATE_ACCOUNT_ENDPOINT, params);
+        Response response = requestHandler.postFormRequest(CREATE_ACCOUNT_ENDPOINT, params);
         
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400,
 				"Expected status code is 400 Bad Request");
@@ -83,7 +82,7 @@ public class CreateAccountTest extends BaseTestClass {
         params.put("mobile_number", "9999999999");
 
 
-        Response response = requestHandler.sendPostRequestWithParams(CREATE_ACCOUNT_ENDPOINT, params);
+        Response response = requestHandler.postFormRequest(CREATE_ACCOUNT_ENDPOINT, params);
         
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400,
 				"Expected status code is 400 Bad Request");
@@ -111,7 +110,7 @@ public class CreateAccountTest extends BaseTestClass {
         params.put("city", "Los Angeles");
         params.put("mobile_number", "9999999999");
         
-        Response response = requestHandler.sendPostRequestWithParams(CREATE_ACCOUNT_ENDPOINT, params);
+        Response response = requestHandler.postFormRequest(CREATE_ACCOUNT_ENDPOINT, params);
 
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Conflict");
 	}

@@ -14,8 +14,6 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 public class ApiLoggingUtil {
-
-    private static final Logger logger = LogManager.getLogger(ApiLoggingUtil.class);
     private static final ByteArrayOutputStream requestOutputStream = new ByteArrayOutputStream();
     private static final ByteArrayOutputStream responseOutputStream = new ByteArrayOutputStream();
 

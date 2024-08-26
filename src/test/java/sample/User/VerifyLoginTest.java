@@ -20,7 +20,7 @@ public class VerifyLoginTest extends BaseTestClass {
         formParams.put("email", "jimmy@example.com");
         formParams.put("password", "jimmy12345");
 
-        Response response = requestHandler.sendPostRequestWithParams(VERIFY_LOGIN_ENDPOINT, formParams);
+        Response response = requestHandler.postFormRequest(VERIFY_LOGIN_ENDPOINT, formParams);
 
         getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 200);
         getSoftAssert().assertEquals(response.jsonPath().getString("message"), "User exists!");
@@ -34,7 +34,7 @@ public class VerifyLoginTest extends BaseTestClass {
         formParams.put("email", "johndoe@example.com");
         formParams.put("password", "incorrectPassword");
 
-        Response response = requestHandler.sendPostRequestWithParams(VERIFY_LOGIN_ENDPOINT, formParams);
+        Response response = requestHandler.postFormRequest(VERIFY_LOGIN_ENDPOINT, formParams);
 
         getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
         getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Unauthorized");
@@ -46,7 +46,7 @@ public class VerifyLoginTest extends BaseTestClass {
         formParams.put("email", "johndoe@example1.com");
         formParams.put("password", "incorrectPassword");
 
-        Response response = requestHandler.sendPostRequestWithParams(VERIFY_LOGIN_ENDPOINT, formParams);
+        Response response = requestHandler.postFormRequest(VERIFY_LOGIN_ENDPOINT, formParams);
 
         getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
         getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
@@ -58,7 +58,7 @@ public class VerifyLoginTest extends BaseTestClass {
         formParams.put("email", "johndoe@example1.com");
         formParams.put("password", "");
 
-        Response response = requestHandler.sendPostRequestWithParams(VERIFY_LOGIN_ENDPOINT, formParams);
+        Response response = requestHandler.postFormRequest(VERIFY_LOGIN_ENDPOINT, formParams);
         System.out.println("testMissingEmail: " + response.getBody().asPrettyString());
 
         getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
@@ -71,7 +71,7 @@ public class VerifyLoginTest extends BaseTestClass {
         formParams.put("email", "");
         formParams.put("password", "");
 
-        Response response = requestHandler.sendPostRequestWithParams(VERIFY_LOGIN_ENDPOINT, formParams);
+        Response response = requestHandler.postFormRequest(VERIFY_LOGIN_ENDPOINT, formParams);
         
         getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
         getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");

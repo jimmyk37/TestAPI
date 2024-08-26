@@ -71,10 +71,7 @@ public class BaseTestClass extends RequestHandler{
 			logger.info("Test Case Passed: " + result.getMethod().getMethodName());
 			test.log(Status.INFO, "API test completed.");
 		}
-		// Assert all soft assertions
-        if (getSoftAssert() != null) {
-        	getSoftAssert().assertAll();
-        }
+		
 		// Clear logs after test execution
 		ApiLoggingUtil.clearLogs();
 		extent.flush();

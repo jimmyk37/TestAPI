@@ -1,5 +1,8 @@
 package sample.User;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -19,8 +22,9 @@ public class GetUserDetailByEmailTest extends BaseTestClass {
 	@Test
 	public void testGetUserDetailByEmailSuccess() {
 		String email = "jimmy@example.com";
-
-		Response response = requestHandler.sendGetRequestwithformparam(GET_USER_DETAIL_ENDPOINT, "email", email);
+		Map<String, String> params = new HashMap<>();
+		params.put("email", email);
+		Response response = requestHandler.getFormRequest(GET_USER_DETAIL_ENDPOINT, params);
 
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 200);
 		Assert.assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
@@ -30,8 +34,9 @@ public class GetUserDetailByEmailTest extends BaseTestClass {
 	@Test
 	public void testNonexistentEmail() {
 		String email = "nonexistent@example.com";
-
-		Response response = requestHandler.sendGetRequestwithformparam(GET_USER_DETAIL_ENDPOINT, "email", email);
+		Map<String, String> params = new HashMap<>();
+		params.put("email", email);
+		Response response = requestHandler.getFormRequest(GET_USER_DETAIL_ENDPOINT, params);
 
 		Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
@@ -39,7 +44,9 @@ public class GetUserDetailByEmailTest extends BaseTestClass {
 
 	@Test
 	public void testMissingEmailParameter() {
-		Response response = requestHandler.sendGetRequestwithformparam(GET_USER_DETAIL_ENDPOINT, "email", "");
+		Map<String, String> params = new HashMap<>();
+		params.put("email", "");
+		Response response = requestHandler.getFormRequest(GET_USER_DETAIL_ENDPOINT, params);
 
 		Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
@@ -48,8 +55,9 @@ public class GetUserDetailByEmailTest extends BaseTestClass {
 	@Test
 	public void testInvalidEmailFormat() {
 		String invalidEmail = "invalidemail";
-
-		Response response = requestHandler.sendGetRequestwithformparam(GET_USER_DETAIL_ENDPOINT, "email", invalidEmail);
+		Map<String, String> params = new HashMap<>();
+		params.put("email", invalidEmail);
+		Response response = requestHandler.getFormRequest(GET_USER_DETAIL_ENDPOINT, params);
 
 		Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
 		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
