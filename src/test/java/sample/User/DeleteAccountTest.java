@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 import java.util.HashMap;
 import java.util.Map;
 import io.restassured.response.Response;
-import sample.base.BaseTestClass;
+import sample.base.HelperClass;
 
-public class DeleteAccountTest extends BaseTestClass {
+public class DeleteAccountTest extends HelperClass {
 
 	private static final String DELETE_ACCOUNT_ENDPOINT = "/api/deleteAccount";
 

@@ -7,9 +7,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.restassured.response.Response;
-import sample.base.BaseTestClass;
+import sample.base.HelperClass;
 
-public class CreateAccountTest extends BaseTestClass {
+public class CreateAccountTest extends HelperClass {
 
 	private static final String CREATE_ACCOUNT_ENDPOINT = "/api/createAccount";
 

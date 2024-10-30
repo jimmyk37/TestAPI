@@ -3,12 +3,13 @@ package sample.User;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
-import sample.base.BaseTestClass;
+import sample.base.HelperClass;
 
-public class VerifyLoginTest extends BaseTestClass {
+public class VerifyLoginTest extends HelperClass {
 	
 	
 	
@@ -22,10 +23,10 @@ public class VerifyLoginTest extends BaseTestClass {
 
         Response response = requestHandler.postFormRequest(VERIFY_LOGIN_ENDPOINT, formParams);
 
-        getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 200);
-        getSoftAssert().assertEquals(response.jsonPath().getString("message"), "User exists!");
-        getSoftAssert().assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
-        getSoftAssert().assertEquals(response.getContentType(), "application/json");
+        Assert.assertEquals(response.jsonPath().getInt("responseCode"), 200);
+        Assert.assertEquals(response.jsonPath().getString("message"), "User exists!");
+        Assert.assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
+        Assert.assertEquals(response.getContentType(), "application/json");
     }
 
     @Test
@@ -36,8 +37,8 @@ public class VerifyLoginTest extends BaseTestClass {
 
         Response response = requestHandler.postFormRequest(VERIFY_LOGIN_ENDPOINT, formParams);
 
-        getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-        getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Unauthorized");
+        Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
+        Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Unauthorized");
     }
 
     @Test
@@ -48,8 +49,8 @@ public class VerifyLoginTest extends BaseTestClass {
 
         Response response = requestHandler.postFormRequest(VERIFY_LOGIN_ENDPOINT, formParams);
 
-        getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-        getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
+        Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
+        Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
     }
 
     @Test
@@ -61,8 +62,8 @@ public class VerifyLoginTest extends BaseTestClass {
         Response response = requestHandler.postFormRequest(VERIFY_LOGIN_ENDPOINT, formParams);
         System.out.println("testMissingEmail: " + response.getBody().asPrettyString());
 
-        getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-        getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
+        Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
+        Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
     }
 
     @Test
@@ -73,7 +74,7 @@ public class VerifyLoginTest extends BaseTestClass {
 
         Response response = requestHandler.postFormRequest(VERIFY_LOGIN_ENDPOINT, formParams);
         
-        getSoftAssert().assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
-        getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
+        Assert.assertNotEquals(response.jsonPath().getInt("responseCode"), 200);
+        Assert.assertEquals(response.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Bad Request");
     }
 }

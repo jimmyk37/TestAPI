@@ -1,5 +1,7 @@
 package sample.Product;
 
+import static io.restassured.RestAssured.given;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,18 +12,22 @@ import org.testng.annotations.Test;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import net.minidev.json.JSONObject;
-import sample.base.BaseTestClass;
 
-public class SearchProductTest extends BaseTestClass{
+import sample.base.HelperClass;
+
+public class SearchProductTest extends HelperClass{
 
 	static Response response;
 	private static final String SEARCH_PRODUCT_ENDPOINT = "/api/searchProduct";
 
 	
+	
 	@Test
 	public void testResponseTime() {
 		Map<String, String> param = new HashMap<>();
 		param.put("search_product", "tshirt");
+		
+		
 		response = requestHandler.postFormRequest(SEARCH_PRODUCT_ENDPOINT, param);
 		
 	    Assert.assertTrue(response.getTime() < 5000L, "Response time is greater than 5 seconds");
@@ -64,11 +70,11 @@ public class SearchProductTest extends BaseTestClass{
 		param.put("search_product", "tshirt");
 		response = requestHandler.postFormRequest(SEARCH_PRODUCT_ENDPOINT, param);
 		
-	    getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("id"), "Product ID is missing");
-	    getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("name"), "Product name is missing");
-	    getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("price"), "Product price is missing");
-	    getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("brand"), "Product brand is missing");
-	    getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("category"), "Product category is missing");
+		softAssert.assertTrue(response.jsonPath().getMap("products[0]").containsKey("id"), "Product ID is missing");
+		softAssert.assertTrue(response.jsonPath().getMap("products[0]").containsKey("name"), "Product name is missing");
+		softAssert.assertTrue(response.jsonPath().getMap("products[0]").containsKey("price"), "Product price is missing");
+		softAssert.assertTrue(response.jsonPath().getMap("products[0]").containsKey("brand"), "Product brand is missing");
+		softAssert.assertTrue(response.jsonPath().getMap("products[0]").containsKey("category"), "Product category is missing");
 
 	}
 
@@ -83,10 +89,10 @@ public class SearchProductTest extends BaseTestClass{
 		String productBrand = response.jsonPath().getString("products.find { it.id == 1 }.brand");
 		String productCategory = response.jsonPath().getString("products.find { it.id == 1 }.category");
 
-		getSoftAssert().assertEquals(productName, "Blue Top");
-		getSoftAssert().assertEquals(productPrice, "Rs. 500");
-		getSoftAssert().assertEquals(productBrand, "Polo");
-		getSoftAssert().assertEquals(productCategory, "Tops");
+		softAssert.assertEquals(productName, "Blue Top");
+		softAssert.assertEquals(productPrice, "Rs. 500");
+		softAssert.assertEquals(productBrand, "Polo");
+		softAssert.assertEquals(productCategory, "Tops");
 	}
 	
 	@Test
@@ -96,8 +102,8 @@ public class SearchProductTest extends BaseTestClass{
 
 		response = requestHandler.postFormRequest(SEARCH_PRODUCT_ENDPOINT, param);
 		
-		getSoftAssert().assertEquals(response.getStatusCode(), 200);
-		getSoftAssert().assertTrue(response.jsonPath().getList("products").isEmpty(), "Products list is not empty");
+		softAssert.assertEquals(response.getStatusCode(), 200);
+		softAssert.assertTrue(response.jsonPath().getList("products").isEmpty(), "Products list is not empty");
 
 	}
 	
@@ -106,8 +112,8 @@ public class SearchProductTest extends BaseTestClass{
 		
 		response = requestHandler.getRequest(SEARCH_PRODUCT_ENDPOINT);
 		
-		getSoftAssert().assertEquals(response.getStatusCode(), 200);
-		getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 405, "Expected status code is 405 Method Not Allowed");
+		softAssert.assertEquals(response.getStatusCode(), 200);
+		softAssert.assertEquals(response.jsonPath().getInt("responseCode"), 405, "Expected status code is 405 Method Not Allowed");
 
 	}
 	
@@ -116,8 +122,8 @@ public class SearchProductTest extends BaseTestClass{
 		Map<String, String> param = new HashMap<>();
 		response = requestHandler.postFormRequest(SEARCH_PRODUCT_ENDPOINT, param);
 
-		getSoftAssert().assertEquals(response.getStatusCode(), 200);
-		getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
+		softAssert.assertEquals(response.getStatusCode(), 200);
+		softAssert.assertEquals(response.jsonPath().getInt("responseCode"), 400, "Expected status code is 400 Bad Request");
 	    
 
 	}
@@ -129,8 +135,8 @@ public class SearchProductTest extends BaseTestClass{
 		
 		response = requestHandler.postFormRequest(SEARCH_PRODUCT_ENDPOINT, param);
 		
-		getSoftAssert().assertEquals(response.getStatusCode(), 200);
-		getSoftAssert().assertTrue(response.jsonPath().getList("products").isEmpty(), "Products list is not empty");
+		softAssert.assertEquals(response.getStatusCode(), 200);
+		softAssert.assertTrue(response.jsonPath().getList("products").isEmpty(), "Products list is not empty");
 
 	}
 

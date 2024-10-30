@@ -1,14 +1,17 @@
 package sample.Product;
 
+import static io.restassured.RestAssured.given;
+
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import static org.hamcrest.Matchers.*;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import sample.base.BaseTestClass;
 
-public class ProductsListTest extends BaseTestClass{
+import sample.base.HelperClass;
+
+public class ProductsListTest extends HelperClass{
 
 	static Response response;
 	
@@ -45,35 +48,43 @@ public class ProductsListTest extends BaseTestClass{
 
 	@Test
 	public void testProductStructure() {
-		response = requestHandler.getRequest("/api/productsList");
-		getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("id"), "Product ID is missing");
-		getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("name"), "Product name is missing");
-		getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("price"), "Product price is missing");
-		getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("brand"), "Product brand is missing");
-		getSoftAssert().assertTrue(response.jsonPath().getMap("products[0]").containsKey("category"),
-				"Product category is missing");		
+		response = given()
+		            .when()
+		            .get("/api/productsList")
+		            .then()
+		            .statusCode(200)
+		            .time(lessThan(5000L))
+		            .extract().response();
+
+		   
+		        response.then()
+		            .body("products[0]", hasKey("id"))  
+		            .body("products[0]", hasKey("name"))  // Check if the "name" key is present
+		            .body("products[0]", hasKey("price"))  // Check if the "price" key is present
+		            .body("products[0]", hasKey("brand"))  // Check if the "brand" key is present
+		            .body("products[0]", hasKey("category"));  // Check if the "category" key is present		
 	}
 
 	@Test
 	public void testSpecificProductDetails() {
-		response = requestHandler.getRequest("/api/productsList");
-		String productName = response.jsonPath().getString("products.find { it.id == 1 }.name");
-		String productPrice = response.jsonPath().getString("products.find { it.id == 1 }.price");
-		String productBrand = response.jsonPath().getString("products.find { it.id == 1 }.brand");
-		String productCategory = response.jsonPath().getString("products.find { it.id == 1 }.category.category");
-
-		getSoftAssert().assertEquals(productName, "Blue Top");
-		getSoftAssert().assertEquals(productPrice, "Rs. 500");
-		getSoftAssert().assertEquals(productBrand, "Polo");
-		getSoftAssert().assertEquals(productCategory, "Tops");
-	}
+		
+        given()
+        .when()
+        .get("/api/productsList")
+        .then()
+        .statusCode(200)  // Verify the status code is 200
+        .body("products.find { it.id == 1 }.name", equalTo("Blue Top"))  // Verify the product name
+        .body("products.find { it.id == 1 }.price", equalTo("Rs. 500"))  // Verify the product price
+        .body("products.find { it.id == 1 }.brand", equalTo("Polo"))  // Verify the product brand
+        .body("products.find { it.id == 1 }.category.category", equalTo("Tops"));  // Verify the product category
+}
 
 	@Test
 	public void testFilterByCategory() {
 		response = requestHandler.getRequest("/api/productsList");
 		String category = "Electronic";
-		getSoftAssert().assertEquals(response.jsonPath().getInt("responseCode"), 200);
-		getSoftAssert().assertTrue(
+		Assert.assertEquals(response.jsonPath().getInt("responseCode"), 200);
+		Assert.assertTrue(
 				response.jsonPath().getList("products.findAll { it.category.category == '" + category + "' }").isEmpty(),
 				"No products found for the category");
 	}
@@ -82,8 +93,8 @@ public class ProductsListTest extends BaseTestClass{
 	@Test(enabled = false)
 	public void testInvalidEndpoint() {		
 		Response responsen = requestHandler.getRequest("/api/productsList111");
-	    getSoftAssert().assertNotEquals(responsen.getStatusCode(), 200);
-	    getSoftAssert().assertEquals(responsen.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
+		Assert.assertNotEquals(responsen.getStatusCode(), 200);
+		Assert.assertEquals(responsen.jsonPath().getInt("responseCode"), 404, "Expected status code is 404 Not Found");
 
 	}
 	
@@ -91,8 +102,8 @@ public class ProductsListTest extends BaseTestClass{
 	public void testUnsupportedMethod() {
 		
 		Response responsen = RestAssured.given().post("/api/productsList");
-		getSoftAssert().assertNotEquals(responsen.jsonPath().getInt("responseCode"), 200);
-		getSoftAssert().assertEquals(responsen.jsonPath().getInt("responseCode"), 405, "Expected status code is 405 Method Not Allowed");
+		Assert.assertNotEquals(responsen.jsonPath().getInt("responseCode"), 200);
+		Assert.assertEquals(responsen.jsonPath().getInt("responseCode"), 405, "Expected status code is 405 Method Not Allowed");
 
 	}
 }

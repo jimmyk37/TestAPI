@@ -14,17 +14,20 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.asserts.SoftAssert;
 
-public class BaseTestClass extends RequestHandler{
+public class HelperClass extends RequestHandler{
     
 	protected RequestHandler requestHandler;
 	protected static ExtentReports extent;
-	protected static Logger logger = Logger.getLogger(BaseTestClass.class);
+	protected static Logger logger ;
 	public static ExtentTest test;
+	public static SoftAssert softAssert;
 
 
 	@BeforeSuite
 	public void setUpSuite() {
+		logger = Logger.getLogger(getClass().getSimpleName());
 		extent = new ExtentReports();
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(
 				System.getProperty("user.dir") + "/test-output/ExtentReport.html");
@@ -49,6 +52,7 @@ public class BaseTestClass extends RequestHandler{
 	public void setUp(ITestResult result) {
 		RestAssured.baseURI = "https://automationexercise.com";
 		requestHandler = new RequestHandler();
+		softAssert=new SoftAssert();
 		ApiLoggingUtil.clearLogs();
 		test = extent.createTest(getClass().getSimpleName() + "." + result.getMethod().getMethodName());
 		ApiLoggingUtil.configureLogging();
@@ -58,6 +62,7 @@ public class BaseTestClass extends RequestHandler{
 
 	@AfterMethod
 	public void tearDown(ITestResult result) {
+		
 
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, "Test Case Failed: " + result.getMethod().getMethodName());
@@ -73,8 +78,9 @@ public class BaseTestClass extends RequestHandler{
 		}
 		
 		// Clear logs after test execution
+		
 		ApiLoggingUtil.clearLogs();
-		extent.flush();
+		
 	}
 	
 	@AfterSuite

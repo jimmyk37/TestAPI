@@ -4,17 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
-import com.aventstack.extentreports.Status;
-
-import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import sample.base.BaseTestClass;
 
-public class GetUserDetailByEmailTest extends BaseTestClass {
+import sample.base.HelperClass;
+
+public class GetUserDetailByEmailTest extends HelperClass {
 
 	private static final String GET_USER_DETAIL_ENDPOINT = "/api/getUserDetailByEmail";
 	
